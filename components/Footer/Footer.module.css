@@ -1,0 +1,41 @@
+.Footer{
+    display: flex;
+    font-size: 1.1rem;
+    padding:2rem;
+    box-shadow: 0px -0.5px 0px #ebf0f7;
+    padding-top: 3rem;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Footer h3{
+    margin-bottom: 1rem;
+}
+
+.List{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.List li{
+    color: #161637;
+    margin-bottom: 1rem;
+}
+.List li a{
+    color: #161637;
+    text-decoration: none;
+}
+.List li a:hover{
+    color: #056ab2;
+}
+
+@media (min-width: 500px) {
+    .Footer {
+        margin-top: 0;
+        flex-direction: row;
+        text-align: left;
+    }
+}

@@ -1,0 +1,97 @@
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+}
+.Card{
+    margin: 1rem;
+    max-width: 18rem;
+    /* box-shadow: 0 1px 2px black;
+    transition: box-shadow .3s; */
+}
+.Card:hover{
+    /* box-shadow: 0 3px 6px black;  */
+    /* cursor: pointer; */
+}
+.Header{
+    padding: 0;
+    height: 12.7rem;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.Body{
+    background-color: #96ccee;
+    color: #161637;
+    padding-top: 0.1rem;
+    transition: height 0.5s
+}
+
+.Body h3{
+    color: #2a5c91;
+    margin-bottom:0.5rem;
+    padding: 2px;
+}
+
+.Body p{
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.OpenHiddenText{
+    height: 53rem;
+    transition: height 0.5s
+}
+
+.ButtonDiv{
+    background-color: #96ccee;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 1rem;
+    z-index: 100;
+}
+
+.CardButton{
+    background-color: #1c73b6; 
+    color: white; 
+    min-width: 7rem;
+    border: 2px solid #1c73b6;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-left: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .CardButton:hover{
+    box-shadow: 1px 2px 0px #1c73b6;
+    background-color: #1c73b6; 
+    border: 2px solid #1c73b6;
+  }
+
+.HidenText{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+  pointer-events: none;
+  background-color: #96ccee;
+}
+
+@media (min-width: 800px) {
+    .CardContainer{
+        flex-direction: row;
+        align-items: unset;
+    }
+    .Card{
+        margin: 0 2rem;
+        min-width: 19rem;
+    }
+    .Header{
+        min-height: 17rem;
+    }
+}

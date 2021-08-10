@@ -1,0 +1,62 @@
+
+.Card{
+    margin: 1rem;
+    text-align: left;
+    max-width: 70rem;
+    /* box-shadow: 0 1px 2px black;
+    transition: box-shadow .3s; */
+}
+
+.alignRight { 
+    text-align: right;
+}
+.Card:hover{
+    /* box-shadow: 0 3px 6px black;  */
+    /* cursor: pointer; */
+}
+
+.Body{
+    color: #161637;
+    z-index: 1;
+    transition: height 0.2s ease-in-out
+}
+
+.Body h3{
+    color: #2a5c91;
+    padding: 2px;
+}
+
+
+.ButtonDiv{
+    z-index: 100;
+}
+
+.CardButton{
+    background-color: transparent; 
+    color: #1c73b6; 
+    min-width: 7rem;
+    border: none;
+    padding: 0.5rem 0;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 1rem 0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+
+.HiddenText{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+  pointer-events: none;
+  margin-top: 10px;
+}
+
+@media (min-width: 800px) {
+    .Card{
+        margin: 0 2rem;
+        min-width: 19rem;
+    }
+}

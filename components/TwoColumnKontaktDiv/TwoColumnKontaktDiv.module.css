@@ -1,0 +1,15 @@
+.Content{
+    text-align: center;
+}
+.cols2{
+    display: flex;
+    margin-top: 10rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .cols2{
+        flex-direction: row;
+    }
+}

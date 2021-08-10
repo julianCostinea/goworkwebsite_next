@@ -1,0 +1,43 @@
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Card{
+    margin: 1rem;
+    display: block;
+    max-width: 18rem;
+    /* box-shadow: 0 1px 2px black; */
+    /* transition: box-shadow .3s; */
+}
+.Card:hover{
+    /* box-shadow: 0 3px 6px black;  */
+    /* cursor: pointer; */
+}
+.Header{
+    padding: 0;
+    text-align: left;
+}
+.Header h2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.Body{
+    padding: 0.1rem 1rem 0 0;
+    min-height: 8rem;
+}
+
+.Body li{
+    text-align: left;
+}
+
+@media (min-width: 500px) {
+    .CardContainer{
+        flex-direction: row;
+    }
+    .Card{
+        margin: 0 2rem;
+        min-width: 18rem;
+    }
+}

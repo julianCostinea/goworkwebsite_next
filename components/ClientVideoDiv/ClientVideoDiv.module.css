@@ -1,0 +1,60 @@
+.Container{
+    background-color: #1c73b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+h2, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.Header{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background-color: #1c73b6;
+}
+
+.Header h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.TextDiv{
+    font-size: 1.2rem;
+}
+
+.Paragraph{
+    margin: 3rem 0;
+}
+
+.Paragraph p{
+    text-align: center;
+}
+
+.White{
+    background-color: white;
+}
+
+@media (min-width: 576px) {
+    .Container{
+        flex-direction: row;
+    }
+    .TextDiv{
+        margin-left: 3rem;
+    }
+    .TextDiv p{
+        text-align: left;
+    }
+    .VideoDiv iframe {
+        margin-top: 3rem;
+        width: 28rem;
+        height: 18rem;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,15 @@
+.CardPhoto{
+    height: 100%;
+}
+.CardPhoto img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 600px) {
+    .CardPhoto img{
+        width: 100%;
+        height: 100%;
+    }
+}

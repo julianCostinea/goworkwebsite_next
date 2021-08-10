@@ -1,0 +1,48 @@
+.Button{
+  background-color: #1c73b6; 
+  color: white; 
+  border: 2px solid #1c73b6;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 1rem;
+  margin-left: 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.Button:hover{
+  box-shadow: 1px 2px 0px #1c73b6;
+  background-color: #1c73b6; 
+  border: 2px solid #1c73b6;
+}
+.Button:focus{
+  outline: black;
+}
+.whiteButton{
+  color: #2a5c91;
+  background-color: white;
+}
+.whiteButton:hover{
+  box-shadow: 1px 2px 0px #4470a0;
+  background-color: white; 
+  border: 2px solid #4470a0;
+}
+.orangeButton{
+  border: 2px solid #ecac45;
+  color: white;
+  background-color: #ecac45;
+}
+.orangeButton:hover{
+  color: #ecac45;
+  box-shadow: 1px 2px 0px #ecac45;
+  background-color: white; 
+  border: 2px solid #ecac45;
+}
+
+@media (min-width: 580px){
+  .Button{
+    min-width: 12rem;
+  }
+}

@@ -1,0 +1,15 @@
+.Dropdown{
+    border: 1px solid #eee;
+    position: absolute;
+    top: 2rem;
+    z-index: 100;
+    background-color: #edebeb;
+    box-shadow: 2px 2px 5px -1px rgba(10,9,10,1);
+    transition: 2s ease-in-out;
+}
+.Close{
+    display: none;
+}
+.Open{
+    display: block;
+}

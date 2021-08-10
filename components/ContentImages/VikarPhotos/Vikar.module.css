@@ -1,0 +1,8 @@
+.VikarPhoto{
+    height: 100%;
+}
+.VikarPhoto img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
