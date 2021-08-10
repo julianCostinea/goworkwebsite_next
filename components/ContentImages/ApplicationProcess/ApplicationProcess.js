@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-
-import applicationStep1 from '../../../assets/images/ApplicationProcess/1.svg';
-import applicationStep2 from '../../../assets/images/ApplicationProcess/2.svg';
-import applicationStep3 from '../../../assets/images/ApplicationProcess/3.svg';
-import applicationStep4 from '../../../assets/images/ApplicationProcess/4.svg';
+import Image from 'next/image';
 
 import classes from './ApplicationProcess.module.css'
 
@@ -12,30 +8,34 @@ const ApplicationProcess = () => {
     return (
     <div className= {classes.ApplicationContainer}>
         <div className={classes.ApplicationPhoto}>
-            <img 
+            <Image 
+                width= "340px" height="280px"
                 style={loaded ? {} : { display: 'none' }} 
-                src={applicationStep1} alt="Application step 1"
+                src="/images/ApplicationProcess/1.svg" alt="Application step 1"
                 onLoad={() => setLoaded(true)}
                 />
         </div>
         <div className={classes.ApplicationPhoto}>
-            <img 
+            <Image
+                width= "340px" height="280px"
                 style={loaded ? {} : { display: 'none' }} 
-                src={applicationStep2} alt="Application step 2"
+                src="/images/ApplicationProcess/2.svg" alt="Application step 2"
                 onLoad={() => setLoaded(true)}
                 />
         </div>
         <div className={classes.ApplicationPhoto}>
-            <img 
+            <Image 
+                width= "340px" height="280px"
                 style={loaded ? {} : { display: 'none' }} 
-                src={applicationStep3} alt="Application step 3"
+                src="/images/ApplicationProcess/3.svg" alt="Application step 3"
                 onLoad={() => setLoaded(true)}
                 />
         </div>
         <div className={classes.ApplicationPhoto}>
-            <img 
+            <Image 
+                width= "340px" height="280px"
                 style={loaded ? {} : { display: 'none' }} 
-                src={applicationStep4} alt="Application step 4"
+                src="/images/ApplicationProcess/4.svg" alt="Application step 4"
                 onLoad={() => setLoaded(true)}
                 />
         </div>

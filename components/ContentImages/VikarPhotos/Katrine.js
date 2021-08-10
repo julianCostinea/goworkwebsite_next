@@ -7,9 +7,8 @@ export const VikarPhotoKatrine = () => {
     const [loaded, setLoaded] = useState(false);
     return (
     <div className={classes.VikarPhoto}>
-        {/* EAGER LOAD IMAGE */}
         <Image
-            width="96px" height="96px" 
+            width="96px" height="96px" loading="eager"
             style={loaded ? {} : { display: 'none' }} 
             src='/images/Vikarer/Katrine.jpg' alt="Katrine"
             onLoad={() => setLoaded(true)}

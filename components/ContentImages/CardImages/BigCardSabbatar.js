@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import SabbatarPhoto from '../../../assets/images/stillinger/stillinger-sabataar.svg';
+import Image from 'next/image';
 
 import classes from './BigCardImage.module.css'
 
@@ -8,9 +7,10 @@ const BigCardPhoto = () => {
     const [loaded, setLoaded] = useState(false);
     return (
     <div className={classes.CardPhoto}>
-        <img 
+        <Image
+            width="350px" height="320px" 
             style={loaded ? {} : { display: 'none' }} 
-            src={SabbatarPhoto} alt="Studerende"
+            src="/images/stillinger/stillinger-sabataar.svg" alt="Studerende"
             onLoad={() => setLoaded(true)}
             />
     </div>

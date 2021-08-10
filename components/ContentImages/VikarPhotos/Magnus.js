@@ -8,7 +8,7 @@ export const VikarPhotoMagnus = () => {
     return (
     <div className={classes.VikarPhoto}>
         <Image
-            width="96px" height="96px"  
+            width="96px" height="96px" loading="eager" 
             style={loaded ? {} : { display: 'none' }} 
             src='/images/Vikarer/Magnus.jpeg' alt="Magnus"
             onLoad={() => setLoaded(true)}

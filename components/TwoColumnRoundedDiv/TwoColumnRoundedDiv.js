@@ -8,7 +8,7 @@ const TwoColumnRoundedDiv = (props) => {
         attachedClasses = [classes.Container, classes.ReverseContainer];
     }
 
-    const formattedHeader = props.header.split('\n').map((str, index) => <h1 key={index}>{str}</h1>);
+    const formattedHeader = props.header.split('\n').map((str, index) => <h1 className={classes.Header__h1} key={index}>{str}</h1>);
     return(
     <div className={attachedClasses.join(' ')}>
         <div className={classes.TextDiv}>
@@ -16,7 +16,7 @@ const TwoColumnRoundedDiv = (props) => {
                 {formattedHeader}
             </div>
             <div className={classes.Paragraph}>
-                <p>{props.children}</p>
+                <p className={classes.Paragraph__p}>{props.children}</p>
             </div> 
         </div>
         <div className={classes.ImageDiv}>
