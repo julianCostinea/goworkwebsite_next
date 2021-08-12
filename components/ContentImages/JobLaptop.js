@@ -8,7 +8,8 @@ export const VikarPhoto = () => {
     return (
     <div className={classes.VikarPhoto}>
         <Image
-            width="400px" height="330px" 
+            loading="eager"
+            width="400px" height="330px"
             style={loaded ? {} : { display: 'none' }} 
             src='/images/jobsøgende-grafik.svg' alt="Vikar"
             onLoad={() => setLoaded(true)}

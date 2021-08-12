@@ -1,4 +1,9 @@
-.CardPhoto{
-    width: 80%;
-}
 
+.CardPhoto{
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .CardPhoto{
+        width: 80%;
+    }
+}

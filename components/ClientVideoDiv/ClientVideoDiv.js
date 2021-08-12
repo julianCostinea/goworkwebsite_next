@@ -19,11 +19,13 @@ const ClientVideoDiv = (props) => {
         </div>
         <div className={attachedClasses.join(' ')}>
             <div className={classes.VideoDiv}>
-                <iframe src="https://www.youtube.com/embed/wAasC_gnYqU?rel=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/wAasC_gnYqU?rel=0" 
+                    frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen ></iframe>
             </div>
             <div className={classes.TextDiv}>
                 <div className={classes.Paragraph}>
-                    <p>{props.children}</p>
+                    {props.children}
                 </div> 
             </div>
         </div>

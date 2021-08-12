@@ -8,6 +8,7 @@ export const ClientPhotoRikke = () => {
     return (
     <div className={classes.ClientPhoto}>
         <Image 
+            loading="eager"
             width= "100px" height="100px"
             style={loaded ? {} : { display: 'none' }} 
             src="/images/Clients/Rikke.jpg" alt="Rikke"

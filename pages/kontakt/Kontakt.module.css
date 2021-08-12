@@ -1,0 +1,24 @@
+.Content{
+    text-align: center;
+}
+.kontaktData{
+    margin: 2rem 0;
+    text-align: center;
+}
+.GoogleMaps{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.GoogleMaps div{
+    width: 70%;
+}
+.GoogleMaps iframe{
+    border-radius: 5px;
+}
+@media (min-width: 576px) {
+    .kontaktData{
+        margin: 1rem 0 0 7rem;
+        text-align: left;
+    }
+}

@@ -1,12 +1,14 @@
 import React from 'react';
+import Image from 'next/image';
 
-import Logo from '../../../assets/images/roskilde_VUC.svg';
 import classes from './SchoolLogos.module.css';
 
 const logo = () => {
     return (
     <div className={classes.Logo}>
-            <img src={Logo} alt="Roskilde VUC Logo" />
+            <Image 
+                width="320px" height="304px"
+                src="/images/roskilde_VUC.svg" alt="Roskilde VUC Logo" />
     </div>
     )
 };

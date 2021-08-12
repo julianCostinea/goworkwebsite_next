@@ -5,19 +5,21 @@ import classes from './Layout.module.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import Footer from '../../components/Footer/Footer';
+import Modal from '../../components/UI/Modal/Modal';
 
 
 class Layout extends Component {
     state = {
         showBoxShadow: false,
+        showModal: false,
         showSideDrawer: false
     }
-    showBoxShadowOnScroll = () => {
-        this.setState({ showBoxShadow: true });
+    closeModal = () => {
+        this.setState({ showModal: false });
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.showBoxShadowOnScroll, { once: true });
+    showBoxShadowOnScroll = () => {
+        this.setState({ showBoxShadow: true });
     }
 
     sideDrawerClosedHandler = () => {
@@ -30,9 +32,36 @@ class Layout extends Component {
         });
     }
 
+    componentDidMount() {
+        if (!sessionStorage.getItem('sessionHideModal')) {
+            if (window.location.pathname !== '/') {
+                sessionStorage.setItem('sessionHideModal', true,);
+            }
+        }
+        if (!sessionStorage.getItem('sessionHideModal')) {
+            setTimeout(() => {
+                this.setState({ showModal: true });
+            }, 500);
+            sessionStorage.setItem('sessionHideModal', true);
+        }
+        if (this.state.showModal) {
+            document.body.style.overflowY = "hidden";
+            document.querySelector('#__next').style.paddingRight = "15px";
+        } else {
+            document.body.style.overflowY = "auto";
+            document.querySelector('#__next').style.paddingRight = "0px";
+        }
+        window.addEventListener('scroll', this.showBoxShadowOnScroll, { once: true });
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.showBoxShadowOnScroll);
+    }
+
     render() {
         return (
             <Aux>
+                <Modal show={this.state.showModal} modalClosed={this.closeModal} />
                 <Toolbar showBox={this.state.showBoxShadow} drawerToggleClicked={this.sideDrawerToggleHandler} />
                 <SideDrawer
                     open={this.state.showSideDrawer}

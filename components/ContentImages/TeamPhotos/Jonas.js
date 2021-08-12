@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-import photoJonas from '../../../assets/images/team/Jonas.jpg';
+import Image from 'next/image';
 
 import classes from './Team.module.css'
 
@@ -8,9 +7,10 @@ export const CandidatePhotoJonas = () => {
     const [loaded, setLoaded] = useState(false);
     return (
     <div className={classes.CardPhoto}>
-        <img 
+        <Image
+            width="320px" height="304px" 
             style={loaded ? {} : { display: 'none' }} 
-            src={photoJonas} alt="Jonas photo"
+            src="/images/team/Jonas.jpg" alt="Jonas photo"
             onLoad={() => setLoaded(true)}
             />
     </div>

@@ -26,27 +26,29 @@ class navigationItem extends Component {
     //     }
     // }
 
-    render(){
+    render() {
         // let attachedClasses = [classes.NavigationItem];
         // if (this.props.dropdownLedigeStillinger) {
         //     attachedClasses = [classes.NavigationItem, classes.Relative];
         // }
         return (
-        <li
-            className={classes.NavigationItem} 
-            onMouseEnter={this.dropdownShow}
-            onMouseLeave={this.dropdownHide}
-            id={'listItem'}
+            <li
+                className={classes.NavigationItem}
+                onMouseEnter={this.dropdownShow}
+                onMouseLeave={this.dropdownHide}
+                id={'listItem'}
             >
-            <Link 
-                id={'navlink'}
-                onClick={this.props.clicked}
-                href={this.props.link} 
+                <Link
+                    id={'navlink'}
+                    href={this.props.link}
                 >
-                    <a className={this.props.router.pathname == this.props.link ? classes.active : null}>{this.props.children}</a>
+                    <a onClick={this.props.clicked} 
+                        className={this.props.router.pathname == this.props.link ? classes.active : null}>
+                            {this.props.children}
+                    </a>
                 </Link>
-            {this.props.dropdownLedigeStillinger ? <Dropdown close={this.dropdownHide} open={this.state.showDropdown}/> : null }
-        </li>
+                {this.props.dropdownLedigeStillinger ? <Dropdown close={this.dropdownHide} open={this.state.showDropdown} /> : null}
+            </li>
         )
     }
 }

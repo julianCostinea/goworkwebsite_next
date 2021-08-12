@@ -1,22 +1,14 @@
 import React from 'react';
+import Image from 'next/image';
 
-import Logo from '../../../assets/images/skanderborg_gym.svg';
 import classes from './SchoolLogos.module.css';
 
 const logo = (props) => {
-    let height = '';
-    let width = '';
-    if (props.height) {
-        height = props.height;
-    }
-    if (props.width) {
-        width = props.width;
-    }
     return (
     <div className={classes.Logo}>
-            <img 
-                style={{height : height, width: width}}
-                src={Logo} alt="Skanderborg Gym Logo" />
+            <Image 
+                width="320px" height="304px"
+                src="/images/skanderborg_gym.svg" alt="Skanderborg Gym Logo" />
     </div>
     )
 };
