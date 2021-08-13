@@ -131,10 +131,16 @@ class KontaktForm extends Component {
       formData[formElementIdentifier] =
         this.state.kontaktForm[formElementIdentifier].value;
     }
-    await fetch("/api/mail", {
+    const response = await fetch("/api/mail", {
       method: "POST",
-      body: JSON.stringify(formData),
+      body: JSON.stringify(formData)
     });
+
+    const data = await response.json();
+
+    if(response.ok){
+      alert('Mail is sent');
+    }
   };
 
   render() {
