@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import classes from './ledige-stillinger.module.css';
 
-const ledigeStillinger = () => (
+const ledigeStillinger = (props) => (
     // <!--HER STARTER SCRIPT / SCRIPT BEGINS HERE v1--> 
     <Fragment>
         <Head>
@@ -20,5 +20,6 @@ const ledigeStillinger = () => (
     </Fragment>
     // <!--HER SLUTTER SCRIPT / SCRIPT ENDS HERE-->
 );
+
 
 export default ledigeStillinger;
