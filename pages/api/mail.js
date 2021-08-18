@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
   try {
     await mail.send({
-      to: "job@go-work.dk",
+      to: "julian@go-work.dk",
       from: "job@go-work.dk",
       subject: `Mail sendt gennem hjemmesiden. Afsender: ${body.email}`,
       text: message,
