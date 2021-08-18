@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
   try {
     await mail.send({
-      to: "julian@go-work.dk",
+      to: "job@go-work.dk",
       from: "job@go-work.dk",
       subject: `Mail sendt gennem hjemmesiden. Afsender: ${body.email}`,
       text: message,
@@ -24,7 +24,6 @@ export default async function handler(req, res) {
     });
     res.status(200).json({ message: "success" });
   } catch (error) {
-    console.log(process.env.SENDGRID_API_KEY);
     console.log(error);
     console.log("Error sending the email");
   }

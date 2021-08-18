@@ -83,7 +83,8 @@ class KontaktForm extends Component {
       },
     },
     formIsValid: false,
-    buttonText: 'SEND'
+    isLoading: false,
+    isCompleted: false
   };
 
   checkValidity = (value, rules) => {
@@ -129,12 +130,12 @@ class KontaktForm extends Component {
 
   kontaktHandler = async (event) => {
     event.preventDefault();
+    this.setState({isLoading: true})
     const formData = {};
     for (let formElementIdentifier in this.state.kontaktForm) {
       formData[formElementIdentifier] =
         this.state.kontaktForm[formElementIdentifier].value;
     }
-    this.setState({buttonText: 'SENDING....'})
     const response = await fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify(formData)
@@ -143,7 +144,9 @@ class KontaktForm extends Component {
     const data = await response.json();
 
     if(response.ok){
-      this.setState({buttonText: 'SENT'})
+      this.setState({isCompleted: true});
+      setTimeout(function(){ window.location.reload(); }, 1800);
+      
     }
   };
 
@@ -224,7 +227,10 @@ class KontaktForm extends Component {
               type="submit"
               className={classes.Button}
             >
-              <Loader />
+              &nbsp;&nbsp;&nbsp;SEND <div className= {classes.checkmarkDiv}
+                style={{visibility: this.state.isLoading ? 'visible' : 'hidden'}}>
+                  <Loader hideCheckmark = {this.state.isCompleted}/>
+                </div>
             </button>
           </div>
         </form>
