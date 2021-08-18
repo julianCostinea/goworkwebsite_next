@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import classes from "./KontaktForm.module.css";
 
 import Input from "./Input";
+import Loader from "./loader";
+
 
 class KontaktForm extends Component {
   state = {
@@ -81,6 +83,7 @@ class KontaktForm extends Component {
       },
     },
     formIsValid: false,
+    buttonText: 'SEND'
   };
 
   checkValidity = (value, rules) => {
@@ -131,6 +134,7 @@ class KontaktForm extends Component {
       formData[formElementIdentifier] =
         this.state.kontaktForm[formElementIdentifier].value;
     }
+    this.setState({buttonText: 'SENDING....'})
     const response = await fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify(formData)
@@ -139,7 +143,7 @@ class KontaktForm extends Component {
     const data = await response.json();
 
     if(response.ok){
-      alert('Mail is sent');
+      this.setState({buttonText: 'SENT'})
     }
   };
 
@@ -220,7 +224,7 @@ class KontaktForm extends Component {
               type="submit"
               className={classes.Button}
             >
-              SEND
+              <Loader />
             </button>
           </div>
         </form>
