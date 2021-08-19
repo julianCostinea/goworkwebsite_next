@@ -83,6 +83,8 @@ class KontaktForm extends Component {
       },
     },
     formIsValid: false,
+    formIsSent: false,
+    errorMsg: null,
     isLoading: false,
     isCompleted: false
   };
@@ -130,7 +132,9 @@ class KontaktForm extends Component {
 
   kontaktHandler = async (event) => {
     event.preventDefault();
-    this.setState({isLoading: true})
+    this.setState({errorMsg: null});
+    this.setState({isLoading: true});
+    this.setState({formIsSent: true});
     const formData = {};
     for (let formElementIdentifier in this.state.kontaktForm) {
       formData[formElementIdentifier] =
@@ -146,7 +150,11 @@ class KontaktForm extends Component {
     if(response.ok){
       this.setState({isCompleted: true});
       setTimeout(function(){ window.location.reload(); }, 1800);
-      
+    }
+    if(!response.ok){
+      this.setState({isLoading: false});
+      this.setState({errorMsg: data.message});
+      console.log(data.message);
     }
   };
 
@@ -163,6 +171,7 @@ class KontaktForm extends Component {
             </h3>
           </React.Fragment>
         )}
+          <h3 style={{color: 'red'}}>{this.state.errorMsg}</h3>
         <form onSubmit={this.kontaktHandler} className={classes.KontaktForm}>
           <Input
             key={form.name.elementConfig.name}
@@ -223,8 +232,8 @@ class KontaktForm extends Component {
           />
           <div style={{ textAlign: "right", padding: "10px" }}>
             <button
-              disabled={!this.state.formIsValid}
-              type="submit"
+              disabled={!this.state.formIsValid || this.state.formIsSent}
+              type="submit" 
               className={classes.Button}
             >
               &nbsp;&nbsp;&nbsp;SEND <div className= {classes.checkmarkDiv}
