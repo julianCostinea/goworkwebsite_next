@@ -16,6 +16,7 @@ const input = (props) => {
             InputElement = 
                 <React.Fragment>
                     <input 
+                        required
                         className={classes.InputElement} 
                         {...props.elementConfig} 
                         value = {props.value}
@@ -28,6 +29,7 @@ const input = (props) => {
             InputElement = 
                 <React.Fragment>
                     <textarea 
+                    required
                     className={[classes.InputElement, classes.InputTextarea].join(' ')} 
                     {...props.elementConfig} 
                     value = {props.value}
@@ -40,6 +42,7 @@ const input = (props) => {
             InputElement = 
                 <React.Fragment>
                     <input 
+                        required
                         className={classes.InputElement} 
                         {...props.elementConfig} 
                         value = {props.value}

@@ -58,6 +58,7 @@ class KontaktForm extends Component {
         validation: {
           required: true,
           minLength: 8,
+          maxLength: 11
         },
         valid: false,
         touched: false,
@@ -98,6 +99,10 @@ class KontaktForm extends Component {
 
     if (rules.minLength) {
       isValid = value.length >= rules.minLength && isValid;
+    }
+
+    if (rules.maxLength) {
+      isValid = value.length <= rules.maxLength && isValid;
     }
 
     return isValid;
