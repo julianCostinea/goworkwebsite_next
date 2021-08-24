@@ -1,0 +1,27 @@
+.Content{
+    text-align: center;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.List ul{
+    text-align: left;
+    list-style: disc;
+    margin: 0;
+}
+
+.List ul li{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+@media (min-width: 576px) {
+    .List{
+        flex-direction: row;
+    }
+    .List ul{
+        margin: 0 7rem;
+    }
+}

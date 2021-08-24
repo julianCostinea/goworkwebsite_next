@@ -95,7 +95,7 @@ const Carousel = (props) => {
     }, []);
 
     return (
-        <div className={'carousel'}>
+        <div className='carousel'>
             <button className="carousel__button carousel__button--left is-hidden">
                 {<ArrowLeft />}
             </button>

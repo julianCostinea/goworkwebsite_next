@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-size: 16px;
   width: 100%;
-  color: #161637
+  color: #161637;
 }
 
 .DesktopOnly {
@@ -15,7 +16,8 @@ html, body {
   min-width: 100%;
 }
 
-h2, p {
+h2,
+p {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -37,11 +39,13 @@ a {
   height: 21rem;
   box-sizing: border-box;
   min-height: 21rem;
+  margin-bottom: 2rem;
 }
 
 .carousel__track-container {
-  height: 100%;
   position: relative;
+  height: auto;
+  min-height: 100% !important;
   overflow: hidden;
 }
 
@@ -87,7 +91,7 @@ a {
 }
 
 .carousel__button--left {
-  left: -60px
+  left: -60px;
 }
 
 .carousel__button--left img {
@@ -95,7 +99,7 @@ a {
 }
 
 .carousel__button--right {
-  right: -60px
+  right: -60px;
 }
 
 .carousel__button--right img {
@@ -119,7 +123,7 @@ a {
   cursor: pointer;
   width: 3rem;
   height: 2px;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .carousel__indicator:focus {
@@ -127,9 +131,9 @@ a {
 }
 
 .carousel__indicator.current-slide {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   width: 4rem;
-  transition: width 1s cubic-bezier(.3, .86, .36, .95);
+  transition: width 1s cubic-bezier(0.3, 0.86, 0.36, 0.95);
 }
 
 .is-hidden {
@@ -143,7 +147,7 @@ a {
   padding: 1rem;
 }
 
-.carousel__slide>p:first-child {
+.carousel__slide > p:first-child {
   text-transform: uppercase;
 }
 
@@ -156,6 +160,12 @@ a {
 }
 
 @media (min-width: 576px) {
+  :global(.App) {
+    min-width: 580px;
+  }
+  .DesktopOnly {
+    display: block;
+  }
   .carousel {
     height: 350px;
     width: 70%;
@@ -176,14 +186,5 @@ a {
 @media (max-width: 576px) {
   .carousel__button {
     display: none;
-  }
-  
-}
-@media (min-width: 576px) {
-  :global(.App) {
-      min-width: 580px;
-  }
-  .DesktopOnly {
-    display: block;
   }
 }

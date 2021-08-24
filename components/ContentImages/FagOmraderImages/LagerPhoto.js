@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Image from "next/image";
 
-import classes from './FagOmrade.module.css'
-import LagerImage from '../../../assets/images/Fagomrader/Lager.png';
+import classes from "./FagOmrade.module.css";
 
 const LagerImg = () => {
-    const [loaded, setLoaded] = useState(false);
-    return (
+  const [loaded, setLoaded] = useState(false);
+  return (
     <div className={classes.CardPhoto}>
-        <img 
-            className={classes.Laptop}
-            style={loaded ? {} : { display: 'none' }} 
-            src={LagerImage} alt="Lager"
-            onLoad={() => setLoaded(true)}
-            />
+      <Image
+        loading="eager"
+        width="400px"
+        height="330px"
+        className={classes.Laptop}
+        style={loaded ? {} : { display: "none" }}
+        src="/images/Fagomrader/Lager.png"
+        alt="Lager"
+        onLoad={() => setLoaded(true)}
+      />
     </div>
-    );
-}
+  );
+};
 
 export default LagerImg;

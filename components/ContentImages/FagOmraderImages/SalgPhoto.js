@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Image from "next/image";
 
-import classes from './FagOmrade.module.css'
-import SalgImage from '../../../assets/images/Fagomrader/Salg.png';
+import classes from "./FagOmrade.module.css";
 
 const SalgImg = () => {
-    const [loaded, setLoaded] = useState(false);
-    return (
+  const [loaded, setLoaded] = useState(false);
+  return (
     <div className={classes.CardPhoto}>
-        <img 
-            className={classes.Laptop}
-            style={loaded ? {} : { display: 'none' }} 
-            src={SalgImage} alt="Salg"
-            onLoad={() => setLoaded(true)}
-            />
+      <Image
+        loading="eager"
+        width="400px"
+        height="330px"
+        className={classes.Laptop}
+        style={loaded ? {} : { display: "none" }}
+        src="/images/Fagomrader/Salg.png"
+        alt="Salg"
+        onLoad={() => setLoaded(true)}
+      />
     </div>
-    );
-}
+  );
+};
 
 export default SalgImg;
