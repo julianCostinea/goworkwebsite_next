@@ -17,6 +17,7 @@ const input = (props) => {
                 <React.Fragment>
                     <input 
                         required
+                        style= {{borderColor: props.invalid && props.touched ? 'red': null}}
                         className={classes.InputElement} 
                         {...props.elementConfig} 
                         value = {props.value}
@@ -30,6 +31,7 @@ const input = (props) => {
                 <React.Fragment>
                     <textarea 
                     required
+                    style= {{borderColor: props.invalid && props.touched ? 'red': null}}
                     className={[classes.InputElement, classes.InputTextarea].join(' ')} 
                     {...props.elementConfig} 
                     value = {props.value}

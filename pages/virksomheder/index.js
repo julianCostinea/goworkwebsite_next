@@ -93,9 +93,6 @@ class Virksomheder extends Component {
                                 Fortæl os om dit behov <span style={{height:'13px', width:'13px', display:'inline-block'}}><ArrowVirksomheder /></span>
                         </a>
                 </OneColumnDiv>
-                <CarouselContainer
-                    whiteDiv
-                    header = {'Hvad siger vores kunder?'}>
                    <Carousel 
                         slide1 = {`Vi er særdeles tilfredse med vores samarbejde med GoWork. Vi er i en branche, hvor behovet
                             for personale varierer enormt - ofte med kort varsel. Med det samarbejde vi har
@@ -119,7 +116,6 @@ class Virksomheder extends Component {
                         jobTitle3 = {'Studieadministrativ'}
                         firma3 = {'Roskilde Universitet'}
                    />
-                </CarouselContainer>
             </div>
           </div>  
         );

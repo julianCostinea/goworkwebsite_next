@@ -21,11 +21,11 @@ class KontaktForm extends Component {
         label: "NAVN*",
         validation: {
           required: true,
-          minLength: 5,
+          minLength: 2,
         },
         valid: false,
         touched: false,
-        errorMessage: "This field is required!",
+        errorMessage: "Navn skal være længere end 2 bogstaver",
       },
       email: {
         elementType: "input",
@@ -40,10 +40,11 @@ class KontaktForm extends Component {
         validation: {
           required: true,
           minLength: 5,
+          isEmail: true
         },
         valid: false,
         touched: false,
-        errorMessage: "Please enter a valid email!",
+        errorMessage: "Email skal indtastes",
       },
       telefon: {
         elementType: "input",
@@ -62,7 +63,7 @@ class KontaktForm extends Component {
         },
         valid: false,
         touched: false,
-        errorMessage: "Please enter a valid phone number!",
+        errorMessage: "Telefonnummer skal være mellem 8 og 11 tal",
       },
       description: {
         elementType: "textarea",
@@ -74,13 +75,13 @@ class KontaktForm extends Component {
           name: "description",
         },
         value: "",
-        label: "FORTÆL OS KORT OM DIT BEHOV*",
+        label: "FORTÆL OS KORT OM JERES BEHOV*",
         validation: {
           required: true,
         },
         valid: false,
         touched: false,
-        errorMessage: "Please tell us more about your needs!",
+        errorMessage: "Fortæl os mere om jeres behov",
       },
     },
     formIsValid: false,
@@ -103,6 +104,10 @@ class KontaktForm extends Component {
 
     if (rules.maxLength) {
       isValid = value.length <= rules.maxLength && isValid;
+    }
+
+    if (rules.isEmail) {
+      isValid = value.trim().match(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/) && isValid;
     }
 
     return isValid;

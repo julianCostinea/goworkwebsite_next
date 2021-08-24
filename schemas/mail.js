@@ -10,6 +10,6 @@ export const mailSchema = object({
       }
     }
       ),
-  email: string().required().email(),
-  description: string().required(),
+  email: string().required('Email skal indtastes').email('Email skal indtastes'),
+  description: string().required('Fortæl os mere om jeres behov'),
 });
