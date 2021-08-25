@@ -13,7 +13,7 @@ const OkonomiImg = () => {
         height="330px"
         className={classes.Laptop}
         style={loaded ? {} : { display: "none" }}
-        src="/images/Fagomrader/Okonomi.png"
+        src="/images/virksomheder/fagomrader/screen.svg"
         alt="Okonomi"
         onLoad={() => setLoaded(true)}
       />

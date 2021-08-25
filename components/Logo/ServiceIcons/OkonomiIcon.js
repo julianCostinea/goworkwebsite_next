@@ -10,7 +10,7 @@ const logo = () => {
     <div className={classes.Icon}>
             <Image 
                 width= "100px" height="100px"
-                src="/images/Økonomi_og administration.svg" alt="OKONOMI Icon" />
+                src="/images/virksomheder/fagomrader/screen.svg" alt="OKONOMI Icon" />
             <p style={{marginTop:'0.5rem', fontWeight:'bold'}}>HR & ØKONOMI</p>
     </div>
     </Link>

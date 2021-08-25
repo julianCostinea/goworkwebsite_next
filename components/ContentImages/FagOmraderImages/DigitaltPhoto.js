@@ -12,7 +12,7 @@ const DigitaltImg = () => {
             width="400px" height="330px"
             className={classes.Laptop}
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/Fagomrader/Digitalt.png" alt="Digitalt"
+            src="/images/virksomheder/fagomrader/lightbulb.svg" alt="Digitalt"
             onLoad={() => setLoaded(true)}
             />
     </div>

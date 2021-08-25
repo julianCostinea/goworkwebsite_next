@@ -13,7 +13,7 @@ const SalgImg = () => {
         height="330px"
         className={classes.Laptop}
         style={loaded ? {} : { display: "none" }}
-        src="/images/Fagomrader/Salg.png"
+        src="/images/virksomheder/fagomrader/rocket.svg"
         alt="Salg"
         onLoad={() => setLoaded(true)}
       />
