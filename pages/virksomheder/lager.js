@@ -17,12 +17,11 @@ class Okonomi extends Component {
                         header = {'Lager &\n Produktion'}>
                    Lej friske vikarer til dit lager eller produktion!<br/><br/>
                    Lager og produktion er en vigtig opgave,<br/>
-                   som skal varetages af de kvalificerede og mødestabile<br/>
-                   ansatte. Vores team finder de helt rigtige<br/>
-                   lager- og produktionstalenter til midlertidige<br/>
-                   opgaver GoWork sikrer at jeres virksomhed får de<br/>
-                   rigtige personer til at løse jeres opgaver, så i kan bruge <br />
-                   jeres tid og ressourcer på det i er bedst til.<br/>
+                   som skal varetages af kvalificerede og mødestabile<br/>
+                   ansatte. Vores team finder hurtigt de helt rigtige<br/>
+                   lager- og produktionsvikarer, så i kan komme <br />
+                   sikkert i mål med dagens opgaver, og bruge tiden <br />
+                   på det i er bedst til.<br/>
                     </TwoColumnDiv>
                     <OneColumnDiv 
                         header = {'Eksempler på de stillinger/opgaver vi løser'}>

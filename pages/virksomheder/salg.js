@@ -20,11 +20,11 @@ class Salg extends Component {
                    Kundeservicemedarbejdere, og jeres salgsteam, <br/>
                    repræsenterer jeres virksomhed udadtil. <br/>
                    Derfor er det vigtigt at finde de helt rigtige <br/>
-                   personer til at varetage opgaverne.<br/>
-                   De rigtige salgstalenter samt kundeservicemedarbejdere <br/>
+                   personer til at varetage opgaverne.<br/> <br/>
+                   Salgstalenter og kundeservicemedarbejdere <br/>
                    kan være svære at finde, da disse opgaver ikke bare kræver<br/>
                    faglige kompetencer, men også personlige egenskaber <br/>
-                   som empati og indlevelse.<br/>
+                   som vedholdenhed, empati og indlevelse.<br/><br/>
                    Vores team finder de helt rigtige talenter til midlertidige <br/>
                    og midlertidige-til-permanente opgaver.
                     </TwoColumnDiv>

@@ -17,11 +17,11 @@ class Digitalt extends Component {
                         header = {'Digitalt & Kreativt'}>
                             Lej et digitalt eller kreativt talent!<br/><br/>
                             Generation Y og Z er specielle, fordi de er digitalt indfødte. <br/>
-                            Det skaber helt nye muligheder - en digital generation<br/>
-                            til digitale opgaver! <br/>
+                            Det skaber nogle oplagte muligheder - en digital generation<br/>
+                            til digitale opgaver! <br/><br/>
                             GoWork har adgang til en store pulje af digitale og<br/>
                             kreative talenter der findes blandt landets studerende og<br/>
-                            freelance-community.<br/>
+                            specialist/freelance-community.<br/><br />
                             Vi udvælger og screener de helt rette kandidater til midlertidige<br/>
                             og midlertidige-til-permanente opgaver, så din virksomhed <br/>
                             kan få styrket sin online tilstedeværelse.

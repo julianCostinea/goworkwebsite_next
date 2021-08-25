@@ -13,7 +13,7 @@ body {
 }
 
 main{
-  margin-bottom: 18rem;
+  margin-bottom: 32rem;
 }
 
 .DesktopOnly {
@@ -173,6 +173,9 @@ a {
   }
   .DesktopOnly {
     display: block;
+  }
+  main{
+    margin-bottom: 18rem;
   }
   .carousel {
     height: 350px;

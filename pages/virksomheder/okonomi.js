@@ -14,17 +14,16 @@ class Okonomi extends Component {
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         imageDiv = {<OkonomiPhoto />}
-                        header = {'HR & ØKONOMI'}>
-                   Lej et HR- eller økonomitalent!<br/><br/>
-                   Mangler i en controller, en BI specialist, en HR-partner eller andre <br/>
-                   slags dygtige og pålidelige medarbejdere der kan<br/>
-                   håndtere økonomi- og HR-opgaver?<br/>
-                   Så kan vi hos GoWork finde dem til jer.<br/>
-                   Med vores brede netværk af dygtige kandidater indenfor økonomi<br/>
-                   og HR kan i trygt overlade ansættelsesprocessen til os.<br/>
-                   Vi udvælger og screener de helt rette kandidater til midlertidige<br/>
-                   og midlertidige-til-permanente opgaver, så din virksomhed <br/>
-                   kan få styrket sin online tilstedeværelse.
+                        header = {`ØKONOMI &\n FINANS`}>
+                   Lej et økonomitalent!<br/><br/>
+                   Mangler i en Controller, en Lønspecialist, en Business Analyst<br/>
+                   eller andre kompetente og pålidelige medarbejdere der kan<br/>
+                   håndtere økonomi- og finansopgaver?<br/><br/>
+                   Så kan vi hos GoWork finde dem til jer.<br/><br/>
+                   Med vores brede netværk af kandidater indenfor økonomi<br/>
+                   og finans kan i trygt overlade opgaven til os.<br/><br/>
+                   Vi udvælger de helt rette kandidater til midlertidige<br/>
+                   og midlertidige-til-permanente opgaver.
                     </TwoColumnDiv>
                     <OneColumnDiv 
                         header = {'Eksempler på stillinger/opgaver vi løser'}>

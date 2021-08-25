@@ -11,7 +11,7 @@ const logo = () => {
             <Image 
                 width= "100px" height="100px"
                 src="/images/virksomheder/fagomrader/screen.svg" alt="OKONOMI Icon" />
-            <p style={{marginTop:'0.5rem', fontWeight:'bold'}}>HR & ØKONOMI</p>
+            <p style={{marginTop:'0.5rem', fontWeight:'bold'}}>ØKONOMI &amp; FINANS </p>
     </div>
     </Link>
     )

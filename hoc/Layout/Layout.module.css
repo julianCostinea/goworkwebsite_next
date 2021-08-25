@@ -1,3 +1,9 @@
 .Content {
     margin-top: 5rem;
 }
+
+@media (min-width: 576px) {
+    .Content {
+        margin-top: 4rem;
+    }
+}
