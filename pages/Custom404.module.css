@@ -1,0 +1,7 @@
+.Content{
+    text-align: center;
+}
+
+.Content div:first-child{
+    margin-top: 3rem;
+}

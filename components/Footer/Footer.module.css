@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .Footer h3{
