@@ -1,31 +1,40 @@
 .Input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: left;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .InputElement {
-    outline: none;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
-    font: inherit;
-    padding: 6px 10px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .InputElement__errorMessage {
-    color: red;
-    display: block;
+  color: red;
+  display: block;
 }
 
-.InputElement:is(input){
-    height: 2.5rem;
+.InputElement:is(input) {
+  height: 2.5rem;
 }
 
-.InputTextarea{
-    resize: none;
+.InputTextarea {
+  resize: none;
+}
+.noHoney {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
