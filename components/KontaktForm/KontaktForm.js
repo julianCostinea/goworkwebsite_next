@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Head from 'next/head';
+import Script from 'next/script';
 import classes from "./KontaktForm.module.css";
 
 import Input from "./Input";
@@ -193,7 +194,7 @@ class KontaktForm extends Component {
     return (
       <div className={classes.KontaktFormContainer}>
         <Head>
-          <script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></script>
+          <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
         </Head>
         {this.props.noHeader ? null : (
           <React.Fragment>
