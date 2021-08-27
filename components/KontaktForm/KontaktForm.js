@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Head from 'next/head';
+import Script from 'next/script';
 import classes from "./KontaktForm.module.css";
 
 import Input from "./Input";
@@ -82,6 +83,20 @@ class KontaktForm extends Component {
         valid: false,
         touched: false,
         errorMessage: "Fortæl os mere om jeres behov",
+      },
+      //Honey pot fields
+      phone: {
+        elementConfig: {
+          type: "phone",
+          id: "phone",
+          autoComplete: "off",
+          name: "phone",
+        },
+        value: "",
+        label: "",
+        validation: {
+        },
+        valid: true,
       },
     },
     formIsValid: false,
@@ -179,7 +194,7 @@ class KontaktForm extends Component {
     return (
       <div className={classes.KontaktFormContainer}>
         <Head>
-          <script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></script>
+          <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
         </Head>
         {this.props.noHeader ? null : (
           <React.Fragment>
@@ -249,6 +264,20 @@ class KontaktForm extends Component {
               )
             }
           />
+          <Input
+              key={form.phone.elementConfig.name}
+              elementType="noHoney"
+              elementConfig={form.phone.elementConfig}
+              value={form.phone.value}
+              label={form.phone.label}
+              invalid={!form.phone.valid}
+              changed={(event) =>
+                this.inputChangedHandler(
+                  event,
+                  form.phone.elementConfig.name
+                )
+              }
+            />
           <div style={{ textAlign: "right", padding: "10px" }}>
             <button
               disabled={!this.state.formIsValid || this.state.formIsSent}
