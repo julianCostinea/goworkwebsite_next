@@ -16,7 +16,8 @@ class Kontakt extends Component {
                 Tlf: 66 10 65 00<br/><br/>
                 @: job@go-work.dk <br/><br/>
                 Fjordsgade 11, 1. Sal, <br/><br/>
-                5000 Odense C.<br/><br/><br/><br/>
+                5000 Odense C.<br/><br/>
+                CVR.: 34704813<br/><br/>
                 <strong>Følg os på de sociale medier</strong><br/><br/>
                 <FacebookIcon/>
                 <LinkedInIcon/>

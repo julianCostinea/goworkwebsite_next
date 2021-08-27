@@ -2,18 +2,18 @@ import TwoColumnDiv from '../components/TwoColumnDiv/TwoColumnDiv';
 
 import classes from './errorPage.module.css';
 
-const Custom404 = () => {
+const Custom500 = () => {
   return (
     <div className={classes.Content}>
       <TwoColumnDiv
         buttonLink={"/"}
         buttonText={`Tilbage til forsiden`}
-        header={`Siden\n findes \n ikke.`}
+        header={`Server\n error.`}
       >
-        Siden du leder efter eksisterer ikke.
+        Noget gik galt.
       </TwoColumnDiv>
     </div>
   );
 };
 
-export default Custom404;
+export default Custom500;

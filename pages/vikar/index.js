@@ -28,7 +28,8 @@ class Vikar extends Component {
                     header = {'Søger du\net fleksibelt job?'}
                     underText = {'Læs mere om dine muligheder'}
                     >
-                   Bliv GoWork’er! Og få tilbudt jobs der passer til <br />din hverdag, 
+                   Bliv GoWork’er! Og få tilbudt vikarjobs <br />
+                   der passer til din hverdag, 
                    som studerende, <br />nyuddannet 
                    eller specialist. <br /><br />
                 </TwoColumnDiv>
@@ -69,19 +70,19 @@ class Vikar extends Component {
                             Mine vagter er altid tilpasset min kalender.`}
                         vikarPhoto1 = {<VikarPhotos.VikarPhotoMathias />}
                         slide1Name = {'Mathias'}
-                        jobTitle1 = {'Lager vikar'}
+                        jobTitle1 = {'Lagermedarbejder'}
                         slide2 = {`GoWork er et nærværende vikarbureau, jeg nemt kan komme i 
                             kontakt med. På min arbejdsplads, føler jeg mig ligeværdig med 
                             de ansatte og føler der bliver sat pris på mit arbejde.`}
                         vikarPhoto2 = {<VikarPhotos.VikarPhotoKatrine />}
                         slide2Name = {'Katrine'}
-                        jobTitle2 = {'Kontor vikar'}
+                        jobTitle2 = {'Webshop support'}
                         slide3 = {`Det har været en fornøjelse at være vikar ved GoWork. 
                             På jobbet har det været rart at tale med kunder der gerne vil 
                             snakke med dig, i selskab af ligesindede kollegaer.`}
                         vikarPhoto3 = {<VikarPhotos.VikarPhotoMagnus />}
                         slide3Name = {'Magnus'}
-                        jobTitle3 = {'Kontor og eksamensvagt'}
+                        jobTitle3 = {'Kundeservice og eksamensvagt'}
                    />
                 </CarouselContainer>
             </div>

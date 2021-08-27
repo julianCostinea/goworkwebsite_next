@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Head from 'next/head';
 import classes from "./KontaktForm.module.css";
 
 import Input from "./Input";
@@ -156,36 +156,45 @@ class KontaktForm extends Component {
 
   kontaktHandler = async (event) => {
     event.preventDefault();
-    this.setState({errorMsg: null});
-    this.setState({isLoading: true});
-    this.setState({formIsSent: true});
+    this.setState({ errorMsg: null });
+    this.setState({ isLoading: true });
+    this.setState({ formIsSent: true });
     const formData = {};
     for (let formElementIdentifier in this.state.kontaktForm) {
       formData[formElementIdentifier] =
         this.state.kontaktForm[formElementIdentifier].value;
     }
-    const response = await fetch("/api/mail", {
-      method: "POST",
-      body: JSON.stringify(formData)
+    grecaptcha.ready(async () => {
+      grecaptcha.execute('6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8', { action: 'submit' }).then(function (token) {
+        console.log(token);
+        fetch("/api/mail", {
+          method: "POST",
+          body: JSON.stringify(formData)
+        }).then(function (response) {
+          return response.json();
+          // if (response.ok) {
+          //   this.setState({ isCompleted: true });
+          //   setTimeout(function () { window.location.reload(); }, 1800);
+          // }
+          // if (!response.ok) {
+          //   this.setState({ isLoading: false });
+          //   this.setState({ errorMsg: data.message });
+          // }
+        }).then(function(result){
+          console.log(result);
+          return;
+        })
+      });
     });
-
-    const data = await response.json();
-
-    if(response.ok){
-      this.setState({isCompleted: true});
-      setTimeout(function(){ window.location.reload(); }, 1800);
-    }
-    if(!response.ok){
-      this.setState({isLoading: false});
-      this.setState({errorMsg: data.message});
-      console.log(data.message);
-    }
   };
 
   render() {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
+        <Head>
+          <script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></script>
+        </Head>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <h1>Kontakt</h1>
@@ -195,7 +204,7 @@ class KontaktForm extends Component {
             </h3>
           </React.Fragment>
         )}
-          <h3 style={{color: 'red'}}>{this.state.errorMsg}</h3>
+        <h3 style={{ color: 'red' }}>{this.state.errorMsg}</h3>
         <form onSubmit={this.kontaktHandler} className={classes.KontaktForm}>
           <Input
             key={form.name.elementConfig.name}
@@ -271,13 +280,13 @@ class KontaktForm extends Component {
           <div style={{ textAlign: "right", padding: "10px" }}>
             <button
               disabled={!this.state.formIsValid || this.state.formIsSent}
-              type="submit" 
+              type="submit"
               className={classes.Button}
             >
-              &nbsp;&nbsp;&nbsp;SEND <div className= {classes.checkmarkDiv}
-                style={{visibility: this.state.isLoading ? 'visible' : 'hidden'}}>
-                  <Loader hideCheckmark = {this.state.isCompleted}/>
-                </div>
+              &nbsp;&nbsp;&nbsp;SEND <div className={classes.checkmarkDiv}
+                style={{ visibility: this.state.isLoading ? 'visible' : 'hidden' }}>
+                <Loader hideCheckmark={this.state.isCompleted} />
+              </div>
             </button>
           </div>
         </form>

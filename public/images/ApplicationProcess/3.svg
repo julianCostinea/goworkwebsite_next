@@ -45,9 +45,9 @@
 	.st1{display:inline;fill:#96CCEE;}
 	.st2{display:inline;fill:none;}
 	.st3{display:inline;fill:#1C73B6;}
-	.st4{font-family:'Inter-Medium';}
-	.st5{font-size:8px;}
-	.st6{font-family:'Inter-Bold';}
+	.st4{font-family:"Inter", Helvetica, Arial, sans-serif;}
+	.st5{font-size:10px;}
+	.st6{font-family:"Inter", Helvetica, Arial, sans-serif;}
 	.st7{font-size:15.2808px;}
 	.st8{fill:#1C73B6;}
 	.st9{fill:none;}
@@ -105,25 +105,25 @@
    height="40.5"
    id="rect341" />
 	<text
-   transform="translate(278.2948,104.8254)"
+   transform="translate(270.2948,104.8254)"
    class="st10 st4 st5"
    id="text343">Hvis der er et godt </text>
 	<text
-   transform="translate(278.4648,116.2154)"
+   transform="translate(270.2648,116.2154)"
    class="st10 st4 st5"
    id="text345">match byder vi dig </text>
 	<text
-   transform="translate(269.8948,127.6054)"
+   transform="translate(260.8948,127.6054)"
    class="st10 st4 st5"
    id="text347">velkommen, og vi er nu </text>
 	<text
-   transform="translate(269.8548,138.9954)"
+   transform="translate(260.8548,138.9954)"
    class="st10 st4 st5"
    id="text349">klar til at få dig ombord</text>
 	<text
    transform="translate(281.8958,91.34)"
    class="st10 st6 st7"
-   id="text351">STEP 03</text>
+   id="text351">STEP 3</text>
 </g>
 <g
    id="Layer_3"

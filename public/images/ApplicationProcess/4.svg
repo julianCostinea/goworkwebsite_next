@@ -45,9 +45,9 @@
 	.st0{fill:#96CCEE;}
 	.st1{fill:none;}
 	.st2{fill:#1C73B6;}
-	.st3{font-family:'Inter-Medium';}
-	.st4{font-size:8px;}
-	.st5{font-family:'Inter-Bold';}
+	.st3{font-family:"Inter", Helvetica, Arial, sans-serif;}
+	.st4{font-size:10px;}
+	.st5{font-family:"Inter", Helvetica, Arial, sans-serif;}
 	.st6{font-size:15.2808px;}
 	.st7{display:none;}
 	.st8{display:inline;fill:#1C73B6;}
@@ -70,19 +70,19 @@
    height="55.5"
    id="rect493" />
 	<text
-   transform="translate(393.614,104.8254)"
+   transform="translate(384.614,104.8254)"
    class="st2 st3 st4"
    id="text495">Du bliver kontaktet af </text>
 	<text
-   transform="translate(385.034,116.2154)"
+   transform="translate(374.034,116.2154)"
    class="st2 st3 st4"
    id="text497">vores dygtige konsulenter </text>
 	<text
-   transform="translate(407.364,127.6054)"
+   transform="translate(397.364,127.6054)"
    class="st2 st3 st4"
    id="text499">med jobtilbud.   </text>
 	<text
-   transform="translate(399.844,138.9954)"
+   transform="translate(386.844,138.9954)"
    class="st2 st3 st4"
    id="text501">Og så er du i gang</text>
 	<text

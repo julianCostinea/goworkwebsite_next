@@ -10,9 +10,9 @@ const footer = () => {
             <div>
                 <ul className={classes.List}>
                     <h3>GoWork</h3>
-                    <li style={{lineHeight : '1.5rem'}}>GoWork er et vikarbureau med 2<br/>
-                        gazellepriser. Vi har siden 2012 formidlet <br/>
-                        ambitiøse mennesker i starten af deres karriere til<br/>
+                    <li style={{lineHeight : '1.5rem'}}>GoWork er et vikarbureau med 2
+                        gazellepriser.<br/> Vi har siden 2012 formidlet 
+                        ambitiøse mennesker <br/>i starten af deres karriere til
                         midlertidige opgaver. </li>
                     <li style={{fontWeight: 'bold'}}>
                         Er din virksomhed klar til at Go Work?
@@ -25,7 +25,7 @@ const footer = () => {
                     <li style={{lineHeight : '1.5rem'}}>Fjordsgade 11, 1. sal <br/>
                     5000 Odense C. <br />
                     Tlf.: 6610 6500 <br/>
-                    CVR.: 34704813</li>
+                    </li>
                     Følg os:
                     <FacebookIcon/>
                     <LinkedInIcon/>
