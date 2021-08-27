@@ -35,7 +35,7 @@ const TwoColumnDiv = (props) => {
                 {button1}
                 {button2}
             <br />
-            {props.underText ? <Link href='/vikar/hop-ombord'><a>{props.underText} <span style={{height:'13px', width:'13px', display:'inline-block'}}><ArrowRightBlue /></span></a></Link> : null}
+            {props.underText ? <Link href='/vikar/hop-ombord'><a>{props.underText}</a></Link> : null}
         </div>
         <div className={classes.ImageDiv}>
             {props.imageDiv}

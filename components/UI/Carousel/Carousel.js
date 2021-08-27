@@ -106,7 +106,7 @@ const Carousel = (props) => {
                         <div className={"credentials"}>
                             {props.vikarPhoto1}
                             <div className={"credentials__text"}>
-                                <p><strong>{props.slide1Name},</strong></p>
+                                <p><strong>{props.slide1Name}</strong></p>
                                 <p>{props.jobTitle1}</p>
                                 <p>{props.firma1}</p>
                             </div>
@@ -117,7 +117,7 @@ const Carousel = (props) => {
                         <div className={"credentials"}>
                             {props.vikarPhoto2}
                             <div className={"credentials__text"}>
-                                <p><strong>{props.slide2Name},</strong></p>
+                                <p><strong>{props.slide2Name}</strong></p>
                                 <p>{props.jobTitle2}</p>
                                 <p>{props.firma2}</p>
                             </div>
@@ -128,7 +128,7 @@ const Carousel = (props) => {
                         <div className={"credentials"}>
                             {props.vikarPhoto3}
                             <div className={"credentials__text"}>
-                                <p><strong>{props.slide3Name},</strong></p>
+                                <p><strong>{props.slide3Name}</strong></p>
                                 <p>{props.jobTitle3}</p>
                                 <p>{props.firma3}</p>
                             </div>

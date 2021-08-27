@@ -9,7 +9,7 @@ const ApplicationProcess = () => {
     <div className= {classes.ApplicationContainer}>
         <div className={classes.ApplicationPhoto}>
             <Image 
-                width= "340px" height="280px"
+                width= "300px" height="240px"
                 style={loaded ? {} : { display: 'none' }} 
                 src="/images/ApplicationProcess/1.svg" alt="Application step 1"
                 onLoad={() => setLoaded(true)}
@@ -17,7 +17,7 @@ const ApplicationProcess = () => {
         </div>
         <div className={classes.ApplicationPhoto}>
             <Image
-                width= "340px" height="280px"
+                width= "300px" height="240px"
                 style={loaded ? {} : { display: 'none' }} 
                 src="/images/ApplicationProcess/2.svg" alt="Application step 2"
                 onLoad={() => setLoaded(true)}
@@ -25,7 +25,7 @@ const ApplicationProcess = () => {
         </div>
         <div className={classes.ApplicationPhoto}>
             <Image 
-                width= "340px" height="280px"
+                width= "300px" height="240px"
                 style={loaded ? {} : { display: 'none' }} 
                 src="/images/ApplicationProcess/3.svg" alt="Application step 3"
                 onLoad={() => setLoaded(true)}
@@ -33,7 +33,7 @@ const ApplicationProcess = () => {
         </div>
         <div className={classes.ApplicationPhoto}>
             <Image 
-                width= "340px" height="280px"
+                width= "300px" height="240px"
                 style={loaded ? {} : { display: 'none' }} 
                 src="/images/ApplicationProcess/4.svg" alt="Application step 4"
                 onLoad={() => setLoaded(true)}

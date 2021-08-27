@@ -45,9 +45,9 @@
 	.st1{display:inline;fill:#96CCEE;}
 	.st2{display:inline;fill:none;}
 	.st3{display:inline;fill:#1C73B6;}
-	.st4{font-family:'Inter-Medium';}
-	.st5{font-size:8px;}
-	.st6{font-family:'Inter-Bold';}
+	.st4{font-family:"Inter", Helvetica, Arial, sans-serif;}
+	.st5{font-size:10px;}
+	.st6{font-family:"Inter", Helvetica, Arial, sans-serif;}
 	.st7{font-size:15.2808px;}
 	.st8{display:inline;fill:#FFFFFF;}
 	.st9{fill:#96CCEE;}
@@ -141,25 +141,25 @@
    height="45.299999"
    id="rect109" />
 	<text
-   transform="translate(149.6824,104.8254)"
+   transform="translate(143.0724,104.8254)"
    class="st11 st4 st5"
    id="text111">Vi vurderer ansøgere og </text>
 	<text
-   transform="translate(150.4424,116.2154)"
+   transform="translate(143.4424,116.2154)"
    class="st11 st4 st5"
    id="text113">tager telefonisk kontakt </text>
 	<text
-   transform="translate(153.0724,127.6054)"
+   transform="translate(143.0724,127.6054)"
    class="st11 st4 st5"
    id="text115">til udvalgte kandidater </text>
 	<text
-   transform="translate(167.0524,138.9954)"
+   transform="translate(143.0524,138.9954)"
    class="st11 st4 st5"
    id="text117">ift. et interview</text>
 	<text
    transform="translate(163.4139,91.34)"
    class="st11 st6 st7"
-   id="text119">STEP 02</text>
+   id="text119">STEP 2</text>
 </g>
 <g
    id="Layer_4"

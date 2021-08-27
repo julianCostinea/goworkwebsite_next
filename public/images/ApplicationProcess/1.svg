@@ -43,9 +43,9 @@
 	.st1{display:inline;fill:#96CCEE;}
 	.st2{display:inline;fill:none;}
 	.st3{display:inline;fill:#1C73B6;}
-	.st4{font-family:'Inter-Medium';}
-	.st5{font-size:8px;}
-	.st6{font-family:'Inter-Bold';}
+	.st4{font-family:"Inter", Helvetica, Arial, sans-serif;}
+	.st5{font-size:10px;}
+	.st6{font-family:"Inter", Helvetica, Arial, sans-serif;}
 	.st7{font-size:15.2808px;}
 	.st8{display:inline;fill:#FFFFFF;}
 	.st9{fill:#1C73B6;}
@@ -175,20 +175,20 @@
    height="36"
    id="rect124" />
 	<text
-   transform="translate(44.645,104.8254)"
+   transform="translate(35.645,104.8254)"
    class="st11 st4 st5"
    id="text126">Gennemgå ledige</text>
 	<text
-   transform="translate(38.745,116.2154)"
+   transform="translate(35.645,116.2154)"
    class="st11 st4 st5"
    id="text128"> stillinger og send os  </text>
 	<text
-   transform="translate(51.245,127.6054)"
+   transform="translate(35.645,127.6054)"
    class="st11 st4 st5"
    id="text130">en ansøgning!</text>
 	<text
-   transform="translate(47.0179,91.34)"
+   transform="translate(50.0179,91.34)"
    class="st11 st6 st7"
-   id="text132">STEP 01</text>
+   id="text132">STEP 1</text>
 </g>
 </svg>

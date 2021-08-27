@@ -37,7 +37,7 @@ class Virksomheder extends Component {
               <div className={classes.Content}>
                 <TwoColumnDiv 
                     imageDiv = {<VirksomehederImg />}
-                    header = {'Få de bedste \n vikarer\n  til opgaven'}>
+                    header = {'Lej en GoWork’er\n - og få løst opgaven!'}>
                    Lej en GoWork’er og kom sikkert i mål med dagens <br/> opgaver. <br/><br/>
                    Vi formidler hurtigt og effektivt kvalificerede medarbejdere.<br/>
                     Der er garanti for det rette match. <br />

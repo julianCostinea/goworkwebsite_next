@@ -19,48 +19,65 @@ class HopOmbord extends Component {
                     <TwoColumnRoundedDiv
                         header={'Sabbatår'}
                         imageDiv={<BigCardSabbatar />}
-                    >Skal dit sabbatår bruges på at tjene dine egne penge..? Så kan du jo
-                    få råd til din egen lejlighed når du starter på studiet. <br />Eller måske skal
-                    du bruge pengene på at få krydset eventyrrejsen af bucket-listen
-                    før dit studieliv begynder? 
-                    Vikarjobs giver typisk en god timeløn. Og så er det fleksibelt! <br />
-                            Vi finder vikarjobs til mennesker på sabbatår indenfor følgende brancher: <br />
-                            -	Lager og produktion <br />
-                            -	Salg og kundeservice <br />
-                            -	Digitale medier <br />
-                            -	M.fl. <br />
-                            
-                            Vi vil meget gerne have dig om bord i vores team af friske vikarer, <br />
-                            der lige som dig ønsker at tjene penge og få noget ud af sabbatåret. <br />
-                            Så hvis du er klar, opret dit CV herunder – vi glæder os til at høre fra dig!
+                    >
+                        <strong>SKAL DIT SABBATÅR TÆLLE FOR NOGET?</strong><br /><br />
+                        Skal dit sabbatår bruges på at tjene dine egne penge..? Så kan du jo
+                        få råd til din egen lejlighed når du starter på studiet. <br />Eller måske skal
+                        du bruge pengene på at få krydset eventyrrejsen af bucket-listen
+                        før dit studieliv begynder?
+                        Vikarjobs giver typisk en god timeløn. Og så er det fleksibelt! <br /><br />
+                        Vi finder vikarjobs til mennesker på sabbatår indenfor følgende områder:
+                        <ul>
+                            <li>Lager og produktion </li>
+                            <li>Salg og kundeservice </li>
+                            <li>Digitale medier </li>
+                            <li>M.fl.</li>
+                        </ul>
+
+                        Vi vil meget gerne have dig om bord i vores team af friske vikarer, <br />
+                        der lige som dig ønsker at tjene penge og få noget ud af sabbatåret. <br />
+                        Så hvis du er klar, se ledige vikarjobs eller opret dit CV – vi glæder os til at høre fra dig!
                     </TwoColumnRoundedDiv>
                     <TwoColumnRoundedDiv
                         floatLeft
                         header={'Studerende'}
                         imageDiv={<BigCardStuderende />}
-                    >Med et vikarjob eller et studiejob kan du tjene penge til økonomisk luft i hverdagen, 
-                    samtidigt med at du styrker dit CV – uden at jobbet kommer i vejen for dine studier.
-                    Vi forstår at studiet har din førsteprioritet. Derfor formidler vi studiejobs og vikarjobs der passer ind i hverdagen som studerende. 
-                        Med et studiejob eller vikarjob kan du få arbejde der: 
-                        -	Ikke ligger samtidigt med dine forelæsninger
-                        -	Giver dig mulighed for at holde fri i eksamensperioder 
-                        -	Giver erhvervserfaring på dit CV, hvilket styrker din profil som jobsøgende når du er færdig med dit studie 
-                        Vi finder gode arbejdspladser til studerende indenfor følgende brancher: 
-                        -	Lager og produktion
-                        -	Salg og kundeservice 
-                        -	Digitale medier
-                        Hvis du er klar til et nyt og spændende studiejob, så klik på knappen herunder og kom i gang med at oprette dit CV!
+                    >
+                        <strong>ØNSKER DU ET FLEKSIBELT ARBEJDE DER IKKE KOMMER I VEJEN FOR DINE STUDIER?</strong> <br /><br />
+                        Med et vikarjob eller et studiejob kan du tjene penge til økonomisk luft i hverdagen,
+                        samtidigt med at du styrker dit CV – uden at jobbet kommer i vejen for dine studier.
+                        Vi forstår at studiet har din førsteprioritet. Derfor formidler vi studiejobs og vikarjobs der passer ind i hverdagen som studerende. <br /><br />
+                        Med et vikarjob kan du få arbejde der:
+                        <ul>
+                            <li>Ikke ligger samtidigt med dine forelæsninger</li>
+                            <li>Giver dig mulighed for at holde fri i eksamensperioder</li>
+                            <li>Giver erhvervserfaring på dit CV, hvilket styrker din profil som jobsøgende når du er færdig med dit studie</li>
+                        </ul>
+                        Vi finder vikarjobs til mennesker på sabbatår indenfor følgende områder:
+                        <ul>
+                            <li>Lager og produktion</li>
+                            <li>Salg og kundeservice</li>
+                            <li>Digitale medier</li>
+                            <li>M.fl. </li>
+                        </ul>
+                        Hvis du er klar til et nyt og spændende studiejob, så se ledige vikarjobs eller opret dit CV – vi glæder os til at høre fra dig!
                     </TwoColumnRoundedDiv>
                     <TwoColumnRoundedDiv
                         header={'Specialist'}
                         imageDiv={<BigCardSpecialist />}
-                    >Er du i starten af din karriere, og har du overvejet at gå efter freelanceopgaver frem for en fast stilling? Hvis ikke, så bør du! Læs her hvorfor:
-                    Frem for at låse dig fast på én virksomhed fra starten kan du med freelanceopgaver:
-                        -	Styrke din faglighed og dit erfaringsniveau ved at lave opgaver for forskellige typer af klienter i varierende brancher 
-                        -	Hurtigt blive klogere på dine egne styrker, hvilken branche og hvilke specialistopgaver du i dit professionelle liv skal satse på, ved at prøve mange opgaver af i starten af din karriere
-                        -	Udbygge dit professionelle netværk ved at få kontakter i flere forskellige virksomheder   
-                        -	Vi varetager alt det administrative, herunder fakturering af klienten og afregningen mellem os og dig, så du kan bruge tiden på det du er bedst til. 
-                        Hvis du er klar på at kickstarte din freelance-karriere, udvide dit netværk og få en masse erfaring indenfor dit speciale på dit CV, så kom i gang nu ved at klikke på knappen herunder:
+                    >
+                        <strong>SØGER DU ET FRIT ARBEJDSLIV MED OPGAVER DU BRÆNDER FOR?</strong> <br /><br />
+                        Er du i starten af din karriere, har et særligt talent inden for eksempelvis grafisk design, digital marketing eller økonomi,
+                        og har du overvejet at gå efter freelanceopgaver frem for en fast stilling? Hvis ikke, så bør du! Læs her hvorfor:<br /><br />
+                        Frem for at låse dig fast på én virksomhed fra starten kan du som vikar:<br />
+                        <ul>
+                            <li>Styrke din faglighed og dit erfaringsniveau ved at lave opgaver for forskellige typer af klienter i varierende brancher</li>
+
+                            <li>Hurtigt blive klogere på dine egne styrker, hvilken branche og hvilke specialistopgaver du i dit professionelle liv skal satse på, ved at prøve mange opgaver af i starten af din karriere</li>
+                            <li>Udbygge dit professionelle netværk ved at få kontakter i flere forskellige virksomheder</li> <br />
+                        </ul>
+                        Vi varetager alt det administrative, herunder fakturering af klienten og afregningen mellem os og dig, så du kan bruge tiden på det du er bedst til. <br /><br />
+                        Hvis du er klar på at kickstarte din vikar specialist-karriere, , udvide dit netværk og få en masse erfaring indenfor dit speciale på dit CV, så kom i gang nu ved at oprette dit CV.
                     </TwoColumnRoundedDiv>
                     <OneColumnDiv
                         header={'Fagområder'}
@@ -70,20 +87,20 @@ class HopOmbord extends Component {
                     >
                         <CardContainer>
                             <TextCard
-                                cardHeader={`SALG &\n KUNDESERVICE:`}
+                                cardHeader={`Salg & Kundeservice:`}
                                 cardBody={'telefoninterviewer, mødebooker, phoner, salgskonsulent, sælger, kundeservicemedarbejde, call center medarbejder og kunderådgiver m.fl.'}
                             />
                             <TextCard
-                                cardHeader={'DIGITALT &\n KREATIVT'}
+                                cardHeader={'Digitalt & Kreativt'}
                                 cardBody={'webdesigner, grafisk designer, digital marketing specialist, content developer, marketing koordinator, email marketing, UX/UI designer og programmering m.fl.'}
                             />
                             <TextCard
-                                cardHeader={'LAGER &\n PRODUKTION'}
+                                cardHeader={'Lager & Produktion'}
                                 cardBody={'webshop lager, pluk/pak, forsendelse, varemodtagelse, etikettering, montage og kvalitetstjek m.fl.'}
                             />
                             <TextCard
-                                cardHeader={'ØKONOMI &\n HR'}
-                                cardBody={'bogholder, controller, analyse, BI, tasteopgaver, ordrebehandling, eksamenstilsyn, samt diverse ad hoc administrative opgaver m.fl.'}
+                                cardHeader={'Økonomi & Finans'}
+                                cardBody={'bogholder, controller, business analyst, lønspecialist, m.fl.'}
                             />
                         </CardContainer>
                     </OneColumnDiv>
