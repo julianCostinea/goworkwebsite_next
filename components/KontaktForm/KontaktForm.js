@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Head from 'next/head';
-import Script from 'next/script';
+import Head from "next/head";
+import Script from "next/script";
 import classes from "./KontaktForm.module.css";
 
 import Input from "./Input";
 import Loader from "./loader";
-
 
 class KontaktForm extends Component {
   state = {
@@ -41,7 +40,7 @@ class KontaktForm extends Component {
         validation: {
           required: true,
           minLength: 5,
-          isEmail: true
+          isEmail: true,
         },
         valid: false,
         touched: false,
@@ -60,7 +59,7 @@ class KontaktForm extends Component {
         validation: {
           required: true,
           minLength: 8,
-          maxLength: 11
+          maxLength: 11,
         },
         valid: false,
         touched: false,
@@ -94,8 +93,7 @@ class KontaktForm extends Component {
         },
         value: "",
         label: "",
-        validation: {
-        },
+        validation: {},
         valid: true,
       },
     },
@@ -103,7 +101,7 @@ class KontaktForm extends Component {
     formIsSent: false,
     errorMsg: null,
     isLoading: false,
-    isCompleted: false
+    isCompleted: false,
   };
 
   checkValidity = (value, rules) => {
@@ -122,7 +120,9 @@ class KontaktForm extends Component {
     }
 
     if (rules.isEmail) {
-      isValid = value.trim().match(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/) && isValid;
+      isValid =
+        value.trim().match(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/) &&
+        isValid;
     }
 
     return isValid;
@@ -165,27 +165,31 @@ class KontaktForm extends Component {
       formData[formElementIdentifier] =
         this.state.kontaktForm[formElementIdentifier].value;
     }
-    grecaptcha.ready(async () => {
-      grecaptcha.execute('6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8', { action: 'submit' }).then(function (token) {
-        console.log(token);
-        fetch("/api/mail", {
-          method: "POST",
-          body: JSON.stringify(formData)
-        }).then(function (response) {
-          return response.json();
-          // if (response.ok) {
-          //   this.setState({ isCompleted: true });
-          //   setTimeout(function () { window.location.reload(); }, 1800);
-          // }
-          // if (!response.ok) {
-          //   this.setState({ isLoading: false });
-          //   this.setState({ errorMsg: data.message });
-          // }
-        }).then(function(result){
-          console.log(result);
-          return;
+    grecaptcha.ready(() => {
+      grecaptcha
+        .execute("6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8", {
+          action: "submit",
         })
-      });
+        .then((token) => {
+          console.log(token);
+          fetch("/api/mail", {
+            method: "POST",
+            body: JSON.stringify(formData),
+          }).then((response) => {
+            if (response.ok) {
+              this.setState({ isCompleted: true });
+              setTimeout(function () {
+                window.location.reload();
+              }, 1800);
+            }
+            if (!response.ok) {
+              return response.json().then((result) => {
+                this.setState({ isLoading: false });
+                this.setState({ errorMsg: result.message });
+              });
+            }
+          });
+        });
     });
   };
 
@@ -193,9 +197,7 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-        <Head>
-          <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
-        </Head>
+        <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <h1>Kontakt</h1>
@@ -205,9 +207,10 @@ class KontaktForm extends Component {
             </h3>
           </React.Fragment>
         )}
-        <h3 style={{ color: 'red' }}>{this.state.errorMsg}</h3>
+        <h3 style={{ color: "red" }}>{this.state.errorMsg}</h3>
         <form onSubmit={this.kontaktHandler} className={classes.KontaktForm}>
           <Input
+            id={form.name.elementConfig.id}
             key={form.name.elementConfig.name}
             elementType={form.name.elementType}
             elementConfig={form.name.elementConfig}
@@ -222,6 +225,7 @@ class KontaktForm extends Component {
           />
           <div className={classes.TwoColumn}>
             <Input
+              id={form.email.elementConfig.id}
               key={form.email.elementConfig.name}
               elementType={form.email.elementType}
               elementConfig={form.email.elementConfig}
@@ -235,6 +239,7 @@ class KontaktForm extends Component {
               }
             />
             <Input
+              id={form.telefon.elementConfig.id}
               key={form.telefon.elementConfig.name}
               elementType={form.telefon.elementType}
               elementConfig={form.telefon.elementConfig}
@@ -249,6 +254,7 @@ class KontaktForm extends Component {
             />
           </div>
           <Input
+            id={form.description.elementConfig.id}
             key={form.description.elementConfig.name}
             elementType={form.description.elementType}
             elementConfig={form.description.elementConfig}
@@ -265,27 +271,30 @@ class KontaktForm extends Component {
             }
           />
           <Input
-              key={form.phone.elementConfig.name}
-              elementType="noHoney"
-              elementConfig={form.phone.elementConfig}
-              value={form.phone.value}
-              label={form.phone.label}
-              invalid={!form.phone.valid}
-              changed={(event) =>
-                this.inputChangedHandler(
-                  event,
-                  form.phone.elementConfig.name
-                )
-              }
-            />
+            id={form.phone.elementConfig.id}
+            key={form.phone.elementConfig.name}
+            elementType="noHoney"
+            elementConfig={form.phone.elementConfig}
+            value={form.phone.value}
+            label={form.phone.label}
+            invalid={!form.phone.valid}
+            changed={(event) =>
+              this.inputChangedHandler(event, form.phone.elementConfig.name)
+            }
+          />
           <div style={{ textAlign: "right", padding: "10px" }}>
             <button
               disabled={!this.state.formIsValid || this.state.formIsSent}
               type="submit"
               className={classes.Button}
             >
-              &nbsp;&nbsp;&nbsp;SEND <div className={classes.checkmarkDiv}
-                style={{ visibility: this.state.isLoading ? 'visible' : 'hidden' }}>
+              &nbsp;&nbsp;&nbsp;SEND{" "}
+              <div
+                className={classes.checkmarkDiv}
+                style={{
+                  visibility: this.state.isLoading ? "visible" : "hidden",
+                }}
+              >
                 <Loader hideCheckmark={this.state.isCompleted} />
               </div>
             </button>
