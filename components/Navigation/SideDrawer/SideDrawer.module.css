@@ -18,7 +18,13 @@
     background-color:#f6f6f6
 }
 
-@media (min-width: 500px) {
+@media (min-width: 750px) {
+    .SideDrawer {
+        width: 450px;
+    }
+}
+
+@media (min-width: 780px) {
     .SideDrawer {
         display: none;
     }
