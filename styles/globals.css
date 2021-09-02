@@ -13,7 +13,7 @@ body {
 }
 
 main{
-  margin-bottom: 32rem;
+  margin-bottom: 33rem;
 }
 
 .DesktopOnly {
@@ -42,11 +42,9 @@ a {
 .carousel {
   position: relative;
   margin: 0 auto;
-  width: 90%;
   text-align: left;
-  height: 21rem;
+  height: 27rem;
   box-sizing: border-box;
-  min-height: 21rem;
   margin-bottom: 2rem;
 }
 
@@ -71,7 +69,7 @@ a {
   margin-top: 0rem;
   text-align: center;
   width: 100%;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 0rem 1rem;
 }
 
 .carousel__slide h2 {
@@ -151,6 +149,7 @@ a {
 .carousel__slide .credentials {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding: 1rem;
 }
@@ -166,8 +165,15 @@ a {
 .carousel__slide .credentials__text {
   text-align: left;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 750px) {
+  main{
+    margin-bottom: 20rem;
+  }
+  .carousel {
+    height: 19rem;
+  }
+}
+@media (min-width: 780px) {
   :global(.App) {
     min-width: 580px;
   }
@@ -175,10 +181,10 @@ a {
     display: block;
   }
   main{
-    margin-bottom: 16rem;
+    margin-bottom: 16.5rem;
   }
   .carousel {
-    height: 350px;
+    height: 400px;
     width: 70%;
   }
   .carousel__slide h2 {
@@ -194,7 +200,7 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 780px) {
   .carousel__button {
     display: none;
   }
