@@ -168,7 +168,7 @@ class KontaktForm extends Component {
     grecaptcha.ready(() => {
       grecaptcha
         .execute("6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8", {
-          action: "submit",
+          action: "homepage",
         })
         .then((token) => {
           formData.recaptcha = token;
