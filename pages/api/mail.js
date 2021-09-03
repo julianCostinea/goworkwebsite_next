@@ -8,6 +8,8 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const body = JSON.parse(req.body);
+    console.log(body.recaptcha);
+    return;
 
     if (body.phone !== "") {
       res.status(502).send({

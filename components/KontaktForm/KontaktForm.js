@@ -171,7 +171,8 @@ class KontaktForm extends Component {
           action: "submit",
         })
         .then((token) => {
-          console.log(token);
+          formData.recaptcha = token;
+          console.log(formData);
           fetch("/api/mail", {
             method: "POST",
             body: JSON.stringify(formData),
@@ -197,7 +198,9 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-        <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
+        <Head>
+          <script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></script>
+        </Head>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <h1>Kontakt</h1>
@@ -208,7 +211,11 @@ class KontaktForm extends Component {
           </React.Fragment>
         )}
         <h3 style={{ color: "red" }}>{this.state.errorMsg}</h3>
-        <form onSubmit={this.kontaktHandler} className={classes.KontaktForm}>
+        <form
+          method="POST"
+          onSubmit={this.kontaktHandler}
+          className={classes.KontaktForm}
+        >
           <Input
             id={form.name.elementConfig.id}
             key={form.name.elementConfig.name}
