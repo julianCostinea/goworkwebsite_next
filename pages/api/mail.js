@@ -8,8 +8,6 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const body = JSON.parse(req.body);
-    console.log(body.recaptcha);
-    return;
 
     if (body.phone !== "") {
       res.status(502).send({
@@ -25,6 +23,20 @@ export default async function handler(req, res) {
     Telefonnummer: ${body.telefon} \r\n
     Besked: ${body.description} \r\n
   `;
+
+    const secretKey = process.env.SECRET_RECAPTCHA_KEY; 
+    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptcha}`;
+
+    const recaptchaResponse = await fetch(
+      verifyUrl,
+      {
+        method: "POST",
+      }
+    );
+    const parsedRecaptchaResponse = await recaptchaResponse.json();
+    console.log("RESPONSE FROM CAPTCHA:", parsedRecaptchaResponse);
+
+    return;
 
     try {
       await mailSchema.validate(req.body);

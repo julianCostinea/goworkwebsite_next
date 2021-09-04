@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Head from "next/head";
 import Script from "next/script";
 import classes from "./KontaktForm.module.css";
 
@@ -172,7 +171,6 @@ class KontaktForm extends Component {
         })
         .then((token) => {
           formData.recaptcha = token;
-          console.log(formData);
           fetch("/api/mail", {
             method: "POST",
             body: JSON.stringify(formData),
@@ -198,9 +196,7 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-        <Head>
-          <script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></script>
-        </Head>
+          <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <h1>Kontakt</h1>
