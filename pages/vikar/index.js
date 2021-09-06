@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
@@ -18,6 +19,10 @@ class Vikar extends Component {
     render() { 
         return ( 
           <React.Fragment>
+              <Head>
+                <title>Jobsøgende</title>
+                <meta name="description" content="JOBSØGENDE SIDE" />
+              </Head>
             <div className={classes.Content}>
                 <TwoColumnDiv 
                     imageDiv = {<VikarPhoto />}
