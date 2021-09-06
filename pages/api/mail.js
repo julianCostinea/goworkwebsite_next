@@ -24,21 +24,22 @@ export default async function handler(req, res) {
     Besked: ${body.description} \r\n
   `;
 
-    const secretKey = process.env.SECRET_RECAPTCHA_KEY; 
+    const secretKey = process.env.SECRET_RECAPTCHA_KEY;
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${body.recaptcha}`;
 
-    const recaptchaResponse = await fetch(
-      verifyUrl,
-      {
-        method: "POST",
-      }
-    );
-    const parsedRecaptchaResponse = await recaptchaResponse.json();
-    console.log("RESPONSE FROM CAPTCHA:", parsedRecaptchaResponse);
-
-    return;
-
     try {
+      const recaptchaResponse = await fetch(verifyUrl, {
+        method: "POST",
+      });
+      const parsedRecaptchaResponse = await recaptchaResponse.json();
+      console.log("RESPONSE FROM CAPTCHA:", parsedRecaptchaResponse);
+      if (!parsedRecaptchaResponse.success || parsedRecaptchaResponse.score < 0.4) {
+        throw new Error(
+          "Kunne ikke sende mail. Prøv venligst igen eller kontakt os på 66 10 65 00."
+        );
+      }
+      
+
       await mailSchema.validate(req.body);
 
       await mail.send({
