@@ -1,3 +1,8 @@
+html{
+  min-height: 100vh;
+  position: relative;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -179,6 +184,7 @@ html, body {
 .Content {
     margin: 0 auto;
     margin-top: 5rem;
+    margin-bottom: 18rem;
     width: 50%;
 }
 
@@ -186,4 +192,62 @@ html, body {
     .Logo {
         margin-right: 3rem;
     }
+}
+
+/* Icons */
+.Icon{
+    display: inline-block;
+    margin: 0px;
+    margin-right: 5px;
+}
+.Icon img{
+    width: 20px;
+}
+
+/* FOOTER */
+.Footer {
+  display: flex;
+  font-size: 1.1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0px -0.5px 0px #ebf0f7;
+  padding-top: 3rem;
+  background-color: rgb(221, 221, 221);
+  color: black;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.Footer h3 {
+  margin-bottom: 1rem;
+}
+
+.List {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.List li {
+  color: #161637;
+  margin-bottom: 1rem;
+}
+.List li a {
+  color: #161637;
+  text-decoration: none;
+}
+.List li a:hover {
+  color: #056ab2;
+}
+
+@media (min-width: 500px) {
+  .Footer {
+    margin-top: 0;
+    flex-direction: row;
+    text-align: left;
+  }
 }
