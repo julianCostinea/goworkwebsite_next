@@ -6,102 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ledige stillinger</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sideDrawer.css" />
   </head>
   <body>
-    <div style="width: 100vw">
-      <div class="Container">
-        <header class="Toolbar">
-          <div class="DrawerToggle_DrawerToggle__3HqL_">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <nav class="DesktopOnly">
-            <ul class="NavigationItems">
-              <a href="/vikar" class="Logo"
-                ><img src="/images/NYlogo250px.png" alt="Go:Work ApS"
-              /></a>
-              <li class="NavigationItem" id="listItem">
-                <a href="/vikar">Jobsøgende</a>
-              </li>
-              <li class="NavigationItem" id="listItem">
-                <a href="/virksomheder">Virksomheder</a>
-              </li>
-              <li class="NavigationItem" id="listItem">
-                <a href="/uddannelser">Uddannelsessteder</a>
-              </li>
-              <li class="NavigationItem" id="listItem">
-                <a href="/om-os">Om&nbsp;os</a>
-              </li>
-              <div class="KontaktNav">
-                <li class="NavigationItem" id="listItem">
-                  <a href="/kontakt">Kontakt&nbsp;os</a>
-                </li>
-              </div>
-            </ul>
-          </nav>
+    <div class="Container">
+      <header class="Toolbar">
+        <div class="DrawerToggle">
           <div></div>
-        </header>
-      </div>
-      <div class="Content">
-        <script
-          src="https://hr-skyen.dk/hr/frame-api/hr.js"
-          type="text/javascript"
-        ></script>
-        <div id="hrskyen">
-          <noscript>
-            This page requires javascript
-            <br />
-            <a href="https://hr-skyen.dk/list-jobs/">Visit our job page</a>
-          </noscript>
+          <div></div>
+          <div></div>
         </div>
-        <script
-          src="https://hr-skyen.dk/hr/frame-api/customers/goworkaps.js"
-          type="text/javascript"
-        ></script>
-      </div>
-      <div class="Footer">
-        <div>
-          <ul class="List">
-            <h3>GoWork</h3>
-            <li style="line-height: 1.5rem">
-              GoWork er et vikarbureau med 2 gazellepriser.<br />
-              Vi har siden 2012 formidlet ambitiøse mennesker <br />
-              i starten af deres karriere til midlertidige opgaver.
+        <nav class="DesktopOnly">
+          <ul class="NavigationItems">
+            <a href="/vikar" class="Logo"
+              ><img src="/images/NYlogo250px.png" alt="Go:Work ApS"
+            /></a>
+            <li class="NavigationItem" id="listItem">
+              <a href="/vikar">Jobsøgende</a>
             </li>
-            <li style="font-weight: bold">
-              Er din virksomhed klar til at Go Work?
+            <li class="NavigationItem" id="listItem">
+              <a href="/virksomheder">Virksomheder</a>
             </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="List">
-            <h3>GoWork ApS</h3>
-            <li style="line-height: 1.5rem">
-              Fjordsgade 11, 1. sal <br />
-              5000 Odense C. <br />
-              Tlf.: 6610 6500 <br />
+            <li class="NavigationItem" id="listItem">
+              <a href="/uddannelser">Uddannelsessteder</a>
             </li>
-            Følg os:
-            <div class="Icon">
-              <a
-                href="https://www.facebook.com/goworkodense/"
-                target="_blank"
-                rel="noreferrer"
-                ><img src="/images/facebook.svg" alt="facebook Icon"
-              /></a>
-            </div>
-            <div class="Icon">
-              <a
-                href="https://dk.linkedin.com/company/go-work-aps"
-                target="_blank"
-                rel="noreferrer"
-                ><img src="/images/linkedin.svg" alt="linkedIn Icon"
-              /></a>
+            <li class="NavigationItem" id="listItem">
+              <a href="/om-os">Om&nbsp;os</a>
+            </li>
+            <div class="KontaktNav">
+              <li class="NavigationItem" id="listItem">
+                <a href="/kontakt">Kontakt&nbsp;os</a>
+              </li>
             </div>
           </ul>
+        </nav>
+        <div class="Backdrop"></div>
+      </header>
+      <!-- REMOVE DISPLAY NONE BEFORE STYLING START -->
+      <div class="SideDrawer" style="text-align: center">
+        <nav>
+          <ul class="NavigationItems">
+            <a href="/vikar" class="MobileLogo"
+              ><img src="/images/NYlogo250px.png" alt="Go:Work ApS"
+            /></a>
+            <li class="NavigationItem" id="listItem">
+              <a href="/vikar">Jobsøgende</a>
+            </li>
+            <li class="NavigationItem" id="listItem">
+              <a href="/virksomheder">Virksomheder</a>
+            </li>
+            <li class="NavigationItem" id="listItem">
+              <a href="/uddannelser">Uddannelsessteder</a>
+            </li>
+            <li class="NavigationItem" id="listItem">
+              <a href="/om-os">Om&nbsp;os</a>
+            </li>
+            <div class="KontaktNav">
+              <li class="NavigationItem" id="listItem">
+                <a href="/kontakt">Kontakt&nbsp;os</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+        <div class="MobileFooter">
+            <h4 style="margin-left:3px">Følg os:</h4>
+            <FacebookIcon link ='https://www.facebook.com/goworkodense/' />
+            <LinkedInIcon link = 'https://dk.linkedin.com/company/go-work-aps'/>
         </div>
+    </div>
+    </div>
+    <div class="Content">
+      <div id="hrskyen">
+        <noscript>
+          This page requires javascript
+          <br />
+          <a href="https://hr-skyen.dk/list-jobs/">Visit our job page</a>
+        </noscript>
       </div>
     </div>
+    <div class="Footer">
+      <div>
+        <ul class="List">
+          <h3>GoWork</h3>
+          <li style="line-height: 1.5rem">
+            GoWork er et vikarbureau med 2 gazellepriser.<br />
+            Vi har siden 2012 formidlet ambitiøse mennesker <br />
+            i starten af deres karriere til midlertidige opgaver.
+          </li>
+          <li style="font-weight: bold">
+            Er din virksomhed klar til at <br />Go Work?
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="List">
+          <h3>GoWork ApS</h3>
+          <li style="line-height: 1.5rem">
+            Fjordsgade 11, 1. sal <br />
+            5000 Odense C. <br />
+            Tlf.: 6610 6500 <br />
+          </li>
+          Følg os:
+          <div class="Icon">
+            <a
+              href="https://www.facebook.com/goworkodense/"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="/images/facebook.svg" alt="facebook Icon"
+            /></a>
+          </div>
+          <div class="Icon">
+            <a
+              href="https://dk.linkedin.com/company/go-work-aps"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="/images/linkedin.svg" alt="linkedIn Icon"
+            /></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://hr-skyen.dk/hr/frame-api/hr.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://hr-skyen.dk/hr/frame-api/customers/goworkaps.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./forJobs.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
