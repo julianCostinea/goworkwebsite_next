@@ -1,214 +1,143 @@
-html{
+html {
   min-height: 100vh;
   position: relative;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    width: 100%;
-    color: #161637
-  }
-  
-  :global(.App) {
-    min-width: 100%;
-  }
-.Container{
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFF;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  color: #161637;
 }
 
-.BoxShadow{
-    box-shadow: 0px 0.5px 0px #ebf0f7;
+:global(.App) {
+  min-width: 100%;
+}
+.Container {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.BoxShadow {
+  box-shadow: 0px 0.5px 0px #ebf0f7;
 }
 
 .Toolbar {
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 90;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
 }
 
 .Toolbar nav {
-    height: 100%;
+  height: 100%;
 }
 
 .Logo {
-    height: 80%;
+  height: 80%;
 }
 
-@media (max-width: 499px) {
-    .DesktopOnly {
-        display: none;
-    }
-    .Toolbar {
-        justify-content: space-between;
-    }
-}
-
-@media (min-width: 576px) {
-    :global(.App) {
-        min-width: 580px;
-    }
-    .DesktopOnly {
-      display: block;
-    }
-  }
 .NavigationItems {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
 }
 
-.KontaktNav{
-    width: 100%;
+.KontaktNav {
+  width: 100%;
 }
 
-@media (min-width: 500px) {
-    .NavigationItems {
-        flex-flow: row;
-    }
-}
-
-@media (min-width: 1200px) {
-    .KontaktNav{
-        margin-left: 9rem;
-    }
-}
 .NavigationItem {
-    margin: 10px 0;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding-bottom: 5px;
-    font-size: 1.1rem;  
-    padding-left: 5px;
-    border-bottom: 1px solid rgb(224, 222, 222);
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  padding-left: 5px;
+  border-bottom: 1px solid rgb(224, 222, 222);
 }
 
 .NavigationItem a {
-    color: #161637;
-    text-decoration: none;
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
+  color: #161637;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
 }
 
 .NavigationItem a:active,
 .NavigationItem a.active {
-    color:#056ab2;
+  color: #056ab2;
 }
 
-.Relative{
-    position: relative;
+.Backdrop {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
 }
 
-@media (min-width: 500px) {
-    .NavigationItem {
-        margin: 0 1rem;
-        height: 100%;
-        width: auto;
-        align-items: center;
-        border-bottom: none;
-    }
-    
-    .NavigationItem a {
-        color: #161637;
-        display: inline-block;
-        padding: 10px 10px 0px 10px;
-        border-bottom: 4px solid transparent;
-    }
-    
-    /* .NavigationItem a:hover{
-        text-shadow:
-        -0.5px -0.5px 0 #03658C,
-        0.5px -0.5px 0 #03658C,
-        -0.5px 0.5px 0 #03658C,
-        0.5px 0.5px 0 #03658C;
-        -webkit-transition: all .2s;
-        -moz-transition: all .2s;
-        -o-transition: all .2s;
-        transition: all ease-out .2s;
-    }
-    .NavigationItem a:active,
-    .NavigationItem a.active {
-        text-shadow:
-        -0.5px -0.5px 0 #03658C,
-        0.5px -0.5px 0 #03658C,
-        -0.5px 0.5px 0 #03658C,
-        0.5px 0.5px 0 #03658C;
-    } */
-
-    .NavigationItem::after,
-    .NavigationItem.active::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        background: #2a5c91;
-        transition: width ease-in-out .3s;
-    }
-    
-    .NavigationItem:hover::after{
-        width: 100%;
-    }
+.BackdropShow {
+    display: block;
 }
+
 .Logo {
-    margin-top: 5px;
-    padding: 0px;
-    max-height: 80%;
-    box-sizing: border-box;
-    border-radius: 5px;
+  margin-top: 5px;
+  padding: 0px;
+  max-height: 80%;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .Logo img {
-    height: 50px;
-    width: 130px;
+  height: 50px;
+  width: 130px;
 }
 
 .Content {
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 18rem;
-    width: 50%;
-}
-
-@media (min-width: 500px) {
-    .Logo {
-        margin-right: 3rem;
-    }
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 35rem;
+  width: 80%;
 }
 
 /* Icons */
-.Icon{
-    display: inline-block;
-    margin: 0px;
-    margin-right: 5px;
+.Icon {
+  display: inline-block;
+  margin: 0px;
+  margin-right: 5px;
 }
-.Icon img{
-    width: 20px;
+.Icon img {
+  width: 20px;
 }
 
 /* FOOTER */
 .Footer {
   display: flex;
   font-size: 1.1rem;
-  padding: 2rem;
+  padding: 0rem;
   box-sizing: border-box;
   box-shadow: 0px -0.5px 0px #ebf0f7;
   padding-top: 3rem;
@@ -244,10 +173,115 @@ html, body {
   color: #056ab2;
 }
 
+.DrawerToggle {
+  width: 40px;
+  height: 4rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: #2a5c91;
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+  .Toolbar {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 780px) {
+  :global(.App) {
+    min-width: 580px;
+  }
+  .DesktopOnly {
+    display: block;
+  }
+  .Footer {
+    padding: 2rem;
+  }
+  .DrawerToggle {
+    display: none;
+  }
+}
+
 @media (min-width: 500px) {
+  .Logo {
+    margin-right: 3rem;
+  }
   .Footer {
     margin-top: 0;
     flex-direction: row;
     text-align: left;
+  }
+  .NavigationItem {
+    margin: 0 1rem;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .NavigationItem a {
+    color: #161637;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+    border-bottom: 4px solid transparent;
+  }
+
+  /* .NavigationItem a:hover{
+        text-shadow:
+        -0.5px -0.5px 0 #03658C,
+        0.5px -0.5px 0 #03658C,
+        -0.5px 0.5px 0 #03658C,
+        0.5px 0.5px 0 #03658C;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all ease-out .2s;
+    }
+    .NavigationItem a:active,
+    .NavigationItem a.active {
+        text-shadow:
+        -0.5px -0.5px 0 #03658C,
+        0.5px -0.5px 0 #03658C,
+        -0.5px 0.5px 0 #03658C,
+        0.5px 0.5px 0 #03658C;
+    } */
+
+  .NavigationItem::after,
+  .NavigationItem.active::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #2a5c91;
+    transition: width ease-in-out 0.3s;
+  }
+
+  .NavigationItem:hover::after {
+    width: 100%;
+  }
+  .NavigationItems {
+    flex-flow: row;
+  }
+}
+@media (min-width: 1200px) {
+  .KontaktNav {
+    margin-left: 9rem;
+  }
+  .Content {
+    margin-bottom: 18rem;
+    width: 50%;
   }
 }
