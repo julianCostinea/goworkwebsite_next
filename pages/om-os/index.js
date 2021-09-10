@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import CardContainer from '../../components/Card/CardContainer';
@@ -11,6 +12,10 @@ class OmOs extends Component {
     render() { 
         return ( 
           <div>
+              <Head>
+                <title>Om os</title>
+                <meta name="description" content="Om os SIDE" />
+              </Head>
               <div className={classes.Content}>
                 <OneColumnDiv
                     lightBlueDiv

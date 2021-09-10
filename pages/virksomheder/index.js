@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
@@ -33,6 +34,10 @@ class Virksomheder extends Component {
     render() {
         return (
             <React.Fragment>
+                <Head>
+                <title>Virksomheder</title>
+                <meta name="description" content="Virksomheder SIDE" />
+              </Head>
                 <KontaktModal show={this.state.showModal} modalClosed={this.closeModal} />
                 <div className={classes.Content}>
                     <TwoColumnDiv
