@@ -1,5 +1,5 @@
 .SideDrawer {
-    display: none;
+    overflow: auto;
     position: fixed;
     width: 280px;
     height: 100%;
@@ -11,12 +11,19 @@
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
 }
+
 .MobileFooter{
-    position:fixed;
-    bottom:0%;
+    position:absolute;
+    bottom:0;
+    box-sizing: border-box;
     padding-bottom: 10px;
     width:100%;
     background-color:#f6f6f6
+}
+
+.MobileLogo img{
+    width: 130px;
+    height: 50px;
 }
 
 @media (min-width: 750px) {
@@ -37,9 +44,4 @@
 
 .Close {
     transform: translateX(-100%);
-}
-
-.MobileLogo {
-    height: 11%;
-    margin-bottom: 32px;
 }

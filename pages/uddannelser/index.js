@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import classes from './Uddanelser.module.css';
 
@@ -28,6 +29,10 @@ class Uddanelser extends Component {
     render() { 
         return ( 
           <div>
+              <Head>
+                <title>Uddannelser</title>
+                <meta name="description" content="Uddannelser SIDE" />
+              </Head>
               <KontaktModal show = {this.state.showModal} modalClosed={this.closeModal} />
               <div className={classes.Content}>
                 <TwoColumnDiv 
