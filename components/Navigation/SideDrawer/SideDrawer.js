@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import BackdropContext from "../../../store/backdrop-context";
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
@@ -7,9 +8,10 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import FacebookIcon from '../../Icons/facebookIcon';
 import LinkedInIcon from '../../Icons/linkedInIcon';
 
-const sideDrawer = ( props ) => {
+const SideDrawer = ( props ) => {
+    const backdropCtx = useContext(BackdropContext)
     let attachedClasses = [classes.SideDrawer, classes.Close];
-    if (props.open) {
+    if (backdropCtx.show) {
         attachedClasses = [classes.SideDrawer, classes.Open];
     }
     return (
@@ -29,4 +31,4 @@ const sideDrawer = ( props ) => {
     );
 };
 
-export default sideDrawer;
+export default SideDrawer;
