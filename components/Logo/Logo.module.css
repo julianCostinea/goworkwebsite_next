@@ -6,11 +6,6 @@
     border-radius: 5px;
 }
 
-.Logo img {
-    height: 50px;
-    width: 130px;
-}
-
 @media (min-width: 780px) {
     .Logo {
         margin-right: 3rem;
