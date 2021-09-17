@@ -9,8 +9,9 @@ const SalgImg = () => {
     <div className={classes.CardPhoto}>
       <Image
         loading="eager"
-        width="400px"
-        height="330px"
+        layout="fixed"
+        width="380px"
+        height="310px"
         className={classes.Laptop}
         style={loaded ? {} : { display: "none" }}
         src="/images/virksomheder/fagomrader/rocket.svg"

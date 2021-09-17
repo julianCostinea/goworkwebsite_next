@@ -10,7 +10,7 @@ const CardPhoto = () => {
         <Image 
             width= "350px" height="350px"
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/virksomheder/virksomheder_oekonomi_v1.svg" alt="Okonomi"
+            src="/images/virksomheder/virksomheder_hoejdaekning_v2.svg" alt="Okonomi"
             onLoad={() => setLoaded(true)}
             />
     </div>

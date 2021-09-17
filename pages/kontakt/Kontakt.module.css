@@ -8,10 +8,9 @@
 .GoogleMaps{
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
 }
 .GoogleMaps div{
-    width: 70%;
+    width: 100%;
 }
 .GoogleMaps iframe{
     border-radius: 5px;

@@ -5,27 +5,20 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Backdrop from '../Backdrop/Backdrop';
 import ModalBox from './ModalBox';
 
-class Modal extends Component {
-
-    shouldComponentUpdate ( nextProps ) {
-        return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
-    }
-
-    render () {
-        return (
-            <Aux>
-                <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
-                <div className = {classes.Modal}
-                    style={{
-                        transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)',
-                        opacity: this.props.show ? '1' : '0',
-                        transition: '1s'
-                    }}>
-                    <ModalBox modalClosed={this.props.modalClosed} />
-                </div>
-            </Aux>
-        )
-    }
+const Modal = (props) => {
+    return (
+        <Aux>
+            <Backdrop show={props.show} clicked={props.modalClosed} />
+            <div className={classes.Modal}
+                style={{
+                    transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
+                    opacity: props.show ? '1' : '0',
+                    transition: '1s'
+                }}>
+                <ModalBox modalClosed={props.modalClosed} />
+            </div>
+        </Aux>
+    )
 }
 
 export default Modal;

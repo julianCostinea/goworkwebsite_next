@@ -17,7 +17,7 @@ class KontaktForm extends Component {
           autoComplete: "name",
         },
         value: "",
-        label: "NAVN*",
+        label: "Navn*",
         validation: {
           required: true,
           minLength: 2,
@@ -35,7 +35,7 @@ class KontaktForm extends Component {
           name: "email",
         },
         value: "",
-        label: "EMAIL*",
+        label: "E-mail*",
         validation: {
           required: true,
           minLength: 5,
@@ -54,7 +54,7 @@ class KontaktForm extends Component {
           name: "telefon",
         },
         value: "",
-        label: "TELEFON*",
+        label: "Telefon*",
         validation: {
           required: true,
           minLength: 8,
@@ -74,7 +74,7 @@ class KontaktForm extends Component {
           name: "description",
         },
         value: "",
-        label: "FORTÆL OS KORT OM JERES BEHOV*",
+        label: "Fortæl os kort om jeres behov*",
         validation: {
           required: true,
         },
@@ -200,9 +200,9 @@ class KontaktForm extends Component {
         {this.props.noHeader ? null : (
           <React.Fragment>
             <h1>Kontakt</h1>
-            <h3 style={{ color: "#305d95", fontWeight: "bold" }}>
-              Er du interesseret i at vide mere? Fortæl os om dit
-              personalebehov.
+            <h3 style={{ color: "#305d95", fontWeight: "bold"}}>
+              Er du interesseret i at vide mere? <br /> Fortæl os kort om dit
+              personalebehov, <br /> så kontakter vi dig for en uforpligtende snak.
             </h3>
           </React.Fragment>
         )}

@@ -16,7 +16,8 @@ class HopOmbord extends Component {
         return (
             <div>
                 <div className={classes.Content}>
-                    <TwoColumnRoundedDiv
+                    {/* !!! Sabbatår, Studerende, Specialist Cards !!!  */}
+                    {/* <TwoColumnRoundedDiv
                         header={'Sabbatår'}
                         imageDiv={<BigCardSabbatar />}
                     >
@@ -78,7 +79,7 @@ class HopOmbord extends Component {
                         </ul>
                         Vi varetager alt det administrative, herunder fakturering af klienten og afregningen mellem os og dig, så du kan bruge tiden på det du er bedst til. <br /><br />
                         Hvis du er klar på at kickstarte din vikar specialist-karriere, , udvide dit netværk og få en masse erfaring indenfor dit speciale på dit CV, så kom i gang nu ved at oprette dit CV.
-                    </TwoColumnRoundedDiv>
+                    </TwoColumnRoundedDiv> */}
                     <OneColumnDiv
                         header={'Fagområder'}
                         paragraph={`Vi har et særligt fokus på midlertidige jobs indenfor salg, det digitale og kreative, kundeservice,
@@ -107,15 +108,17 @@ class HopOmbord extends Component {
                     <OneColumnDiv
                         whiteDiv
                         header={'Ansøgningsproces'}
-                        paragraph={`Vi er stolte af vores mange glade kunder, som rater vores kandidater 4.5 ud af 5.0 stjerner. Du får med
-                        vores hjælp sikkerhed for, at du passer godt til de opgaver vi tilbyder dig. Vi sørger også for at den 
-                        virksomhed du får tilbudt arbejde i, passer til dine ønsker. \n\nDet er nemlig kun et godt match hvis både 
-                        virksomheden og den ansatte er glade for hinanden - og det er vores mål!`}
+                        // paragraph={`Vi er stolte af vores mange glade kunder, som rater vores kandidater 4.5 ud af 5.0 stjerner. Du får med
+                        // vores hjælp sikkerhed for, at du passer godt til de opgaver vi tilbyder dig. Vi sørger også for at den 
+                        // virksomhed du får tilbudt arbejde i, passer til dine ønsker. \n\nDet er nemlig kun et godt match hvis både 
+                        // virksomheden og den ansatte er glade for hinanden - og det er vores mål!`}
+                        paragraph = {`Vi brænder for at bringe ambitiøse mennesker og virksomheder sammen.
+                        Her er en kort beskrivelse af en standard ansættelsesproces:`}
                     >
                         <div>
-                            <h2
+                            {/* <h2
                                 style={{ color: '#2a5c91', marginTop: '2rem', fontSize: '1.5rem' }}
-                            >Her er en kort beskrivelse af en standard ansættelsesproces:</h2> <br />
+                            ></h2> */}
                             <ApplicationProcess />
                         </div>
                     </OneColumnDiv>

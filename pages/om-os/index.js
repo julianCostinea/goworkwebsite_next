@@ -9,74 +9,87 @@ import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhoto
 import classes from './OmOs.module.css';
 
 class OmOs extends Component {
-    render() { 
-        return ( 
-          <div>
-              <Head>
-                <title>Om os</title>
-                <meta name="description" content="Om os SIDE" />
-              </Head>
-              <div className={classes.Content}>
-                <OneColumnDiv
-                    lightBlueDiv
-                    header = {'Passion for fremtidens medarbejdere'}
-                    paragraph={`Go:Work er et vikar- og freelancebureau.Vi har siden 2012 formidlet studerende og 
-                        nyuddannede til vikariater- og studiejobs, og specialister til freelanceopgaver.\n
-                        Vi er vilde med den energi og de ambitioner som definerer generation Y og Z.
-                        Og brænder for at bringe talent og virksomhed sammen.`}
-                >
-                </OneColumnDiv>
-                <OneColumnDiv
-                    whiteDiv
-                    header={'Vores team'}
-                >
-                    <CardContainer>
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoOle />}
-                            cardHeader = {'Ole Susé'}
-                            cardBody ={'Senior Konsulent & Indehaver'}
+    render() {
+        return (
+            <div>
+                <Head>
+                    <title>Om os</title>
+                    <meta name="description" content="Om os SIDE" />
+                </Head>
+                <div className={classes.Content}>
+                    <OneColumnDiv
+                        header={'Kort om os'}
+                        paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. \n
+                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige
+                        opgaver – lige fra den nyudklækkede student som søger ufaglært arbejde i sit sabbatår til 
+                        den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
+                    >
+                    </OneColumnDiv>
+
+                    <OneColumnDiv
+                        whiteDiv
+                        header={'Vores team'}
+                    >
+                        <CardContainer>
+                        <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoIgnacio />}
+                                cardHeader={'Anne Jervelund'}
+                                cardBody={'HR Konsulent'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoJonas />}
-                            cardHeader = {'Jonas Jeppesen'}
-                            cardBody ={'HR Konsulent'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoJonas />}
+                                cardHeader={'Jonas Jeppesen'}
+                                cardBody={'HR Konsulent'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoJulian />}
-                            cardHeader = {'Julian Costinea'}
-                            cardBody ={'HR Konsulent'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoJulian />}
+                                cardHeader={'Julian Costinea'}
+                                cardBody={'HR Konsulent'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoErik />}
-                            cardHeader = {'Erik Dreiøe'}
-                            cardBody ={'HR Konsulent'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoErik />}
+                                cardHeader={'Erik Dreiøe'}
+                                cardBody={'HR Konsulent'}
                             />
-                    </CardContainer>
-                    <CardContainer>
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoIgnacio />}
-                            cardHeader = {'Ignacio Gonzalez'}
-                            cardBody ={'LUCHADOR'}
+                        </CardContainer>
+                        <CardContainer>
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoOle />}
+                                cardHeader={'Ole Susé'}
+                                cardBody={'Senior Konsulent & Indehaver'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoPeter/>}
-                            cardHeader = {'Peter Prese'}
-                            cardBody ={'HR Konsulent'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoPeter />}
+                                cardHeader={'Peter Prese'}
+                                cardBody={'HR Konsulent'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoArne/>}
-                            cardHeader = {'Arne Lauritzen'}
-                            cardBody ={'Senior Konsulent'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoArne />}
+                                cardHeader={'Arne Lauritzen'}
+                                cardBody={'Senior Konsulent'}
                             />
-                        <Card 
-                            cardPhoto = {<TeamPhotos.CandidatePhotoTrine/>}
-                            cardHeader = {'Trine le Fevre'}
-                            cardBody ={'Bogholder'}
+                            <Card
+                                cardPhoto={<TeamPhotos.CandidatePhotoTrine />}
+                                cardHeader={'Trine le Fevre'}
+                                cardBody={'Bogholder'}
                             />
-                    </CardContainer>
-                </OneColumnDiv>
+                        </CardContainer>
+                    </OneColumnDiv>
+                    <OneColumnDiv
+                        lightBlueDiv
+                        header={'Bliv klar til fremtiden'}
+                        paragraph={`Undgå en ’plads på tilskuerrækkerne’ i et arbejdsmarked under stærk forandring.\n
+                    Fremtidens arbejdsbegreb bliver en flydende størrelse, hvor ’fast job’ erstattes af digitale 
+                    arbejdspladser og midlertidige projekter. Det stiller krav til teknologi og 
+                    forandringsparathed hos arbejdsgivere, og fleksibilitet hos arbejdstagere.\n
+                    Hos GoWork forbereder vi dig på det der venter – og brænder for at bringe ambitiøse 
+                    mennesker og virksomheder sammen, nu og i fremtiden. \n
+                    Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætter i den samme gamle rille`}
+                    >
+                    </OneColumnDiv>
+
+                </div>
             </div>
-          </div>  
         );
     }
 }

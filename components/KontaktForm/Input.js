@@ -79,7 +79,7 @@ const input = (props) => {
   }
   return (
     <div className={classes.Input}>
-      <label htmlFor={props.id}>{props.label}</label>
+      <label style={{fontWeight: "bold"}} htmlFor={props.id}>{props.label}</label>
       {InputElement}
     </div>
   );

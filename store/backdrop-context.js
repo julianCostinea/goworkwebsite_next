@@ -1,4 +1,3 @@
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 import { createContext, useState } from "react";
 
 const BackdropContext = createContext({

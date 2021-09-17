@@ -42,22 +42,21 @@ class Virksomheder extends Component {
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         imageDiv={<VirksomehederImg />}
-                        header={'Lej en GoWork’er\n - og få løst opgaven!'}>
-                        Lej en GoWork’er og kom sikkert i mål med dagens <br /> opgaver. <br /><br />
-                        Vi formidler hurtigt og effektivt kvalificerede medarbejdere.<br />
-                        Der er garanti for det rette match. <br />
-                        Og ja, så kan du spare op til 35% på dit vikargebyr. <br /><br /><br />
-                        Hvilken opgave søger du personale til? <br />
+                        header={'Lej en GoWork’er\n og få løst\n opgaven'}>
+                        GoWork formidler ambitiøse mennesker i starten af <br /><br />
+                        deres karriere til vikar- og specialiststillinger.<br />
+                        Nemt, enkelt og økonomisk. <br /><br /><br />
+                        Hvilken opgave eller projekt søger du personale til? <br />
                         <KontaktModalButton openKontakt={this.showModal} />
                     </TwoColumnDiv>
                     <OneColumnDiv
-                        firmaHeader={'KOM I GODT SELSKAB. VI BESÆTTER ÅRLIGT MERE END 25.000 JOBS'}
+                        firmaHeader={'KOM I GODT SELSKAB. VI BESÆTTER ÅRLIGT MERE END 25.000 VIKARJOBS'}
                     >
                         <FirmaLogos />
                     </OneColumnDiv>
                     <OneColumnDiv
                         whiteDiv
-                        header={'3 gode grunde til at bruge GoWork'}
+                        header={'3 gode grunde til at bruge os'}
                     >
                         <CardContainer>
                             <Card
@@ -68,7 +67,7 @@ class Virksomheder extends Component {
                             <Card
                                 cardPhoto={<CardOkonomi />}
                                 cardHeader={'SPAR PENGE'}
-                                cardBody={'Lavere gebyr end\ntraditionelle bureauer.\n Spar op til 35%'}
+                                cardBody={'Lavere gebyr end\ntraditionelle bureauer.\n'}
                             />
                             {/* <Card 
                             cardPhoto={<CardAttitude />}
@@ -86,7 +85,7 @@ class Virksomheder extends Component {
                         lightBlueDiv
                         header={'Kvikke hoveder til de fleste opgaver'}
                         paragraph={`Vi holder os skarpt opdateret på udviklingen indenfor flere fagområder. Sådan sikrer vi at din
-                    virksomhed til enhver tid har de stærkeste vikar eller freelance-specialister til opgaven.`}
+                    virksomhed til enhver tid har de stærkeste kandidater til opgaven.`}
                     >
                         Vælg det område du søger personale til:
                         <ServiceIcons />
@@ -98,7 +97,8 @@ class Virksomheder extends Component {
                             Fortæl os om dit behov <span style={{ height: '13px', width: '13px', display: 'inline-block' }}><ArrowVirksomheder /></span>
                         </a>
                     </OneColumnDiv>
-                    <CarouselContainer whiteDiv header={''}>
+                    {/* Carousel for virksomheder */}
+                    {/* <CarouselContainer whiteDiv header={''}>
                         <Carousel
                             slide1={`Vi er særdeles tilfredse med vores samarbejde med GoWork. Vi er i en branche, hvor behovet
                             for personale varierer enormt - ofte med kort varsel. Med det samarbejde vi har
@@ -122,7 +122,7 @@ class Virksomheder extends Component {
                             jobTitle3={'Studieadministrativ'}
                             firma3={'Roskilde Universitet'}
                         />
-                    </CarouselContainer>
+                    </CarouselContainer> */}
                 </div>
             </React.Fragment>
         );

@@ -10,7 +10,7 @@ const footer = () => {
             <div>
                 <ul className={classes.List}>
                     <h3>GoWork</h3>
-                    <li style={{lineHeight : '1.5rem'}}>GoWork er et vikarbureau med 2
+                    <li style={{lineHeight : '1.5rem'}}>GoWork er et vikarbureau med flere
                         gazellepriser.<br/> Vi har siden 2012 formidlet 
                         ambitiøse mennesker <br/>i starten af deres karriere til
                         midlertidige opgaver. </li>
