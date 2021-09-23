@@ -15,6 +15,7 @@ import CardOkonomi from '../../components/ContentImages/CardImages/CardOkonomi';
 import UddannelserImage from '../../components/ContentImages/UddannelserImage';
 import ClientVideoDiv from '../../components/ClientVideoDiv/ClientVideoDiv';
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
+import UddanelserImage from '../../components/ContentImages/UddanelserImage';
 
 class Uddanelser extends Component {
     state = {
@@ -37,24 +38,47 @@ class Uddanelser extends Component {
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         imageDiv={<UddannelserImage />}
-                        header={'Book dit \n eksamenstilsyn her!'}>
-                        GoWork er løsningen, når du har behov for<br />
-                        et kompetent og fleksibelt eksamenstilsyn.<br />
-                        Du undgår besværet med administration af eget korps,<br />
+                        header={'Book din næste eksamensvagt her!'}>
+                        GoWork er løsningen, når du har behov for
+                        et kompetent og fleksibelt eksamenstilsyn.
+                        Du undgår besværet med administration af eget korps,
                         og sparer både tid og penge.<br /><br />
                         Fortæl os kort om dit behov.<br />
                         <KontaktModalButton openKontakt={this.showModal} />
                     </TwoColumnDiv>
                     <OneColumnDiv
-                        firmaHeader={'VI ER DEN FORETRUKNE LEVERANDØR HOS +50 UDDANNELSESSTEDER'}
+                        firmaHeader={'VI SAMARBEJDER MED 50+ UDDANNELSESSTEDER OG HJÆLPER DEM MED AT FINDE DE HELT RETTE EKSAMENSVAGTER.'}
                     >
                         <div style={{ marginTop: '2rem' }}>
                             <SchoolLogos />
                         </div>
                     </OneColumnDiv>
-                    <OneColumnDiv
+                    <TwoColumnDiv
+                        ReverseContainer
+                        imageDiv={<UddanelserImage />}
+                        header={'Tre gode grunde til at bruge os'}>
+                        <strong>Fleksibilitet </strong>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> */}
+                        <br />
+                        Skru op og ned for antal bestilte vagter som det passer dig<br /><br />
+                        <strong>Tilfredse kunder</strong>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> */}
+                        <br />
+                        9 af 10 kunder vil anbefale GoWork til deres <br />
+                        ven, kollega eller netværk - og det er vi pavestolte over.<br /><br />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg> */}
+                        <strong>Høj dækning</strong><br />
+                        Vi besætter 98 pct. af de opgaver vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved om vi er den rette til at løse opgaven. Når vi siger ja, så mener vi det – og arbejder fokuseret på at komme i mål, så du når dine deadlines.
+                    </TwoColumnDiv>
+                    {/* <OneColumnDiv
                         whiteDiv
-                        header={'3 gode grunde til at bruge os'}>
+                        header={'Tre gode grunde til at bruge os'}>
                         <CardContainer>
                             <Card
                                 cardPhoto={<CardMatch />}
@@ -71,15 +95,10 @@ class Uddanelser extends Component {
                                 cardHeader={'FLEKSIBILITET'}
                                 cardBody={'Skru op og ned\nfor antal bestilte vagter\nsom det passer dig.'}
                             />
-                            {/* <Card 
-                            cardPhoto = {<CardOkonomi />}
-                            cardHeader = {'ØKONOMI'}
-                            cardBody ={'Lavere vikargebyr\nend hos traditionelle\n vikarbureauer.'}
-                            /> */}
-
                         </CardContainer>
-                    </OneColumnDiv>
+                    </OneColumnDiv> */}
                     <OneColumnDiv
+                        lightBlueDiv
                         header={'Fleksible løsninger til alle behov'}
                         paragraph={`
                     Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få 

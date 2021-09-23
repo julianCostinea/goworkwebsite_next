@@ -11,7 +11,7 @@ export const ClientPhotoTine = () => {
             loading="eager"
             width= "100px" height="100px"
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/Clients/Ole.jpg" alt="Tine"
+            src="/images/Clients/Jacob2.png" alt="Tine"
             onLoad={() => setLoaded(true)}
             />
     </div>

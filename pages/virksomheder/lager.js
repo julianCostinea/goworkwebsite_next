@@ -13,14 +13,16 @@ class Okonomi extends Component {
             <React.Fragment>
                 <div className={classes.Content}>
                     <TwoColumnDiv
+                        smallIconReverse
                         imageDiv = {<LagerPhoto />}
                         header = {'Lager &\n Produktion'}>
-                   Lej friske vikarer til dit lager eller produktion!<br/><br/>
-                   Lager og produktion er en vigtig opgave,<br/>
-                   som skal varetages af kvalificerede og mødestabile<br/>
-                   ansatte. Vores team finder hurtigt de helt rigtige<br/>
-                   lager- og produktionsvikarer, så i kan komme <br />
-                   sikkert i mål med dagens opgaver, og bruge tiden <br />
+                   Lej friske vikarer til dit lager eller produktion! <br/><br/>
+                   Lager og produktion er en vigtig opgave,
+                   som skal varetages af kvalificerede og mødestabile
+                   ansatte. <br /><br/>
+                   Vores team finder hurtigt de helt rigtige
+                   lager- og produktionsvikarer, så i kan komme 
+                   sikkert i mål med dagens opgaver, og bruge tiden 
                    på det i er bedst til.<br/>
                     </TwoColumnDiv>
                     <OneColumnDiv 

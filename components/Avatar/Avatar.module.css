@@ -1,0 +1,48 @@
+.avatar{
+    display: none;
+}
+
+@keyframes float {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	50% {
+		transform: translate3d(0, 10px, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@media (min-width:1700px) {
+    .avatar{
+        display: block;
+        position: absolute;
+        animation: float 6s ease-in-out infinite;
+        z-index: 90;
+    }
+    .topLeft{
+        top:5%;
+        left:49%;
+    }
+    .topRight {
+        top:2%;
+        left:80%;
+    }
+    .bottomRight {
+        top: 15%;
+        left:82%;
+    }
+    .vikarJob {
+        background-color: #6cb0e1;
+        padding: 5px;
+        border-radius: 10rem;
+        color: white;
+    }
+    .avatar:nth-of-type(2) .vikarJob{
+        background-color: red;
+    }
+    .avatar:nth-of-type(3) .vikarJob{
+        background-color: orange;
+    }
+}

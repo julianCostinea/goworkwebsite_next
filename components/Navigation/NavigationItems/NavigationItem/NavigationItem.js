@@ -44,7 +44,7 @@ const NavigationItem = (props) => {
                 id={'navlink'}
                 href={props.link}
             >
-                <a onClick={backdropCtx.hideBackdrop}
+                <a onClick={props.clicked}
                     className={router.pathname == props.link ? classes.active : null}>
                     {props.children}
                 </a>

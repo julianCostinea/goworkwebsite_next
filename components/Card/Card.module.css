@@ -1,7 +1,6 @@
 .CardContainer{
     display: flex;
     flex-wrap: wrap ;
-    justify-content: center;
     align-items: center;
     margin-top: 1rem;
 }
@@ -44,7 +43,7 @@
         justify-content: center;
     }
     .Card{
-        margin: 0 2rem;
+        margin: 0 4.5rem;
         min-width: 18rem;
     }
     .Header{

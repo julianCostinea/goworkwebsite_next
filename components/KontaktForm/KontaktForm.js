@@ -196,14 +196,16 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-          <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
+        <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
         {this.props.noHeader ? null : (
           <React.Fragment>
+            <div>
             <h1>Kontakt</h1>
-            <h3 style={{ color: "#305d95", fontWeight: "bold"}}>
+            <p style={{fontSize:"1.25rem"}}>
               Er du interesseret i at vide mere? <br /> Fortæl os kort om dit
               personalebehov, <br /> så kontakter vi dig for en uforpligtende snak.
-            </h3>
+            </p>
+            </div>
           </React.Fragment>
         )}
         <h3 style={{ color: "red" }}>{this.state.errorMsg}</h3>
@@ -285,13 +287,13 @@ class KontaktForm extends Component {
               this.inputChangedHandler(event, form.phone.elementConfig.name)
             }
           />
-          <div style={{ textAlign: "right", padding: "10px" }}>
+          <div style={{ textAlign: "left", padding: "10px" }}>
             <button
               disabled={!this.state.formIsValid || this.state.formIsSent}
               type="submit"
               className={classes.Button}
             >
-              &nbsp;&nbsp;&nbsp;SEND{" "}
+              &nbsp;&nbsp;&nbsp;Send{" "}
               <div
                 className={classes.checkmarkDiv}
                 style={{

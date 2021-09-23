@@ -4,11 +4,14 @@
   box-sizing: border-box;
   text-align: left;
 }
+.Input input, .Input textarea{
+  background-color: #ebeef0;
+}
 
 .InputElement {
   outline: none;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 2px;
   background-color: white;
   font: inherit;
   padding: 6px 10px;

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import OkonomiPhoto from '../../components/ContentImages/FagOmraderImages/OkonomiPhoto';
@@ -8,26 +8,27 @@ import KontaktForm from '../../components/KontaktForm/KontaktForm';
 import classes from './ServicePage.module.css';
 
 class Okonomi extends Component {
-    render() { 
-        return ( 
+    render() {
+        return (
             <React.Fragment>
                 <div className={classes.Content}>
                     <TwoColumnDiv
-                        imageDiv = {<OkonomiPhoto />}
-                        header = {`ØKONOMI &\n FINANS`}>
-                   Lej et økonomitalent!<br/><br/>
-                   Mangler i en Controller, en Lønspecialist, en Business Analyst<br/>
-                   eller andre kompetente og pålidelige medarbejdere der kan<br/>
-                   håndtere økonomi- og finansopgaver?<br/><br/>
-                   Så kan vi hos GoWork finde dem til jer.<br/><br/>
-                   Med vores brede netværk af kandidater indenfor økonomi<br/>
-                   og finans kan i trygt overlade opgaven til os.<br/><br/>
-                   Vi udvælger de helt rette kandidater til midlertidige<br/>
-                   og midlertidige-til-permanente opgaver.
+                        smallIconReverse
+                        imageDiv={<OkonomiPhoto />}
+                        header={`Økonomi &\n Finans`}>
+                        Lej et økonomitalent!<br /><br />
+                        Mangler i en Controller, en Lønspecialist, en Business Analyst
+                        eller andre kompetente og pålidelige medarbejdere der kan
+                        håndtere økonomi- og finansopgaver?<br /><br />
+                        Så kan vi hos GoWork finde dem til jer.<br /><br />
+                        Med vores brede netværk af kandidater indenfor økonomi
+                        og finans kan i trygt overlade opgaven til os.<br /><br />
+                        Vi udvælger de helt rette kandidater til midlertidige
+                        og midlertidige-til-permanente opgaver.
                     </TwoColumnDiv>
-                    <OneColumnDiv 
-                        header = {'Eksempler på stillinger/opgaver vi løser'}>
-                        <div className = {classes.List}>
+                    <OneColumnDiv
+                        header={'Eksempler på stillinger/opgaver vi løser'}>
+                        <div className={classes.List}>
                             <ul>
                                 <li>Controller</li>
                                 <li>Analyse</li>
@@ -44,8 +45,8 @@ class Okonomi extends Component {
                 </div>
                 <KontaktForm />
             </React.Fragment>
-         );
+        );
     }
 }
- 
+
 export default Okonomi;

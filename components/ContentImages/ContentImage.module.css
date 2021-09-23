@@ -3,9 +3,10 @@
     display: none;
 }
 
-@media (min-width: 600px) {
-    .Laptop {
-        display: block;
-        width: 500px;
+@media (min-width: 780px) {
+    .ImageDiv{
+        width: 70%;
+        height: 70%;
+        float: right;
     }
 }

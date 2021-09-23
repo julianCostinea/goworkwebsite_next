@@ -1,23 +1,49 @@
-.Content{
+.Content {
     text-align: center;
 }
-.kontaktData{
+
+.kontaktData {
     margin: 2rem 0;
     text-align: center;
 }
-.GoogleMaps{
+
+.kontaktData div {
+    display: inline-block;
+}
+
+.kontaktData svg {
+    width: 1.2rem;
+    float: left;
+    color: #056ab2;
+}
+
+.GoogleMaps {
     display: flex;
     justify-content: center;
 }
-.GoogleMaps div{
+
+.GoogleMaps div {
     width: 100%;
 }
-.GoogleMaps iframe{
+
+.GoogleMaps iframe {
     border-radius: 5px;
 }
+
+@media (min-width: 760px) {
+    .kontaktFormDiv {
+        text-align: left;
+    }
+    .kontaktFormDiv .HeaderContainer {
+        width: 580px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 1100px) {
-    .kontaktData{
-        margin: 1rem 0 0 7rem;
+    .kontaktData {
+        margin: 0 0 0 7rem;
         text-align: left;
     }
 }

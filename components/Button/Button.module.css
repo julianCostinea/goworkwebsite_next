@@ -20,6 +20,12 @@
 .Button:focus{
   outline: black;
 }
+
+.Button svg { 
+  width: 1.2rem;
+  float: right;
+  margin-right: 1rem;
+}
 .whiteButton{
   color: #2a5c91;
   background-color: white;

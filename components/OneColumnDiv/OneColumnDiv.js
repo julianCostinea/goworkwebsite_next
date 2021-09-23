@@ -18,7 +18,7 @@ const OneColumnDiv = (props) => {
     <div className={attachedClasses.join(' ')}>
         <div>
             {props.overParagraph ? <p>{props.overParagraph}</p> : null}
-            <h4 className={ props.bigHeader ? classes.bigHeader : {}}>
+            <h4 className={ props.bigHeader ? classes.bigHeader : null}>
                 {props.header}
             </h4>
             {props.firmaHeader ? <h3>{props.firmaHeader}</h3> : null}

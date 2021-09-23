@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import DigitaltPhoto from '../../components/ContentImages/FagOmraderImages/DigitaltPhoto';
@@ -8,27 +8,28 @@ import KontaktForm from '../../components/KontaktForm/KontaktForm';
 import classes from './ServicePage.module.css';
 
 class Digitalt extends Component {
-    render() { 
-        return ( 
+    render() {
+        return (
             <React.Fragment>
                 <div className={classes.Content}>
                     <TwoColumnDiv
-                        imageDiv = {<DigitaltPhoto />}
-                        header = {'Digitalt & Kreativt'}>
-                            Lej et digitalt eller kreativt talent!<br/><br/>
-                            Generation Y og Z er specielle, fordi de er digitalt indfødte. <br/>
-                            Det skaber nogle oplagte muligheder - en digital generation<br/>
-                            til digitale opgaver! <br/><br/>
-                            GoWork har adgang til en store pulje af digitale og<br/>
-                            kreative talenter der findes blandt landets studerende og<br/>
-                            specialist/freelance-community.<br/><br />
-                            Vi udvælger og screener de helt rette kandidater til midlertidige<br/>
-                            og midlertidige-til-permanente opgaver, så din virksomhed <br/>
-                            kan få styrket sin online tilstedeværelse.
+                        smallIconReverse
+                        imageDiv={<DigitaltPhoto />}
+                        header={'Digitalt & Kreativt'}>
+                        Lej et digitalt eller kreativt talent! <br/><br/>
+                        Generation Y og Z er specielle, fordi de er digitalt indfødte.
+                        Det skaber nogle oplagte muligheder - en digital generation
+                        til digitale opgaver! <br /><br />
+                        GoWork har adgang til en store pulje af digitale og
+                        kreative talenter der findes blandt landets studerende og
+                        specialist/freelance-community.<br /><br />
+                        Vi udvælger og screener de helt rette kandidater til midlertidige
+                        og midlertidige-til-permanente opgaver, så din virksomhed
+                        kan få styrket sin online tilstedeværelse.
                     </TwoColumnDiv>
-                    <OneColumnDiv 
-                        header = {'Eksempler på de stillinger/opgaver vi løser'}>
-                        <div className = {classes.List}>
+                    <OneColumnDiv
+                        header={'Eksempler på de stillinger/opgaver vi løser'}>
+                        <div className={classes.List}>
                             <ul>
                                 <li>UX/UI designer</li>
                                 <li>Webdesigner</li>
@@ -48,8 +49,8 @@ class Digitalt extends Component {
                 </div>
                 <KontaktForm />
             </React.Fragment>
-         );
+        );
     }
 }
- 
+
 export default Digitalt;

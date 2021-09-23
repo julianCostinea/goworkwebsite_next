@@ -4,8 +4,14 @@
 }
 
 @media (min-width: 600px) {
-    .Laptop {
+    .CardPhoto {
         display: block;
-        width: 590px;
+        width: 28rem;
+    }
+}
+
+@media(max-width: 576px){
+    .CardPhoto {
+        width: 6rem;
     }
 }

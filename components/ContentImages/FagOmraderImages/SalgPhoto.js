@@ -9,7 +9,6 @@ const SalgImg = () => {
     <div className={classes.CardPhoto}>
       <Image
         loading="eager"
-        layout="fixed"
         width="380px"
         height="310px"
         className={classes.Laptop}

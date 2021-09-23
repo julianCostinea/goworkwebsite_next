@@ -7,12 +7,13 @@ import Logo from '../../Logo/Logo';
 const NavigationItems = (props) => (
     <ul className={classes.NavigationItems}>
         <Logo />
-        <NavigationItem link="/vikar">Jobsøgende</NavigationItem>
-        <NavigationItem link="/virksomheder">Virksomheder</NavigationItem>
-        <NavigationItem link="/uddannelser">Uddannelsessteder</NavigationItem>
-        <NavigationItem link="/om-os">Om&nbsp;os</NavigationItem>
+        <NavigationItem clicked = {props.closeModal} link="/vikar">Jobsøgende</NavigationItem>
+        <NavigationItem clicked = {props.closeModal} link="/virksomheder">Virksomheder</NavigationItem>
+        <NavigationItem clicked = {props.closeModal} link="/uddannelser">Uddannelsessteder</NavigationItem>
+        <NavigationItem clicked = {props.closeModal} link="/om-os">Om&nbsp;os</NavigationItem>
         <div className={classes.KontaktNav}>
             <NavigationItem 
+                clicked = {props.closeModal}
                 link="/kontakt">
                     Kontakt&nbsp;os
             </NavigationItem>
