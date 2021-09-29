@@ -8,7 +8,7 @@ const UddannelserImg = (props) => (
         <Image 
             loading="eager"
             width="400px" height="330px"
-            className={classes.Laptop} width="400px" height="330px"
+            className={classes.Laptop}
             src="/images/uddannelser.svg" alt="Uddannelser" />
     </div>
 );
