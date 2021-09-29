@@ -19,10 +19,9 @@ class OmOs extends Component {
                 <div className={classes.Content}>
                     <OneColumnDiv
                         header={'Kort om os'}
-                        paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. \n
-                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige
-                        opgaver – lige fra den nyudklækkede student som søger ufaglært arbejde i sit sabbatår til 
-                        den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
+                        paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. 
+
+                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige opgaver – lige fra den nyudklækkede student som søger ufaglært arbejde i sit sabbatår til den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
                     >
                     </OneColumnDiv>
 
@@ -31,7 +30,7 @@ class OmOs extends Component {
                         header={'Vores team'}
                     >
                         <CardContainer>
-                        <Card
+                            <Card
                                 cardPhoto={<TeamPhotos.CandidatePhotoIgnacio />}
                                 cardHeader={'Anne Jervelund'}
                                 cardBody={'HR Konsulent'}
@@ -51,8 +50,6 @@ class OmOs extends Component {
                                 cardHeader={'Erik Dreiøe'}
                                 cardBody={'HR Konsulent'}
                             />
-                        </CardContainer>
-                        <CardContainer>
                             <Card
                                 cardPhoto={<TeamPhotos.CandidatePhotoOle />}
                                 cardHeader={'Ole Susé'}
@@ -78,13 +75,13 @@ class OmOs extends Component {
                     <OneColumnDiv
                         lightBlueDiv
                         header={'Bliv klar til fremtiden'}
-                        paragraph={`Undgå en ’plads på tilskuerrækkerne’ i et arbejdsmarked under stærk forandring.\n
-                    Fremtidens arbejdsbegreb bliver en flydende størrelse, hvor ’fast job’ erstattes af digitale 
-                    arbejdspladser og midlertidige projekter. Det stiller krav til teknologi og 
-                    forandringsparathed hos arbejdsgivere, og fleksibilitet hos arbejdstagere.\n
-                    Hos GoWork forbereder vi dig på det der venter – og brænder for at bringe ambitiøse 
-                    mennesker og virksomheder sammen, nu og i fremtiden. \n
-                    Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætter i den samme gamle rille`}
+                        paragraph={`Undgå en ’plads på tilskuerrækkerne’ i et arbejdsmarked under stærk forandring.
+
+                    Fremtidens arbejdsbegreb bliver en flydende størrelse, hvor ’fast job’ erstattes af digitale arbejdspladser og midlertidige projekter. Det stiller krav til teknologi og forandringsparathed hos arbejdsgivere, og fleksibilitet hos arbejdstagere.
+
+                    Hos GoWork forbereder vi dig på det der venter – og brænder for at bringe ambitiøse mennesker og virksomheder sammen, nu og i fremtiden. 
+
+                    Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætte i den samme gamle rille`}
                     >
                     </OneColumnDiv>
 

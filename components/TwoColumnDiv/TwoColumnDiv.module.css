@@ -39,19 +39,18 @@
     font-size: 1.25rem;
 }
 
-@media(max-width: 576px){
+@media(max-width: 770px){
     .smallIconReverse{
         flex-direction: column-reverse;
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 770px) {
     .Container {
         flex-direction: row;
     }
     .ReverseContainer {
         flex-direction: row-reverse;
-        margin-left: -5rem;
     }
     .ReverseContainer .TextDiv h2{
         font-size: 2rem;
@@ -79,5 +78,8 @@
 @media(min-width: 780px){
     .TextDiv {
         max-width: 30%;
+    }
+    .ReverseContainer {
+        margin-left: -5rem;
     }
 }

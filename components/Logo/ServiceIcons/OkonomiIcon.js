@@ -6,7 +6,7 @@ import classes from './ServiceIcon.module.css';
 
 const logo = () => {
     return (
-    <Link href={'virksomheder/okonomi'}>
+    <Link href={'virksomheder/okonomi'} passHref>
     <div className={classes.Icon}>
             <Image 
                 width= "100px" height="100px"

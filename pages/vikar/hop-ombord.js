@@ -3,11 +3,7 @@ import React, { Component } from 'react';
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import CardContainer from '../../components/Card/CardContainer';
 import TextCard from '../../components/TextCard/TextCard';
-import BigCardStuderende from '../../components/ContentImages/CardImages/BigCardStuderende';
-import BigCardSabbatar from '../../components/ContentImages/CardImages/BigCardSabbatar';
-import BigCardSpecialist from '../../components/ContentImages/CardImages/BigCardSpecialist';
 import ApplicationProcess from '../../components/ContentImages/ApplicationProcess/ApplicationProcess';
-import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
 
 import classes from './HopOmbord.module.css';
 

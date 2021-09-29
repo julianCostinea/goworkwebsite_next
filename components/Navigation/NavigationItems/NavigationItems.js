@@ -6,7 +6,7 @@ import Logo from '../../Logo/Logo';
 
 const NavigationItems = (props) => (
     <ul className={classes.NavigationItems}>
-        <Logo />
+        <Logo clicked = {props.closeModal}/>
         <NavigationItem clicked = {props.closeModal} link="/vikar">Jobsøgende</NavigationItem>
         <NavigationItem clicked = {props.closeModal} link="/virksomheder">Virksomheder</NavigationItem>
         <NavigationItem clicked = {props.closeModal} link="/uddannelser">Uddannelsessteder</NavigationItem>

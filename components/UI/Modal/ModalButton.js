@@ -5,7 +5,7 @@ import classes from './Modal.module.css';
 
 const Button = (props) => {
     return (
-        <Link href={props.link}>
+        <Link href={props.link} passHref>
             <button onClick={props.modalClosed} className={classes.ModalButton}>
                 {props.buttonText}
             </button>

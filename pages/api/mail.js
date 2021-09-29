@@ -1,5 +1,3 @@
-import { resolveHref } from "next/dist/next-server/lib/router/router";
-
 const mail = require("@sendgrid/mail");
 import { mailSchema } from "../../schemas/mail";
 
@@ -32,7 +30,6 @@ export default async function handler(req, res) {
         method: "POST",
       });
       const parsedRecaptchaResponse = await recaptchaResponse.json();
-      console.log("RESPONSE FROM CAPTCHA:", parsedRecaptchaResponse);
       if (!parsedRecaptchaResponse.success || parsedRecaptchaResponse.score < 0.4) {
         throw new Error(
           "Kunne ikke sende mail. Prøv venligst igen eller kontakt os på 66 10 65 00."
@@ -51,7 +48,6 @@ export default async function handler(req, res) {
       });
       res.status(200).json({ message: "success" });
     } catch (error) {
-      console.log(error);
       res.status(error.code ?? 502).send({
         message:
           error.message ??

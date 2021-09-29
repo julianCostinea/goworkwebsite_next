@@ -21,9 +21,10 @@
     height: 60px;
     width: 150px;
 }
-@media (min-width: 500px) {
+@media (min-width: 760px) {
     .LogoContainer{
         flex-direction: row;
+        flex-wrap: wrap;
     }
     .splitRow{
         display: flex;

@@ -11,7 +11,7 @@ const Logo = (props) => {
   return(
   <div className={classes.Logo} style={{ height: props.height, cursor: "pointer" }}>
     <Link href="/" passHref>
-      <a onClick={backdropCtx.hideBackdrop}>
+      <a onClick={props.clicked}>
         <Image
           loading="eager"
           quality="100"

@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-import ArrowLeft from './arrowLeft';
-import ArrowRight from './arrowRight';
-
 
 const Carousel = (props) => {
     useEffect(() => {
@@ -25,19 +22,19 @@ const Carousel = (props) => {
             targetSlide.classList.add('current-slide');
         }
 
-        const updateDots = (currentDot, targetDot)=>{
+        const updateDots = (currentDot, targetDot) => {
             currentDot.classList.remove('current-slide');
             targetDot.classList.add('current-slide');
         }
 
-        const hideShowArrows = (slides, prevButton, nextButton, targetIndex)=>{
+        const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
             if (targetIndex === 0) {
                 prevButton.classList.add('is-hidden');
                 nextButton.classList.remove('is-hidden');
             } else if (targetIndex === slides.length - 1) {
                 nextButton.classList.add('is-hidden');
                 prevButton.classList.remove('is-hidden');
-            } else{
+            } else {
                 prevButton.classList.remove('is-hidden');
                 nextButton.classList.remove('is-hidden');
             }
@@ -45,12 +42,12 @@ const Carousel = (props) => {
 
         //next Slide
         const nextButton = document.querySelector('.carousel__button--right');
-        nextButton.addEventListener('click', function() {
+        nextButton.addEventListener('click', function () {
             const currentSlide = track.querySelector('.current-slide');
             const nextSlide = currentSlide.nextElementSibling;
             const currentDot = dotsNav.querySelector('.current-slide');
             const nextDot = currentDot.nextElementSibling;
-            const nextIndex = slides.findIndex(slide=>slide === nextSlide);
+            const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
             moveToSlide(track, currentSlide, nextSlide);
             updateDots(currentDot, nextDot);
@@ -59,12 +56,12 @@ const Carousel = (props) => {
 
         //prev Slide
         const prevButton = document.querySelector('.carousel__button--left');
-        prevButton.addEventListener('click', function() {
+        prevButton.addEventListener('click', function () {
             const currentSlide = track.querySelector('.current-slide');
             const prevSlide = currentSlide.previousElementSibling;
             const currentDot = dotsNav.querySelector('.current-slide');
             const prevDot = currentDot.previousElementSibling;
-            const prevIndex = slides.findIndex(slide=>slide === prevSlide);
+            const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
             moveToSlide(track, currentSlide, prevSlide);
             updateDots(currentDot, prevDot);
@@ -96,9 +93,11 @@ const Carousel = (props) => {
 
     return (
         <div className='carousel'>
-            <button className="carousel__button carousel__button--left is-hidden">
-                {<ArrowLeft />}
-            </button>
+            <div className="carousel__button carousel__button--left is-hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+            </div>
             <div className="carousel__track-container">
                 <ul className="carousel__track">
                     <li className="carousel__slide current-slide">
@@ -136,9 +135,11 @@ const Carousel = (props) => {
                     </li>
                 </ul>
             </div>
-            <button className="carousel__button carousel__button--right">
-                {<ArrowRight />}
-            </button>
+            <div className="carousel__button carousel__button--right">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" width="20px" height="16px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
 
             <div className="carousel__nav">
                 <button className="carousel__indicator current-slide"></button>

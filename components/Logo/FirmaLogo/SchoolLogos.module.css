@@ -21,8 +21,25 @@
     height: 60px;
     width: 150px;
 }
-@media (min-width: 500px) {
+@media (min-width: 760px) {
     .LogoContainer{
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .splitRow{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width: 500px) {
+    .splitRow{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Logo {
+        margin: 5px;
+    }
+    .RUCLogo{
+        margin-top: 16px;
     }
 }

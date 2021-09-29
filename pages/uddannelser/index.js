@@ -7,11 +7,6 @@ import KontaktModalButton from '../../components/Button/KontaktModalButton';
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import SchoolLogos from '../../components/Logo/FirmaLogo/SchoolLogos';
-import CardContainer from '../../components/Card/CardContainer';
-import Card from '../../components/Card/Card';
-import CardMatch from '../../components/ContentImages/CardImages/CardMatch';
-import CardFleksibilitet from '../../components/ContentImages/CardImages/CardFleksibilitet';
-import CardOkonomi from '../../components/ContentImages/CardImages/CardOkonomi';
 import UddannelserImage from '../../components/ContentImages/UddannelserImage';
 import ClientVideoDiv from '../../components/ClientVideoDiv/ClientVideoDiv';
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
@@ -101,10 +96,10 @@ class Uddanelser extends Component {
                         lightBlueDiv
                         header={'Fleksible løsninger til alle behov'}
                         paragraph={`
-                    Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få 
-                    eksamensvagter til fuld outsourcing. \n
-                    Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn,
-                    sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt. \n
+                    Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.
+
+                    Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn,sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
+                    
                     Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid. 
                     `}
                     />

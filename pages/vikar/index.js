@@ -5,6 +5,7 @@ import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import { VikarPhoto } from '../../components/ContentImages/JobLaptop';
 import CardContainer from '../../components/Card/CardContainer';
+import Avatar from '../../components/Avatar/Avatar';
 import Card from '../../components/Card/Card';
 import CardFrihed from '../../components/ContentImages/CardImages/CardFrihed';
 import CardKompetence from '../../components/ContentImages/CardImages/CardKompetence';
@@ -24,6 +25,9 @@ class Vikar extends Component {
                     <meta name="description" content="JOBSØGENDE SIDE" />
                 </Head>
                 <div className={classes.Content}>
+                    <Avatar topRight vikarJob="Lager" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
+                    <Avatar topLeft vikarJob="Support" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
+                    <Avatar bottomRight vikarJob="Kundeservice" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
                     <TwoColumnDiv
                         imageDiv={<VikarPhoto />}
                         buttonText={'Se stillinger'}
@@ -40,9 +44,7 @@ class Vikar extends Component {
                     </TwoColumnDiv>
                     <OneColumnDiv
                         header={'Attention all doers'}
-                        paragraph={`Vores vikar- og specialist team består af ambitiøse mennesker i starten af deres karriere, der 
-                        springer til med kort varsel, har lyst til at møde nye virksomheder og kollegaer, og nyder den 
-                            frihed som på vikarkontrakt giver. Lyder det som noget for dig? `}
+                        paragraph={`Vores vikar- og specialist team består af ambitiøse mennesker i starten af deres karriere, der springer til med kort varsel, har lyst til at møde nye virksomheder og kollegaer, og nyder den frihed som på vikarkontrakt giver. Lyder det som noget for dig? `}
                     >
                         Opret dit CV – hvis ikke nu, hvornår så?
                     </OneColumnDiv>

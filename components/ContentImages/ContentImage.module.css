@@ -3,8 +3,13 @@
     display: none;
 }
 
+.ImageDiv{
+    display: none;
+}
+
 @media (min-width: 780px) {
     .ImageDiv{
+        display: block;
         width: 70%;
         height: 70%;
         float: right;

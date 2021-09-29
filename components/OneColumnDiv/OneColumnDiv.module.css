@@ -48,12 +48,16 @@ h4.bigHeader{
     margin-bottom: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1100px) {
     .Container{
         font-size: 5rem;
         padding:4rem 1rem 5rem 1rem;
     }
     h4.bigHeader{
         font-size: 5rem;
+    }
+    .Paragraph p {
+        width: 50%;
+        margin: 0 auto;
     }
 }

@@ -6,7 +6,7 @@ import classes from './ServiceIcon.module.css';
 
 const logo = () => {
     return (
-    <Link href={'/virksomheder/salg'}>
+    <Link href={'/virksomheder/salg'} passHref>
         <div className={classes.Icon}>
                 <Image width="100px" height="100px" src="/images/virksomheder/fagomrader/rocket.svg" alt="Kundeservice Icon" />
                 <p style={{marginTop:'0.5rem', fontWeight:'bold'}}>SALG & KUNDESERVICE</p>

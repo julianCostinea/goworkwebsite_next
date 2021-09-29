@@ -5,11 +5,6 @@ import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import FirmaLogos from '../../components/Logo/FirmaLogo/FirmaLogos';
 import ServiceIcons from '../../components/Logo/ServiceIcons/ServiceIcons';
-import CardContainer from '../../components/Card/CardContainer';
-import Card from '../../components/Card/Card';
-import CardMatch from '../../components/ContentImages/CardImages/CardMatch';
-import CardOkonomi from '../../components/ContentImages/CardImages/CardOkonomi';
-import CardAttitude from '../../components/ContentImages/CardImages/CardAttitude';
 import KontaktModalButton from '../../components/Button/KontaktModalButton';
 import VirksomehederImg from '../../components/ContentImages/VirksomhederImage';
 import VirksomehederImg2 from '../../components/ContentImages/VirksomhederImage2';
@@ -108,8 +103,7 @@ class Virksomheder extends Component {
                     <OneColumnDiv
                         lightBlueDiv
                         header={'Kvikke hoveder til de fleste opgaver'}
-                        paragraph={`Vi holder os skarpt opdateret på udviklingen indenfor flere fagområder. Sådan sikrer vi at din
-                    virksomhed til enhver tid har de stærkeste kandidater til opgaven.`}
+                        paragraph={`Vi holder os skarpt opdateret på udviklingen indenfor flere fagområder. Sådan sikrer vi at din virksomhed til enhver tid har de stærkeste kandidater til opgaven.`}
                     >
                         Vælg det område du søger personale til:
                         <ServiceIcons />
