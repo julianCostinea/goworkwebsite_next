@@ -23,7 +23,7 @@ const TwoColumnDiv = (props) => {
 
     const formattedHeader = props.header.split('\n').map((str, index) => <h2 className={classes.Header__h2} key={index}>{str}</h2>);
     return(
-    <div className={`${classes.Container} ${props.ReverseContainer ? classes.ReverseContainer : null} ${props.smallIconReverse ? classes.smallIconReverse : null}`}>
+    <div className={`${classes.Container} ${props.ReverseContainer ? classes.ReverseContainer : null} ${props.smallIconReverse ? classes.smallIconReverse : null} ${props.lightBlueDiv ? classes.lightBlueDiv : null}`}>
         <div className={classes.TextDiv}>
             <div className={classes.Header}>
                 {formattedHeader}

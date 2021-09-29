@@ -11,6 +11,9 @@ import UddannelserImage from '../../components/ContentImages/UddannelserImage';
 import ClientVideoDiv from '../../components/ClientVideoDiv/ClientVideoDiv';
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
 import UddanelserImage from '../../components/ContentImages/UddanelserImage';
+import UddanelserImage3 from '../../components/ContentImages/UddanelserImage3';
+import Avatar from '../../components/Avatar/Avatar';
+import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhotos';
 
 class Uddanelser extends Component {
     state = {
@@ -31,6 +34,9 @@ class Uddanelser extends Component {
                 </Head>
                 <KontaktModal show={this.state.showModal} modalClosed={this.closeModal} />
                 <div className={classes.Content}>
+                    <Avatar topRight vikarJob="Koordinator" AvatarPhoto={<TeamPhotos.CandidatePhotoJonas />} />
+                    <Avatar topLeft vikarJob="Vagt" AvatarPhoto={<TeamPhotos.CandidatePhotoJulian />} />
+                    <Avatar bottomRight vikarJob="Vagt" AvatarPhoto={<TeamPhotos.CandidatePhotoErik />} />
                     <TwoColumnDiv
                         imageDiv={<UddannelserImage />}
                         header={'Book din næste eksamensvagt her!'}>
@@ -48,24 +54,38 @@ class Uddanelser extends Component {
                             <SchoolLogos />
                         </div>
                     </OneColumnDiv>
+                    <ClientVideoDiv
+                        whiteDiv
+                        header={''}>
+                        <h4>Hvad siger vores kunder? </h4>
+                        <p>Hør det fra Skanderborg Gymnasium her.</p> <br /><br />
+                        <div style={{ fontStyle: "italic", textAlign: "left" }}>
+                            &quot;GoWork leverede varen i forhold til vores eksamener. <br />
+                            Det var kvalificerede medarbejdere - <br />
+                            unge mennesker med overblik. <br />
+                            Og de var både hurtige og vågne.&quot;<br /><br /><br />
+                        </div>
+                        <p><strong>Uddannelsesleder, Jacob</strong> </p>
+                    </ClientVideoDiv>
                     <TwoColumnDiv
-                        ReverseContainer
-                        imageDiv={<UddanelserImage />}
-                        header={'Tre gode grunde til at bruge os'}>
-                        <strong>Fleksibilitet </strong>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        lightBlueDiv
+                        imageDiv={<UddanelserImage3 />}
+                        header={''}>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
+                        <h2>Hvorfor bruge os?</h2> <br/>
+                        <strong>Fleksibilitet </strong>
                         <br />
-                        Skru op og ned for antal bestilte vagter som det passer dig<br /><br />
-                        <strong>Tilfredse kunder</strong>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        Skru op og ned for antal bestilte vagter som det passer dig<br /><br /><br />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" height="20px" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
+                        <strong>Tilfredse kunder</strong>
                         <br />
                         9 af 10 kunder vil anbefale GoWork til deres <br />
-                        ven, kollega eller netværk - og det er vi pavestolte over.<br /><br />
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        ven, kollega eller netværk - og det er vi pavestolte over.<br /><br /><br />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" height="20px" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg> */}
                         <strong>Høj dækning</strong><br />
@@ -92,8 +112,8 @@ class Uddanelser extends Component {
                             />
                         </CardContainer>
                     </OneColumnDiv> */}
-                    <OneColumnDiv
-                        lightBlueDiv
+                    {/* <OneColumnDiv
+                        whiteDiv
                         header={'Fleksible løsninger til alle behov'}
                         paragraph={`
                     Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.
@@ -102,19 +122,15 @@ class Uddanelser extends Component {
                     
                     Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid. 
                     `}
-                    />
-                    <ClientVideoDiv
-                        whiteDiv
-                        header={'Hvad siger vores kunder om os?'}>
-                        <p>Hør det fra Skanderborg Gymnasium her.</p> <br /><br />
-                        <div style={{ fontStyle: "italic", textAlign: "left" }}>
-                            &quot;GoWork leverede varen i forhold til vores eksamener. <br />
-                            Det var kvalificerede medarbejdere - <br />
-                            unge mennesker med overblik. <br />
-                            Og de var både hurtige og vågne.&quot;<br /><br />
-                        </div>
-                        <p><strong>Uddannelsesleder, Jacob Peter Thomsen</strong> </p>
-                    </ClientVideoDiv>
+                    /> */}
+                    <TwoColumnDiv
+                        imageDiv={<UddanelserImage />}
+                        ReverseContainer
+                        header={'Fleksible løsninger til alle behov'}>
+                        Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.<br /><br />
+                        Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn,sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
+                        Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid.
+                    </TwoColumnDiv>
                 </div>
             </div>
         );

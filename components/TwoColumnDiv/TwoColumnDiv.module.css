@@ -7,6 +7,10 @@
     padding: 3rem 1rem;
 }
 
+.lightBlueDiv{
+    background-color: #94B5C0;
+}
+
 .Header__h2, .Paragraph__p {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -51,6 +55,9 @@
     }
     .ReverseContainer {
         flex-direction: row-reverse;
+    }
+    .ReverseContainer .TextDiv{
+        margin-left: 8rem;
     }
     .ReverseContainer .TextDiv h2{
         font-size: 2rem;

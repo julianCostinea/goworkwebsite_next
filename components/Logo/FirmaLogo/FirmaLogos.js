@@ -5,6 +5,8 @@ import classes from './FirmaLogo.module.css';
 import SimplyLogo from './SimplyLogo';
 import ValeurLogo from './ValeurLogo';
 import RUCLogo from './RUCLogo';
+import StenhusLogo from './StenhusLogo';
+import SkanderborgLogo from './SkanderborgLogo';
 import HNLogo from './HNLogo';
 import AALogo from './AALogo';
 
@@ -21,6 +23,10 @@ const logo = () => {
             </div>
             <div className={classes.splitRow}>
                 <RUCLogo />
+                <StenhusLogo />
+            </div>
+            <div className={classes.splitRow}>
+                <SkanderborgLogo />
             </div>
         </div>
     )

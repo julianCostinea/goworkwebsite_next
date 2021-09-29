@@ -115,7 +115,7 @@ class HopOmbord extends Component {
                             />
                             <TextCard
                                 cardHeader={'Økonomi & Finans'}
-                                cardBody={'bogholder, controller, business analyst, lønspecialist, montage og kvalitetstjek, m.fl.'}
+                                cardBody={'bogholder, controller, business analyst, lønspecialist, m.fl.'}
                             />
                         </CardContainer>
                     </OneColumnDiv>

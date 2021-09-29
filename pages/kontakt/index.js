@@ -54,7 +54,7 @@ class Kontakt extends Component {
         <div className ={classes.HeaderContainer}>
           <h2>Skriv til os</h2>
           <p>
-            Vi sidder klar til at hjælpe dig godt i gang. Hvis du er jobsøger, så beder vi dig sende os en ansøgning på et aktuelt jobopslag – ikke via denne kontaktformular.
+            Vi sidder klar til at hjælpe dig godt i gang. Hvis du er jobsøger, så beder vi dig sende os en ansøgning på et aktuelt jobopslag.
           </p>
         </div>
 
