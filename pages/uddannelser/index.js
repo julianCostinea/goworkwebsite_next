@@ -13,6 +13,7 @@ import KontaktModal from '../../components/UI/Modal/KontaktModal';
 import UddanelserImage from '../../components/ContentImages/UddanelserImage';
 import UddanelserImage3 from '../../components/ContentImages/UddanelserImage3';
 import Avatar from '../../components/Avatar/Avatar';
+import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
 import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhotos';
 
 class Uddanelser extends Component {
@@ -67,14 +68,13 @@ class Uddanelser extends Component {
                         </div>
                         <p><strong>Uddannelsesleder, Jacob</strong> </p>
                     </ClientVideoDiv>
-                    <TwoColumnDiv
+                    <TwoColumnRoundedDiv
                         lightBlueDiv
                         imageDiv={<UddanelserImage3 />}
-                        header={''}>
+                        header={'Hvorfor bruge os?'}>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
-                        <h2>Hvorfor bruge os?</h2> <br/>
                         <strong>Fleksibilitet </strong>
                         <br />
                         Skru op og ned for antal bestilte vagter som det passer dig<br /><br /><br />
@@ -90,7 +90,7 @@ class Uddanelser extends Component {
                         </svg> */}
                         <strong>Høj dækning</strong><br />
                         Vi besætter 98 pct. af de opgaver vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved om vi er den rette til at løse opgaven. Når vi siger ja, så mener vi det – og arbejder fokuseret på at komme i mål, så du når dine deadlines.
-                    </TwoColumnDiv>
+                    </TwoColumnRoundedDiv>
                     {/* <OneColumnDiv
                         whiteDiv
                         header={'Tre gode grunde til at bruge os'}>
@@ -123,14 +123,15 @@ class Uddanelser extends Component {
                     Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid. 
                     `}
                     /> */}
-                    <TwoColumnDiv
-                        imageDiv={<UddanelserImage />}
-                        ReverseContainer
-                        header={'Fleksible løsninger til alle behov'}>
+
+                    <TwoColumnRoundedDiv
+                    imageDiv={<UddanelserImage />}
+                    ReverseContainer
+                    header={'Fleksible løsninger til alle behov'}>
                         Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.<br /><br />
                         Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn,sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
                         Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid.
-                    </TwoColumnDiv>
+                    </TwoColumnRoundedDiv>
                 </div>
             </div>
         );

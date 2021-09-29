@@ -167,7 +167,7 @@ a {
 }
 @media (min-width: 750px) {
   main{
-    margin-bottom: 15rem;
+    margin-bottom: 15.5rem;
   }
   .carousel {
     height: 19rem;

@@ -4,8 +4,11 @@ import classes from './TwoColumnRoundedDiv.module.css';
 
 const TwoColumnRoundedDiv = (props) => {
     let attachedClasses = [classes.Container];
-    if (props.floatLeft) {
-        attachedClasses = [classes.Container, classes.ReverseContainer];
+    if (props.ReverseContainer) {
+        attachedClasses.push(classes.ReverseContainer);
+    }
+    if (props.lightBlueDiv) {
+        attachedClasses.push(classes.lightBlueDiv);
     }
 
     const formattedHeader = props.header.split('\n').map((str, index) => <h1 className={classes.Header__h1} key={index}>{str}</h1>);

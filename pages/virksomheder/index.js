@@ -8,15 +8,15 @@ import ServiceIcons from '../../components/Logo/ServiceIcons/ServiceIcons';
 import KontaktModalButton from '../../components/Button/KontaktModalButton';
 import VirksomehederImg from '../../components/ContentImages/VirksomhederImage';
 import VirksomehederImg2 from '../../components/ContentImages/VirksomhederImage2';
-
-import classes from './Virksomheder.module.css';
-
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
+import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
 import CarouselContainer from '../../components/CarouselContainer/CarouselContainer';
 import Carousel from '../../components/UI/Carousel/Carousel';
 import * as ClienPhotos from '../../components/ContentImages/ClientPhotos/ClientPhotos';
 import * as VikarPhotos from '../../components/ContentImages/VikarPhotos/VikarPhotos';
 import Avatar from '../../components/Avatar/Avatar';
+
+import classes from './Virksomheder.module.css';
 
 class Virksomheder extends Component {
     state = {
@@ -77,10 +77,10 @@ class Virksomheder extends Component {
                             />
                         </CardContainer>
                     </OneColumnDiv> */}
-                    <TwoColumnDiv
+                    <TwoColumnRoundedDiv
                         ReverseContainer
                         imageDiv={<VirksomehederImg2 />}
-                        header={''}
+                        header={'Hvorfor bruge os?'}
                         >
                         <strong>Et godt match </strong>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,7 +100,7 @@ class Virksomheder extends Component {
                         </svg> */}
                         <strong>Høj dækning</strong><br />
                         Vi besætter 98 pct. af de opgaver vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved om vi er den rette til at løse opgaven. Når vi siger ja, så mener vi det – og arbejder fokuseret på at komme i mål, så du når dine deadlines.
-                    </TwoColumnDiv>
+                    </TwoColumnRoundedDiv>
                     <OneColumnDiv
                         lightBlueDiv
                         header={'Kvikke hoveder til de fleste opgaver'}

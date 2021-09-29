@@ -17,7 +17,7 @@
 }
 .Header{
     padding: 0;
-    height: 16rem;
+    min-height: 13rem;
     background-color: white;
     border-radius: 10px 10px 0 0;
 }
@@ -46,7 +46,14 @@
         margin: 0 4.5rem;
         min-width: 18rem;
     }
+    .TeamCard{
+        margin: 0 4.5rem;
+        max-width: 15rem;
+    }
     .Header{
         min-height: 19rem;
+    }
+    .TeamCard .Header{
+        min-height: 13rem;
     }
 }

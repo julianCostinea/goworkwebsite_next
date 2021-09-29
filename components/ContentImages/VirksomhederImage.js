@@ -1,15 +1,20 @@
-import React from 'react';
-import Image from 'next/image';
+import React, {useState} from 'react';
+import Image from 'next/image'
 
 import classes from './ContentImage.module.css'
 
-const VirksomehederImg = (props) => (
-    <div>
-        <Image 
+const VirksomhederImage = () => {
+    const [loaded, setLoaded] = useState(false);
+    return (
+    <div className={classes.ImageDiv2}>
+        <Image
             loading="eager"
-            width="350px" height="330px"
-            className={classes.Laptop} src="/images/jobsoegende/jobsoegende-team_v2.svg" alt="Virksomeheder" />
+            width="400px" height="400px"
+            style={loaded ? {} : { display: 'none' }} 
+            src='/images/jobsoegende/jobsoegende-team_v2.svg' alt="Virksomheder"
+            onLoad={() => setLoaded(true)}
+            />
     </div>
-);
+);}
 
-export default VirksomehederImg;
+export default VirksomhederImage;

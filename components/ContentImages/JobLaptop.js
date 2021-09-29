@@ -6,7 +6,7 @@ import classes from './ContentImage.module.css'
 export const VikarPhoto = () => {
     const [loaded, setLoaded] = useState(false);
     return (
-    <div className={classes.VikarPhoto}>
+    <div className={classes.ImageDiv}>
         <Image
             loading="eager"
             width="400px" height="330px"

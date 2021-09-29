@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import CardContainer from '../../components/Card/CardContainer';
-import Card from '../../components/Card/Card';
+import TeamCard from '../../components/Card/TeamCard';
 import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhotos';
 
 import classes from './OmOs.module.css';
@@ -30,42 +30,42 @@ class OmOs extends Component {
                         header={'Vores team'}
                     >
                         <CardContainer>
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoIgnacio />}
                                 cardHeader={'Anne Jervelund'}
                                 cardBody={'HR Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoJonas />}
                                 cardHeader={'Jonas Jeppesen'}
                                 cardBody={'HR Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoJulian />}
                                 cardHeader={'Julian Costinea'}
                                 cardBody={'HR Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoErik />}
                                 cardHeader={'Erik Dreiøe'}
                                 cardBody={'HR Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoOle />}
                                 cardHeader={'Ole Susé'}
                                 cardBody={'Senior Konsulent & Indehaver'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoPeter />}
                                 cardHeader={'Peter Prese'}
                                 cardBody={'HR Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoArne />}
                                 cardHeader={'Arne Lauritzen'}
                                 cardBody={'Senior Konsulent'}
                             />
-                            <Card
+                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoTrine />}
                                 cardHeader={'Trine le Fevre'}
                                 cardBody={'Bogholder'}
