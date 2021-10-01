@@ -196,7 +196,7 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-        <Script src="https://www.google.com/recaptcha/api.js?render=6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8"></Script>
+        <Script src="https://www.google.com/recaptcha/api.js?render=6LclBKEcAAAAAFHWOOrAQcZ4U4FR1jHb2hDLKet7"></Script>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <div>
