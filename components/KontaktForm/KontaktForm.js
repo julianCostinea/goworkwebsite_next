@@ -166,7 +166,7 @@ class KontaktForm extends Component {
     }
     grecaptcha.ready(() => {
       grecaptcha
-        .execute("6LcVZSkcAAAAAJq7M6sq2rnUp5FfmPLNG6itAZr8", {
+        .execute("6LclBKEcAAAAAFHWOOrAQcZ4U4FR1jHb2hDLKet7", {
           action: "homepage",
         })
         .then((token) => {
