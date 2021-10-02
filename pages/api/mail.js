@@ -40,7 +40,7 @@ export default async function handler(req, res) {
       await mailSchema.validate(req.body);
 
       await mail.send({
-        to: "jonas@go-work.dk",
+        to: "julian@go-work.dk",
         from: "kontakt@go-work.dk",
         subject: `Mail sendt gennem hjemmesiden. Afsender: ${body.email}`,
         text: message,
