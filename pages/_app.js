@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Script type="text/javascript" src="/js/analytics.js"></Script>
       <Head>
         <link rel="icon" href="/logoIcon.png" />
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2f7dcd32-8bd8-433e-bb6f-03dadafb2ad9" data-blockingmode="auto" type="text/javascript"></script>
       </Head>
       <Component {...pageProps} />
     </Layout>
