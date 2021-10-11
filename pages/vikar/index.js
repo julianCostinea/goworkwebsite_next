@@ -31,7 +31,7 @@ class Vikar extends Component {
                     <TwoColumnDiv
                         imageDiv={<VikarPhoto />}
                         buttonText={'Se stillinger'}
-                        buttonLink={'/forJobs.html'}
+                        buttonLink={'/vikar/ledige-stillinger'}
                         button2Text={'Opret CV'}
                         button2Link={'/vikar/opret-cv'}
                         header={'Søger du\net fleksibelt job?'}

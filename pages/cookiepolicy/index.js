@@ -1,13 +1,10 @@
-import Script from 'next/script';
-import Layout from '../../hoc/Layout/Layout';
+import classes from './cookiepolicy.module.css';
 
-function CookieDeclaration({ Component, pageProps }) {
+function CookieDeclaration() {
     return (
-        <Layout>
-            <div style={{maxWidth: "80vw"}}>
-            <Script id="CookieDeclaration" src="https://consent.cookiebot.com/2f7dcd32-8bd8-433e-bb6f-03dadafb2ad9/cd.js" type="text/javascript" async></Script>      <Script type="text/javascript" src="/js/analytics.js"></Script>
-            </div>
-        </Layout>
+        <div className={classes.Content}>
+            <iframe id={'cookiePolicy'} src="/cookiePolicy.html" width="100%" height="1000px"></iframe>
+        </div>
     )
 }
 

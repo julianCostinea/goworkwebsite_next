@@ -76,7 +76,6 @@ class Layout extends Component {
           </BackdropContextProvider>
           <main className={classes.Content}>{this.props.children}</main>
           <Footer />
-        ;
       </Aux>
     );
   }
