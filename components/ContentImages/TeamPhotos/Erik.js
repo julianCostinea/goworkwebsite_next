@@ -8,7 +8,9 @@ export const CandidatePhotoErik = () => {
     return (
     <div className={classes.CardPhoto}>
         <Image
-            width="320px" height="304px" 
+            width="272px" height="256px" 
+            unoptimized
+            quality= {100}
             style={loaded ? {} : { display: 'none' }} 
             src="/images/team/Erik.jpg" alt="Erik photo"
             onLoad={() => setLoaded(true)}
