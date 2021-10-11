@@ -1,0 +1,4 @@
+body > div:nth-of-type(3) {
+    margin: 0 auto;
+    max-width: 50%;
+}
