@@ -9,7 +9,7 @@ export const CandidatePhotoAnne = () => {
     <div className={classes.CardPhoto}>
         <Image
             width="272px" height="256px" 
-            quality= {100}
+            loading="eager"
             objectFit="fill"
             style={loaded ? {} : { display: 'none' }} 
             src="/images/team/Anne.jpg" alt="Anne photo"

@@ -9,6 +9,7 @@ export const CandidatePhotoJonas = () => {
     <div className={classes.CardPhoto}>
         <Image
             width="320px" height="304px" 
+            loading="eager"
             style={loaded ? {} : { display: 'none' }} 
             src="/images/team/Jonas.jpg" alt="Jonas photo"
             onLoad={() => setLoaded(true)}
