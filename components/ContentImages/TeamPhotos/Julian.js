@@ -10,7 +10,7 @@ export const CandidatePhotoJulian = () => {
         <Image
             width="320px" height="304px" 
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/team/julian.jpg" alt="Julian photo"
+            src="/images/team/Julian.jpg" alt="Julian photo"
             onLoad={() => setLoaded(true)}
             />
     </div>
