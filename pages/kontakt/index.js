@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import FacebookIcon from "../../components/Icons/facebookIcon";
 import LinkedInIcon from "../../components/Icons/linkedInIcon";
-import InstagramIcon from "../../components/Icons/InstagramIcon";
+import InstagramIcon from "../../components/Icons/instagramIcon";
 import KontaktForm from "../../components/KontaktForm/KontaktForm";
 
 import classes from "./Kontakt.module.css";
