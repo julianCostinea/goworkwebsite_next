@@ -8,7 +8,7 @@ const logo = () => {
     <div className={classes.Logo}>
             <Image
                 width="320px" height="304px"
-                src="/images/UCL.svg" alt="University College Lillebælt Logo" />
+                src="/images/uddannelser/UCL_horisontal.svg" alt="University College Lillebælt Logo" />
     </div>
     )
 };

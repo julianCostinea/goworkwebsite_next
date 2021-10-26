@@ -96,11 +96,9 @@ class HopOmbord extends Component {
                     <OneColumnDiv
                         lightBlueDiv
                         header={'Fagområder'}
-                        paragraph={`Vi har et særligt fokus på midlertidige jobs indenfor salg, det digitale og kreative, kundeservice,
-                      operations, eksamentilsyn, økonomi og administration. Her er et overblik over nogle af de
-                      stillinger / opgaver vi løser:`}
+                        paragraph={`Vi har et særligt fokus på midlertidige jobs indenfor salg, det digitale og kreative, kundeservice, operations, eksamentilsyn, økonomi og administration. Her er et overblik over nogle af de stillinger / opgaver vi løser:`}
                     >
-                        <CardContainer>
+                        <CardContainer alignLeft>
                             <TextCard
                                 cardHeader={`Salg & Kundeservice:`}
                                 cardBody={'telefoninterviewer, mødebooker, phoner, salgskonsulent, sælger, kundeservicemedarbejder, call center medarbejder og kunderådgiver, m.fl.'}

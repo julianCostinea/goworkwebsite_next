@@ -1,11 +1,11 @@
 .Button{
-  background-color: #1c73b6; 
+  background-color: #255c92; 
   color: white; 
-  border: 2px solid #1c73b6;
+  border: 2px solid #255c92;
   padding: 16px;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 1rem;
   margin-left: 0;
   transition-duration: 0.4s;
@@ -13,9 +13,9 @@
   border-radius: 10px;
 }
 .Button:hover{
-  box-shadow: 1px 2px 0px #1c73b6;
-  background-color: #1c73b6; 
-  border: 2px solid #1c73b6;
+  box-shadow: 1px 2px 0px #255c92;
+  background-color: #255c92; 
+  border: 2px solid #255c92;
 }
 .Button:focus{
   outline: black;
@@ -27,13 +27,13 @@
   margin-right: 1rem;
 }
 .whiteButton{
-  color: #2a5c91;
+  color: #255c92;
   background-color: white;
 }
 .whiteButton:hover{
-  box-shadow: 1px 2px 0px #4470a0;
+  box-shadow: 1px 2px 0px #255c92;
   background-color: white; 
-  border: 2px solid #4470a0;
+  border: 2px solid #255c92;
 }
 .orangeButton{
   border: 2px solid #ecac45;

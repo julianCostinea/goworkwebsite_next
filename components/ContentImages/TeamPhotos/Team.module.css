@@ -1,17 +1,7 @@
 .CardPhoto{
-    height: 100%;
+    width: 15rem;
 }
 .CardPhoto img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.CardPhotoErik{
-    width: 8rem;
-    height: 5rem;
-}
-
-.CardPhotoErik img{
     width: 100%;
     height: 100%;
     border-radius: 50%;

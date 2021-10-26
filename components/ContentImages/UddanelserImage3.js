@@ -6,8 +6,8 @@ import classes from './ContentImage.module.css'
 const UddanelserImage = (props) => (
     <div className={classes.ImageDiv2}>
         <Image
-            width="450px" height="600px"
-            className={classes.Laptop} src="/images/uddannelser/dude_removebg.png" alt="Hvorfor os" />
+            width="500px" height="500px" 
+            className={classes.Laptop} src="/images/virksomheder/virksomheder_godtmatch_v3.svg" alt="Hvorfor os" />
     </div>
 );
 

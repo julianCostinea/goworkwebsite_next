@@ -3,19 +3,22 @@
     display: none;
 }
 
-.ImageDiv, .ImageDiv2{
-    display: none;
-}
-
 @media (min-width: 780px) {
     .ImageDiv{
-        display: block;
         width: 100%;
         height: 100%;
     }
-    .ImageDiv2{
+    .ImageDiv2, .ImageDiv3{
         display: block;
-        max-width: 100%;
+        max-width: 90%;
         max-height: 80%;
     }
+    .ImageDiv4 img {
+        width: 35rem;
+    }
 }
+@media (min-width: 1600px) {
+    .ImageDiv2{
+        margin-left: 2rem;
+    }
+  }

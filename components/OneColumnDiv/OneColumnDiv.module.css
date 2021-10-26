@@ -1,5 +1,5 @@
 .Container{
-    background-color: #E7E7DE;
+    background-color: #E7F1F7;
     display: block;
     padding:6rem 1rem 4rem 1rem;
     font-size: 0.8rem;
@@ -11,15 +11,15 @@
     margin-bottom: 1rem;
 }
 .Container h3{
-    font-size: 1rem;
-    font-weight: normal;
+    font-size: 15px;
+    color: #255c92;
 }
 
 .White{
     background: white;
 }
 .lightBlueDiv{
-    background-color: #94B5C0;
+    background-color: #AFC4DB;
 }
 
 .Children{

@@ -13,13 +13,13 @@ import AarhusKatedralskole from './AarhusKat';
 const logo = () => {
     return (
         <div className={classes.LogoContainer}>
-            <RUCLogo />
             <SkanderborgLogo />
+            <HaderslevKatedralskole />
             <StenhusLogo />
             <Roskilde_VUCLogo />
             <UCLLogo />
             <AarhusKatedralskole />
-            <HaderslevKatedralskole />
+            <RUCLogo />
         </div>
     )
 };

@@ -63,7 +63,8 @@ class Layout extends Component {
   render() {
     return (
       <Aux>
-          <BackdropContextProvider>
+        <BackdropContextProvider>
+          <div className="grid">
             <Modal show={this.state.showModal} modalClosed={this.closeModal} />
             <Toolbar
               showBox={this.state.showBoxShadow}
@@ -73,9 +74,10 @@ class Layout extends Component {
               open={this.state.showSideDrawer}
               closed={this.sideDrawerClosedHandler}
             />
-          </BackdropContextProvider>
-          <main className={classes.Content}>{this.props.children}</main>
-          <Footer />
+            <main className={classes.Content}>{this.props.children}</main>
+            <Footer />
+          </div>
+        </BackdropContextProvider>
       </Aux>
     );
   }

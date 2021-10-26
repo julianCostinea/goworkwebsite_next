@@ -27,7 +27,7 @@ class Vikar extends Component {
                 <div className={classes.Content}>
                     <Avatar topRight vikarJob="Lager" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
                     <Avatar topLeft vikarJob="Support" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
-                    <Avatar bottomRight vikarJob="Kundeservice" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
+                    <Avatar bottomRight bottomRightLow vikarJob="Kundeservice" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
                     <TwoColumnDiv
                         imageDiv={<VikarPhoto />}
                         buttonText={'Se stillinger'}

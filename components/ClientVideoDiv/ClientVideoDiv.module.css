@@ -1,18 +1,18 @@
 .Container{
-    background-color: #1c73b6;
+    background-color: #AFC4DB;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
     text-align: center;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
 }
 
 .Header{
     margin-top: 2rem;
     padding-top: 2rem;
-    background-color: #1c73b6;
+    background-color: #AFC4DB;
 }
 
 .Header h4{
@@ -27,7 +27,6 @@
 }
 
 .TextDiv h4 {
-    text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 2rem;
@@ -52,8 +51,11 @@
     .Container{
         flex-direction: row;
     }
+    .TextDiv h4 {
+        text-align: left;
+    }
     .TextDiv{
-        margin-left: 7rem;
+        margin-right: 7rem;
     }
     .TextDiv p{
         text-align: left;

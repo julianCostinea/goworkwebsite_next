@@ -10,7 +10,7 @@ const toolbar = (props) => {
         attachedClasses = [classes.Container, classes.BoxShadow];
     }
     return(
-        <div className={attachedClasses.join(' ')}>
+        <div className={`${attachedClasses.join(' ')} Toolbar`}>
             <header className={classes.Toolbar}>
                 <DrawerToggle clicked={props.drawerToggleClicked} />
                 <nav className={classes.DesktopOnly}>

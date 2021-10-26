@@ -7,6 +7,7 @@ import Backdrop from '../../UI/Backdrop/Backdrop';
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import FacebookIcon from '../../Icons/facebookIcon';
 import LinkedInIcon from '../../Icons/linkedInIcon';
+import InstagramIcon from '../../Icons/instagramIcon';
 
 const SideDrawer = ( props ) => {
     //const backdropCtx = useContext(BackdropContext)
@@ -22,9 +23,9 @@ const SideDrawer = ( props ) => {
                     <NavigationItems closeModal = {props.closed}/>
                 </nav>
                 <div className={classes.Footer}>
-                    <h4 style={{marginLeft:'3px'}}>Følg os:</h4>
-                    <FacebookIcon link ='https://www.facebook.com/goworkodense/' />
-                    <LinkedInIcon link = 'https://dk.linkedin.com/company/go-work-aps'/>
+                    <FacebookIcon/>
+                    <LinkedInIcon />
+                    <InstagramIcon />
                 </div>
             </div>
         </Aux>

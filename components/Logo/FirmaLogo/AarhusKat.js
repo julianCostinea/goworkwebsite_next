@@ -5,10 +5,11 @@ import classes from './SchoolLogos.module.css';
 
 const AarhusKatedralskole = () => {
     return (
-    <div className={classes.Logo}>
+    <div className={classes.LogoScaled}>
             <Image 
                 width="320px" height="304px"
-                src="/images/uddannelser/aarhus_katedralskole.png" alt="Aarhus katedralskole Logo" />
+                quality={100}
+                src="/images/uddannelser/aarhus_katedralskole.svg" alt="Aarhus katedralskole Logo" />
     </div>
     )
 };

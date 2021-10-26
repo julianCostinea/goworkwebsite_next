@@ -3,14 +3,16 @@ import Image from 'next/image';
 
 import classes from './Team.module.css'
 
-export const CandidatePhotoIgnacio = () => {
+export const CandidatePhotoAnne = () => {
     const [loaded, setLoaded] = useState(false);
     return (
     <div className={classes.CardPhoto}>
         <Image
-            width="320px" height="304px" 
+            width="272px" height="256px" 
+            quality= {100}
+            objectFit="fill"
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/team/Ignacio.jpg" alt="Ignacio photo"
+            src="/images/team/Anne.jpg" alt="Anne photo"
             onLoad={() => setLoaded(true)}
             />
     </div>

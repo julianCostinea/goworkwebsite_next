@@ -14,7 +14,7 @@ import UddanelserImage from '../../components/ContentImages/UddanelserImage';
 import UddanelserImage3 from '../../components/ContentImages/UddanelserImage3';
 import Avatar from '../../components/Avatar/Avatar';
 import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
-import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhotos';
+import * as VikarPhotos from '../../components/ContentImages/VikarPhotos/VikarPhotos';
 
 class Uddanelser extends Component {
     state = {
@@ -35,9 +35,9 @@ class Uddanelser extends Component {
                 </Head>
                 <KontaktModal show={this.state.showModal} modalClosed={this.closeModal} />
                 <div className={classes.Content}>
-                    <Avatar topRight vikarJob="Koordinator" AvatarPhoto={<TeamPhotos.CandidatePhotoJonas />} />
-                    <Avatar topLeft vikarJob="Vagt" AvatarPhoto={<TeamPhotos.CandidatePhotoJulian />} />
-                    <Avatar bottomRight vikarJob="Vagt" AvatarPhoto={<TeamPhotos.CandidatePhotoErik />} />
+                    <Avatar topRight vikarJob = "Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
+                    <Avatar topLeft vikarJob = "Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
+                    <Avatar bottomRight vikarJob = "Koordinator" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
                     <TwoColumnDiv
                         imageDiv={<UddannelserImage />}
                         header={'Book din næste eksamensvagt her!'}>
@@ -49,14 +49,21 @@ class Uddanelser extends Component {
                         <KontaktModalButton openKontakt={this.showModal} />
                     </TwoColumnDiv>
                     <OneColumnDiv
-                        firmaHeader={'VI SAMARBEJDER MED 50+ UDDANNELSESSTEDER OG HJÆLPER DEM MED AT FINDE DE HELT RETTE EKSAMENSVAGTER.'}
+                        firmaHeader={'VI SAMARBEJDER MED 50+ UDDANNELSESSTEDER OG HJÆLPER DEM MED AT FINDE DE HELT RETTE EKSAMENSVAGTER'}
                     >
                         <div style={{ marginTop: '2rem' }}>
                             <SchoolLogos />
                         </div>
                     </OneColumnDiv>
+                    <TwoColumnRoundedDiv
+                        imageDiv={<UddanelserImage />}
+                        ReverseContainer
+                        header={'Fleksible løsninger til alle behov'}>
+                        Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.<br /><br />
+                        Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn, sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
+                        Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid.
+                    </TwoColumnRoundedDiv>
                     <ClientVideoDiv
-                        whiteDiv
                         header={''}>
                         <h4>Hvad siger vores kunder? </h4>
                         <p>Hør det fra Skanderborg Gymnasium her.</p> <br /><br />
@@ -69,27 +76,18 @@ class Uddanelser extends Component {
                         <p><strong>Uddannelsesleder, Jacob</strong> </p>
                     </ClientVideoDiv>
                     <TwoColumnRoundedDiv
-                        lightBlueDiv
-                        imageDiv={<UddanelserImage3 />}
+                        whiteDiv
+                        ReverseContainer
+                        imageDiv={<UddanelserImage3/>}
                         header={'Hvorfor bruge os?'}>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg> */}
-                        <strong>Fleksibilitet </strong>
+                        <strong>Undgå tidskrævende administration med eget tilsyn</strong>
                         <br />
-                        Skru op og ned for antal bestilte vagter som det passer dig<br /><br /><br />
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" height="20px" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg> */}
-                        <strong>Tilfredse kunder</strong>
+                        I sender blot jeres bestilling via vores online bestillingsplatform, så klarer vi resten – lige fra rekruttering til orientering, gennemførelse og aflønning af vagter. <br /><br />
+                        <strong>Tryghed</strong>
                         <br />
-                        9 af 10 kunder vil anbefale GoWork til deres <br />
-                        ven, kollega eller netværk - og det er vi pavestolte over.<br /><br /><br />
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" height="20px" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                        </svg> */}
-                        <strong>Høj dækning</strong><br />
-                        Vi besætter 98 pct. af de opgaver vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved om vi er den rette til at løse opgaven. Når vi siger ja, så mener vi det – og arbejder fokuseret på at komme i mål, så du når dine deadlines.
+                        Med indgående kendskab til gennemførelse af eksamenstilsyn kombineret med en grundig rekrutteringsproces sikrer vi, at du altid har et kompetent og velforberedt tilsyn ved hånden. <br /><br />
+                        <strong>Sikkerhed for det rette antal vagter</strong><br />
+                        Vi afdækker jeres behov i god tid, afstemmer forventninger til eksamensperioden, og går målrettet til værks, så I har det rette antal vagter klar til den travle tid – også hvis der opstår sygemeldinger.
                     </TwoColumnRoundedDiv>
                     {/* <OneColumnDiv
                         whiteDiv
@@ -123,15 +121,6 @@ class Uddanelser extends Component {
                     Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid. 
                     `}
                     /> */}
-
-                    <TwoColumnRoundedDiv
-                        imageDiv={<UddanelserImage />}
-                        ReverseContainer
-                        header={'Fleksible løsninger til alle behov'}>
-                        Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.<br /><br />
-                        Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn,sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
-                        Vores mission er, i alt sin enkelthed, at bringe jer sikkert igennem en hektisk eksamenstid.
-                    </TwoColumnRoundedDiv>
                 </div>
             </div>
         );

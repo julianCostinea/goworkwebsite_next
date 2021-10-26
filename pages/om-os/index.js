@@ -18,6 +18,7 @@ class OmOs extends Component {
                 </Head>
                 <div className={classes.Content}>
                     <OneColumnDiv
+                        whiteDiv
                         header={'Kort om os'}
                         paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. 
 
@@ -26,12 +27,12 @@ class OmOs extends Component {
                     </OneColumnDiv>
 
                     <OneColumnDiv
-                        whiteDiv
-                        header={'Vores team'}
+                        lightBlueDiv
+                        header={'Vores Team'}
                     >
                         <CardContainer>
                             <TeamCard
-                                cardPhoto={<TeamPhotos.CandidatePhotoIgnacio />}
+                                cardPhoto={<TeamPhotos.CandidatePhotoAnne />}
                                 cardHeader={'Anne Jervelund'}
                                 cardBody={'HR Konsulent'}
                             />
@@ -53,7 +54,7 @@ class OmOs extends Component {
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoOle />}
                                 cardHeader={'Ole Susé'}
-                                cardBody={'Senior Konsulent & Indehaver'}
+                                cardBody={`Senior Konsulent \n& Indehaver`}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoPeter />}
@@ -73,7 +74,7 @@ class OmOs extends Component {
                         </CardContainer>
                     </OneColumnDiv>
                     <OneColumnDiv
-                        lightBlueDiv
+                        whiteDiv
                         header={'Bliv klar til fremtiden'}
                         paragraph={`Undgå en ’plads på tilskuerrækkerne’ i et arbejdsmarked under stærk forandring.
 
@@ -81,7 +82,7 @@ class OmOs extends Component {
 
                     Hos GoWork forbereder vi dig på det der venter – og brænder for at bringe ambitiøse mennesker og virksomheder sammen, nu og i fremtiden. 
 
-                    Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætte i den samme gamle rille`}
+                    Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætte i den samme gamle rille.`}
                     >
                     </OneColumnDiv>
 

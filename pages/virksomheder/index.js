@@ -7,7 +7,7 @@ import FirmaLogos from '../../components/Logo/FirmaLogo/FirmaLogos';
 import ServiceIcons from '../../components/Logo/ServiceIcons/ServiceIcons';
 import KontaktModalButton from '../../components/Button/KontaktModalButton';
 import VirksomehederImg from '../../components/ContentImages/VirksomhederImage';
-import VirksomehederImg2 from '../../components/ContentImages/VirksomhederImage2';
+import VirksomehederImg3 from '../../components/ContentImages/VirksomhederImage3';
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
 import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
 import CarouselContainer from '../../components/CarouselContainer/CarouselContainer';
@@ -46,12 +46,12 @@ class Virksomheder extends Component {
                         header={'Lej en GoWork’er \n - og få opgaven løst'}>
                         GoWork formidler ambitiøse mennesker i starten af
                         deres karriere til vikar- og specialiststillinger.
-                        Nemt, enkelt og økonomisk. <br /><br /><br />
+                        Nemt, enkelt og økonomisk. <br /><br />
                         Hvilken opgave eller projekt søger du personale til? <br />
                         <KontaktModalButton openKontakt={this.showModal} />
                     </TwoColumnDiv>
                     <OneColumnDiv
-                        firmaHeader={'VI SAMARBEJDER MED 100+ SUCCESRIGE VIRKSOMHEDER OG HJÆLPER DEM MED AT FINDE DE HELT RETTE MEDARBEJDERE.'}
+                        firmaHeader={'VI SAMARBEJDER MED 100+ SUCCESRIGE VIRKSOMHEDER OG HJÆLPER DEM MED AT FINDE DE HELT RETTE MEDARBEJDERE'}
                     >
                         <FirmaLogos />
                     </OneColumnDiv>
@@ -79,27 +79,26 @@ class Virksomheder extends Component {
                     </OneColumnDiv> */}
                     <TwoColumnRoundedDiv
                         ReverseContainer
-                        imageDiv={<VirksomehederImg2 />}
+                        imageDiv={<VirksomehederImg3 />}
                         header={'Hvorfor bruge os?'}
                         >
-                        <strong>Et godt match </strong>
+                        <strong>Undgå tidsspild</strong>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
                         <br />
-                        Via vores omfattende netværk til dygtige kandidater kombineret med en grundig rekrutteringsproces sørger vi for, at du undgår tidsspild på det forkerte match. Kunderne giver vores matchevne 4,5 ud af 5 stjerner.  <br /><br />
-                        <strong>Tilfredse kunder</strong>
+                        Vores kandidater scorer 8,6 ud af 10 mulige ift. i hvor høj grad, de matcher arbejdsgiverens forventninger. Via datadrevet annoncering og et solidt rekrutteringshåndværk sørger vi for, at du undgår tidsspild på de forkerte match. <br /><br />
+                        <strong>Den bedste anbefaling (Net Promoter Score)</strong>
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
                         <br />
-                        9 af 10 kunder vil anbefale GoWork til deres <br />
-                        ven, kollega eller netværk - og det er vi pavestolte over.<br /><br />
+                        9 af 10 kunder vil anbefale GoWork til deres ven, kollega eller netværk. På vores netop gennemførte NPS 2021 Survey scorer vi 43 (hvilket svarer til fremragende).<br /><br />
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg> */}
-                        <strong>Høj dækning</strong><br />
-                        Vi besætter 98 pct. af de opgaver vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved om vi er den rette til at løse opgaven. Når vi siger ja, så mener vi det – og arbejder fokuseret på at komme i mål, så du når dine deadlines.
+                        <strong>Sikkerhed for at opgaven bliver løst</strong><br />
+                        Vi besætter 98 pct. af de opgaver, vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved, om vi er den rette samarbejdspartner til opgaven. Når vi siger ja, så mener vi det, og arbejder fokuseret på at komme i mål – så du undgår at skubbe dine deadlines.
                     </TwoColumnRoundedDiv>
                     <OneColumnDiv
                         lightBlueDiv
@@ -137,7 +136,7 @@ class Virksomheder extends Component {
                             Og de var både hurtige og vågne`}
                             vikarPhoto3={<ClienPhotos.ClientPhotoTine />}
                             slide3Name={'Jacob'}
-                            firma3={'Skandeborg Gymnasium'}
+                            firma3={'Skanderborg Gymnasium'}
                         />
                     </CarouselContainer>
                 </div>

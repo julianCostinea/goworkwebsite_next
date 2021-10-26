@@ -1,29 +1,35 @@
-.CardContainer{
+.CardContainer {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
     justify-content: center;
 }
-.Card{
+
+.CardContainer.alignLeft {
+    justify-content: unset;
+}
+
+.Card {
     margin: 1rem;
     max-width: 18rem;
+    margin-top: 1.5rem;
     /* box-shadow: 0 1px 2px black;
     transition: box-shadow .3s; */
 }
-.Card:hover{
+
+.Card:hover {
     /* box-shadow: 0 3px 6px black;  */
     /* cursor: pointer; */
 }
-.Header{
+
+.Header {
     padding: 0;
     min-height: 13rem;
-    background-color: white;
     border-radius: 10px 10px 0 0;
 }
 
-.Body{
-    background-color: white;
+.Body {
     padding: 1rem;
     height: 10rem;
     color: #161637;
@@ -31,29 +37,36 @@
     border-radius: 0px 0px 10px 10px;
 }
 
-.Pink{
+.Pink {
     background-color: #ed7495;
 }
-.Orange{
+
+.Orange {
     background-color: #f29722;
 }
 
+@media (min-width: 760px) {
+    .CardContainer.alignLeft {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 1100px) {
-    .CardContainer{
+    .CardContainer {
         align-items: unset;
     }
-    .Card{
+    .Card {
         margin: 0 4.5rem;
         min-width: 18rem;
     }
-    .TeamCard{
+    .TeamCard {
         margin: 0 4.5rem;
         max-width: 15rem;
     }
-    .Header{
-        min-height: 19rem;
+    .Header {
+        min-height: 15rem;
     }
-    .TeamCard .Header{
+    .TeamCard .Header {
         min-height: 13rem;
     }
 }

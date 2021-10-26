@@ -13,6 +13,7 @@ const Modal = (props) => {
                 style={{
                     transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
                     opacity: props.show ? '1' : '0',
+                    zIndex: props.show ? '500' : '0',
                     transition: '1s'
                 }}>
                 <ModalBox modalClosed={props.modalClosed} />

@@ -21,6 +21,7 @@ const input = (props) => {
         <React.Fragment>
           <input
             required
+            placeholder={props.label}
             style={{
               borderColor: props.invalid && props.touched ? "red" : null,
             }}
@@ -37,6 +38,7 @@ const input = (props) => {
       InputElement = (
         <React.Fragment>
           <textarea
+            placeholder={props.label}
             required
             style={{
               borderColor: props.invalid && props.touched ? "red" : null,
@@ -54,6 +56,7 @@ const input = (props) => {
       InputElement = (
         <React.Fragment>
           <input
+            placeholder={props.label}
             className={classes.noHoney}
             {...props.elementConfig}
             value={props.value}
@@ -66,6 +69,7 @@ const input = (props) => {
       InputElement = (
         <React.Fragment>
           <input
+            placeholder={props.label}
             required
             className={classes.InputElement}
             {...props.elementConfig}
@@ -79,7 +83,7 @@ const input = (props) => {
   }
   return (
     <div className={classes.Input}>
-      <label htmlFor={props.id}>{props.icon}{props.label}</label>
+      <label htmlFor={props.id}>{props.icon}</label>
       {InputElement}
     </div>
   );

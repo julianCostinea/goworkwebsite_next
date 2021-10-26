@@ -3,7 +3,7 @@
 }
 .cols2{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 5rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
