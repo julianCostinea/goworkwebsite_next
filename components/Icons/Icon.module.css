@@ -4,6 +4,15 @@
     margin-right: 5px;
 }
 
+.Icon svg{
+    transition: all 0.2s;
+    color: #255c92;
+}
+
+.Icon svg:hover{
+    transform: scale(1.1);
+}
+
 .Icon a svg{
     width: 2rem;
     height: 2rem;

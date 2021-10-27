@@ -57,12 +57,13 @@ class KontaktForm extends Component {
         label: "Telefon*",
         validation: {
           required: true,
+          isNumber: true,
           minLength: 8,
           maxLength: 11,
         },
         valid: false,
         touched: false,
-        errorMessage: "Telefonnummer skal være mellem 8 og 11 tal",
+        errorMessage: "Telefonnummer skal være et tal mellem 8 og 11 karakterer",
       },
       description: {
         elementType: "textarea",
@@ -108,6 +109,10 @@ class KontaktForm extends Component {
 
     if (rules.required) {
       isValid = value.trim() !== "" && isValid;
+    }
+
+    if (rules.isNumber) {
+      isValid = !isNaN(value) && isValid;
     }
 
     if (rules.minLength) {
