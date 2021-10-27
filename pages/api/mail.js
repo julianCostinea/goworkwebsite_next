@@ -35,12 +35,11 @@ export default async function handler(req, res) {
           "Kunne ikke sende mail. Prøv venligst igen eller kontakt os på 66 10 65 00."
         );
       }
-      
 
       await mailSchema.validate(req.body);
 
       await mail.send({
-        to: "julian@go-work.dk",
+        to: "job@go-work.dk",
         from: "kontakt@go-work.dk",
         subject: `Mail sendt gennem hjemmesiden. Afsender: ${body.email}`,
         text: message,
