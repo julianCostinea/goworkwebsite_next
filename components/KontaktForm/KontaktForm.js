@@ -20,11 +20,11 @@ class KontaktForm extends Component {
         label: "Navn*",
         validation: {
           required: true,
-          minLength: 2,
+          minLength: 4,
         },
         valid: false,
         touched: false,
-        errorMessage: "Navn skal være længere end 2 bogstaver",
+        errorMessage: "Navn skal være længere end 3 bogstaver",
       },
       email: {
         elementType: "input",
@@ -185,6 +185,7 @@ class KontaktForm extends Component {
               return response.json().then((result) => {
                 this.setState({ isLoading: false });
                 this.setState({ errorMsg: result.message });
+                this.setState({ formIsSent: false });
               });
             }
           });

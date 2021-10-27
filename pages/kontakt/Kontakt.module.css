@@ -14,7 +14,11 @@
 .kontaktData svg {
     width: 1.2rem;
     float: left;
-    color: #056ab2;
+    color: #255c92;
+    transition: all 0.2s;
+}
+.kontaktData svg:hover {
+    transform: scale(1.1);
 }
 
 .GoogleMaps {

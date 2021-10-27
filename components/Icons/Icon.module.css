@@ -3,6 +3,8 @@
     margin: 0px;
     margin-right: 5px;
 }
-.Icon img{
-    width: 30px;
+
+.Icon a svg{
+    width: 2rem;
+    height: 2rem;
 }
