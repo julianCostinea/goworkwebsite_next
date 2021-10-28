@@ -185,7 +185,7 @@ html, body {
   background-color: #2a5c91;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 810px) {
   .DesktopOnly {
     display: none;
   }
@@ -194,7 +194,7 @@ html, body {
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 811px) {
   :global(.App) {
     min-width: 580px;
   }
@@ -207,19 +207,8 @@ html, body {
   .DrawerToggle {
     display: none;
   }
-}
-
-@media (min-width: 500px) {
-  .Logo {
-    margin-right: 3rem;
-  }
-  .Footer {
-    margin-top: 0;
-    flex-direction: row;
-    text-align: left;
-  }
-  .Aligned {
-    max-width: 40%;
+  .NavigationItems {
+    flex-flow: row;
   }
   .NavigationItem {
     margin: 0 1rem;
@@ -264,8 +253,19 @@ html, body {
   .NavigationItem:hover::after {
     width: 100%;
   }
-  .NavigationItems {
-    flex-flow: row;
+}
+
+@media (min-width: 500px) {
+  .Logo {
+    margin-right: 3rem;
+  }
+  .Footer {
+    margin-top: 0;
+    flex-direction: row;
+    text-align: left;
+  }
+  .Aligned {
+    max-width: 40%;
   }
 }
 

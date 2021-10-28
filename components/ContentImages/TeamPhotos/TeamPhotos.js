@@ -6,3 +6,4 @@ export * from './Anne';
 export * from './Arne';
 export * from './Trine';
 export * from './Peter';
+export * from './Emil';
