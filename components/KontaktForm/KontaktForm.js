@@ -209,7 +209,7 @@ class KontaktForm extends Component {
             <h1>Kontakt</h1>
             <p style={{fontSize:"1.25rem"}}>
               Er du interesseret i at vide mere? <br /> Fortæl os kort om dit
-              personalebehov, <br /> så kontakter vi dig for en uforpligtende snak.
+              personalebehov, <br /> så kontakter vi dig til en uforpligtende snak.
             </p>
             </div>
           </React.Fragment>

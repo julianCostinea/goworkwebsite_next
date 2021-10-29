@@ -37,14 +37,14 @@ class Vikar extends Component {
                         header={'Søger du\net fleksibelt job?'}
                         underText={'Læs mere om dine muligheder'}
                     >
-                        Bliv GoWork’er! Og få tilbudt vikarjobs
+                        Bliv GoWork’er! Få tilbudt vikarjobs
                         der passer til din hverdag,
                         som studerende, nyuddannet
                         eller specialist. <br /><br />
                     </TwoColumnDiv>
                     <OneColumnDiv
                         header={'Attention all doers'}
-                        paragraph={`Vores vikar- og specialist team består af ambitiøse mennesker i starten af deres karriere, der springer til med kort varsel, har lyst til at møde nye virksomheder og kollegaer, og nyder den frihed som på vikarkontrakt giver. Lyder det som noget for dig? `}
+                        paragraph={`Vores vikar- og specialist team består af ambitiøse mennesker i starten af deres karriere, der springer til med kort varsel, har lyst til at møde nye virksomheder og kollegaer, samt nyder den frihed som jobs på vikarkontrakt giver. Lyder det som noget for dig? `}
                     >
                         Opret dit CV – hvis ikke nu, hvornår så?
                     </OneColumnDiv>

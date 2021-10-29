@@ -93,7 +93,7 @@ class Virksomheder extends Component {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
                         <br />
-                        9 af 10 kunder vil anbefale GoWork til deres ven, kollega eller netværk. På vores netop gennemførte NPS 2021 Survey scorer vi 43 (hvilket svarer til fremragende).<br /><br />
+                        9 af 10 kunder vil anbefale GoWork til deres ven, kollega eller netværk. På vores netop gennemførte NPS 2021 Survey scorer vi 89 (hvilket svarer til verdensklasse).<br /><br />
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg> */}
@@ -124,19 +124,25 @@ class Virksomheder extends Component {
                             vikarPhoto1={<ClienPhotos.ClientPhotoJacob />}
                             slide1Name={'Jacob'}
                             firma1={'Alex Andersen Ølund A/S'}
-                            slide2={`GoWork kan noget andet – og det fungerer godt. De formidler selvstændige mennesker 
-                            med den rette indstilling, som altid er klar på nye udfordringer, og hurtige til 
-                            at sætte sig ind i opgaverne. `}
-                            vikarPhoto2={<ClienPhotos.ClientPhotoRikke />}
-                            slide2Name={'Rikke'}
-                            firma2={'Valeur A/S'}
-                            slide3={`GoWork leverede varen i forhold til vores eksamener.
+                            // slide2={`GoWork kan noget andet – og det fungerer godt. De formidler selvstændige mennesker 
+                            // med den rette indstilling, som altid er klar på nye udfordringer, og hurtige til 
+                            // at sætte sig ind i opgaverne. `}
+                            // vikarPhoto2={<ClienPhotos.ClientPhotoRikke />}
+                            // slide2Name={'Rikke'}
+                            // firma2={'Valeur A/S'}
+                            slide3={`Vi er særdeles tilfredse med vores samarbejde med GoWork. Vi er i en branche, hvor behovet
+                            for personale varierer enormt - ofte med kort varsel. Med det samarbejde vi har
+                            med GoWork, er vi aldrig bange for at tage opgaver ind.`}
+                            vikarPhoto3={<ClienPhotos.ClientPhotoJacob />}
+                            slide3Name={'Jacob'}
+                            firma3={'Alex Andersen Ølund A/S'}
+                            slide2={`GoWork leverede varen i forhold til vores eksamener.
                             Det var kvalificerede medarbejdere -
                             unge mennesker med overblik.
                             Og de var både hurtige og vågne`}
-                            vikarPhoto3={<ClienPhotos.ClientPhotoTine />}
-                            slide3Name={'Jacob'}
-                            firma3={'Skanderborg Gymnasium'}
+                            vikarPhoto2={<ClienPhotos.ClientPhotoTine />}
+                            slide2Name={'Jacob'}
+                            firma2={'Skanderborg Gymnasium'}
                         />
                     </CarouselContainer>
                 </div>

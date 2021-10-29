@@ -22,7 +22,7 @@ class OmOs extends Component {
                         header={'Kort om os'}
                         paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. 
 
-                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige opgaver – lige fra den nyudklækkede student som søger ufaglært arbejde i sit sabbatår til den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
+                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige opgaver – lige fra den nyudklækkede student på sabbatår til den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
                     >
                     </OneColumnDiv>
 
