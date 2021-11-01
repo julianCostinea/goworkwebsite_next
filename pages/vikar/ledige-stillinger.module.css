@@ -1,6 +1,7 @@
 .Content{
     max-width: 65%;
     margin: 0 auto;
+    padding: 1rem 0;
 }
 
 .Content > iframe {
