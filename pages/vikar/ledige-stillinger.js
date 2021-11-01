@@ -4,7 +4,7 @@ function LedigeStillinger() {
     const adjustHeight = () => {
         const iframe = document.querySelector('#HRon');
         setTimeout(function () {
-            if (iframeHeight < 1000) {
+            if (iframe.contentWindow.document.body.scrollHeight < 1000) {
                 adjustHeight();
             }
             else {
