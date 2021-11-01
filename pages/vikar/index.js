@@ -18,11 +18,21 @@ import classes from './Vikar.module.css';
 
 class Vikar extends Component {
     render() {
+        let pageDescription = "Hos GoWork finder du altid masser af ledige stillinger i hele landet. Find vejen til dit næste job her";
+        let pageTitle = "Find job | Søg en af vores ledige stillinger";
+        if (this.props.homePage) {
+            pageTitle = "GoWork | Vikar- og rekrutteringsbureau";
+            pageDescription = "GoWork ApS hjælper virksomheder og medarbejdere med at finde det rette match. Søg job eller find din næste medarbejder her";
+        }
         return (
             <React.Fragment>
                 <Head>
-                    <title>Jobsøgende</title>
-                    <meta name="description" content="JOBSØGENDE SIDE" />
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
                 </Head>
                 <div className={classes.Content}>
                     <Avatar topRight vikarJob="Lager" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />

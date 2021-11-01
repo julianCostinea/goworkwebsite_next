@@ -27,17 +27,23 @@ class Uddanelser extends Component {
         this.setState({ showModal: false });
     }
     render() {
+        const pageTitle = "Uddannelser | Find din næste eksamensvagt her";
+        const pageDescription = "Find kompetent og fleksibelt eksamenstilsyn til at hjælpe med jeres prøver";
         return (
             <div>
                 <Head>
-                    <title>Uddannelser</title>
-                    <meta name="description" content="Uddannelser SIDE" />
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription} />
+                    <meta name="twitter:title" content={pageTitle} />
+                    <meta name="twitter:description" content={{ pageDescription }} />
                 </Head>
                 <KontaktModal show={this.state.showModal} modalClosed={this.closeModal} />
                 <div className={classes.Content}>
-                    <Avatar topRight vikarJob = "Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
-                    <Avatar topLeft vikarJob = "Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
-                    <Avatar bottomRight vikarJob = "Koordinator" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
+                    <Avatar topRight vikarJob="Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
+                    <Avatar topLeft vikarJob="Vagt" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
+                    <Avatar bottomRight vikarJob="Koordinator" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
                     <TwoColumnDiv
                         imageDiv={<UddannelserImage />}
                         header={'Book din næste eksamensvagt her!'}>
@@ -78,7 +84,7 @@ class Uddanelser extends Component {
                     <TwoColumnRoundedDiv
                         whiteDiv
                         ReverseContainer
-                        imageDiv={<UddanelserImage3/>}
+                        imageDiv={<UddanelserImage3 />}
                         header={'Hvorfor bruge os?'}>
                         <strong>Undgå tidskrævende administration med eget tilsyn</strong>
                         <br />

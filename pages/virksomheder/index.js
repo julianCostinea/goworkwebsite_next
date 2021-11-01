@@ -29,11 +29,17 @@ class Virksomheder extends Component {
         this.setState({ showModal: false });
     }
     render() {
+        const pageTitle = "Virksomheder | Find din næste vikar her";
+        const pageDescription = "Vi sætter stor pris på at finde de helt rigtige kandidater og hjælper jer gennem hele ansættelsesprocessen";
         return (
             <React.Fragment>
                 <Head>
-                    <title>Virksomheder</title>
-                    <meta name="description" content="Virksomheder SIDE" />
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
                 </Head>
                 <KontaktModal show={this.state.showModal} modalClosed={this.closeModal} />
                 <div className={classes.Content}>
@@ -93,7 +99,7 @@ class Virksomheder extends Component {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg> */}
                         <br />
-                        9 af 10 kunder vil anbefale GoWork til deres ven, kollega eller netværk. På vores netop gennemførte NPS 2021 Survey scorer vi 89 (hvilket svarer til verdensklasse).<br /><br />
+                        9 af 10 kunder vil anbefale GoWork til deres ven, kollega eller netværk. På vores netop gennemførte NPS 2021 Survey scorer vi 89 (hvilket svarer til verdensklasse jf. Bain &amp; Company).<br /><br />
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg> */}

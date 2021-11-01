@@ -4,6 +4,6 @@ import Vikar from './vikar';
 
 export default function Homepage() {
     return (
-        <Vikar />
+        <Vikar homePage />
     )
 }

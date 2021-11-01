@@ -60,11 +60,13 @@ class Kontakt extends Component {
         <KontaktForm noHeader />
       </div>
     );
+    const pageTitle = "Kontakt GoWork | Skriv til os";
+    const pageDescription = "GoWorks kontaktoplysninger. Kontakt vores kontor ved at sende en mail til job@go-work.dk.";
     return (
       <React.Fragment>
         <Head>
-          <title>Kontakt</title>
-          <meta name="description" content="Kontakt SIDE" />
+          <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
         </Head>
         <div className={classes.Content}>
           <TwoColumnKontaktDiv leftDiv={kontaktForm} rightDiv={kontaktData} />

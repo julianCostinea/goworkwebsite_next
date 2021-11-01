@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
 import CardContainer from '../../components/Card/CardContainer';
@@ -9,11 +10,18 @@ import classes from './HopOmbord.module.css';
 
 class HopOmbord extends Component {
     render() {
+        const pageTitle = "Find job | Læs mere om dine muligheder";
+        const pageDescription = "Vi hjælper dig med at finde dit næste job. Start din karriere hos GoWork nu.";
         return (
-            <div>
-                <div className={classes.Content}>
-                    {/* !!! Sabbatår, Studerende, Specialist Cards !!!  */}
-                    {/* <TwoColumnRoundedDiv
+            <React.Fragment>
+                <Head>
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                </Head>
+                <div>
+                    <div className={classes.Content}>
+                        {/* !!! Sabbatår, Studerende, Specialist Cards !!!  */}
+                        {/* <TwoColumnRoundedDiv
                         header={'Sabbatår'}
                         imageDiv={<BigCardSabbatar />}
                     >
@@ -76,49 +84,50 @@ class HopOmbord extends Component {
                         Vi varetager alt det administrative, herunder fakturering af klienten og afregningen mellem os og dig, så du kan bruge tiden på det du er bedst til. <br /><br />
                         Hvis du er klar på at kickstarte din vikar specialist-karriere, , udvide dit netværk og få en masse erfaring indenfor dit speciale på dit CV, så kom i gang nu ved at oprette dit CV.
                     </TwoColumnRoundedDiv> */}
-                    <OneColumnDiv
-                        whiteDiv
-                        header={'Ansøgningsproces'}
-                        // paragraph={`Vi er stolte af vores mange glade kunder, som rater vores kandidater 4.5 ud af 5.0 stjerner. Du får med
-                        // vores hjælp sikkerhed for, at du passer godt til de opgaver vi tilbyder dig. Vi sørger også for at den 
-                        // virksomhed du får tilbudt arbejde i, passer til dine ønsker. \n\nDet er nemlig kun et godt match hvis både 
-                        // virksomheden og den ansatte er glade for hinanden - og det er vores mål!`}
-                        paragraph={`Vi brænder for at bringe ambitiøse mennesker og virksomheder sammen.
+                        <OneColumnDiv
+                            whiteDiv
+                            header={'Ansøgningsproces'}
+                            // paragraph={`Vi er stolte af vores mange glade kunder, som rater vores kandidater 4.5 ud af 5.0 stjerner. Du får med
+                            // vores hjælp sikkerhed for, at du passer godt til de opgaver vi tilbyder dig. Vi sørger også for at den 
+                            // virksomhed du får tilbudt arbejde i, passer til dine ønsker. \n\nDet er nemlig kun et godt match hvis både 
+                            // virksomheden og den ansatte er glade for hinanden - og det er vores mål!`}
+                            paragraph={`Vi brænder for at bringe ambitiøse mennesker og virksomheder sammen.
                         Her er en kort beskrivelse af en standard ansættelsesproces:`}
-                    >
-                        <div>
-                            {/* <h2
+                        >
+                            <div>
+                                {/* <h2
                                 style={{ color: '#2a5c91', marginTop: '2rem', fontSize: '1.5rem' }}
                             ></h2> */}
-                            <ApplicationProcess />
-                        </div>
-                    </OneColumnDiv>
-                    <OneColumnDiv
-                        lightBlueDiv
-                        header={'Fagområder'}
-                        paragraph={`Vi har et særligt fokus på midlertidige jobs indenfor salg, det digitale og kreative, kundeservice, operations, eksamentilsyn, økonomi og administration. Her er et overblik over nogle af de stillinger / opgaver vi løser:`}
-                    >
-                        <CardContainer alignLeft>
-                            <TextCard
-                                cardHeader={`Salg & Kundeservice:`}
-                                cardBody={'telefoninterviewer, mødebooker, phoner, salgskonsulent, sælger, kundeservicemedarbejder, call center medarbejder og kunderådgiver, m.fl.'}
-                            />
-                            <TextCard
-                                cardHeader={'Digitalt & Kreativt'}
-                                cardBody={'webdesigner, grafisk designer, digital marketing specialist, content developer, marketing koordinator, email marketing, UX/UI designer og programmering, m.fl.'}
-                            />
-                            <TextCard
-                                cardHeader={'Lager & Produktion'}
-                                cardBody={'webshop lager, pluk/pak, forsendelse, varemodtagelse, etikettering, montage og kvalitetstjek, m.fl.'}
-                            />
-                            <TextCard
-                                cardHeader={'Økonomi & Finans'}
-                                cardBody={'bogholder, controller, business analyst, lønspecialist, m.fl.'}
-                            />
-                        </CardContainer>
-                    </OneColumnDiv>
+                                <ApplicationProcess />
+                            </div>
+                        </OneColumnDiv>
+                        <OneColumnDiv
+                            lightBlueDiv
+                            header={'Fagområder'}
+                            paragraph={`Vi har et særligt fokus på midlertidige jobs indenfor salg, det digitale og kreative, kundeservice, operations, eksamentilsyn, økonomi og administration. Her er et overblik over nogle af de stillinger / opgaver vi løser:`}
+                        >
+                            <CardContainer alignLeft>
+                                <TextCard
+                                    cardHeader={`Salg & Kundeservice:`}
+                                    cardBody={'telefoninterviewer, mødebooker, phoner, salgskonsulent, sælger, kundeservicemedarbejder, call center medarbejder og kunderådgiver, m.fl.'}
+                                />
+                                <TextCard
+                                    cardHeader={'Digitalt & Kreativt'}
+                                    cardBody={'webdesigner, grafisk designer, digital marketing specialist, content developer, marketing koordinator, email marketing, UX/UI designer og programmering, m.fl.'}
+                                />
+                                <TextCard
+                                    cardHeader={'Lager & Produktion'}
+                                    cardBody={'webshop lager, pluk/pak, forsendelse, varemodtagelse, etikettering, montage og kvalitetstjek, m.fl.'}
+                                />
+                                <TextCard
+                                    cardHeader={'Økonomi & Finans'}
+                                    cardBody={'bogholder, controller, business analyst, lønspecialist, m.fl.'}
+                                />
+                            </CardContainer>
+                        </OneColumnDiv>
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

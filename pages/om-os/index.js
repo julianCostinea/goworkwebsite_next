@@ -10,11 +10,17 @@ import classes from './OmOs.module.css';
 
 class OmOs extends Component {
     render() {
+        const pageTitle = "Om GoWork";
+        const pageDescription = "GoWork hjælper arbejdsgivere og jobsøgende med at finde hinanden. Mød vores team her";
         return (
             <div>
                 <Head>
-                    <title>Om os</title>
-                    <meta name="description" content="Om os SIDE" />
+                <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
                 </Head>
                 <div className={classes.Content}>
                     <OneColumnDiv
