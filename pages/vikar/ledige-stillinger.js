@@ -7,7 +7,7 @@ function LedigeStillinger() {
             if (iframe.contentWindow.document.body.scrollHeight < 1000) {
                 adjustHeight();
             }
-            if (iframe.contentWindow.location > 52) {
+            if (iframe.contentWindow.location.href > 85) {
                 console.log("IN IF STATEMNT");
                 document.querySelector('#HRon').height = document.querySelector('#HRon').contentWindow.document.body.scrollHeight;
             }
