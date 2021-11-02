@@ -171,7 +171,7 @@ class KontaktForm extends Component {
     }
     grecaptcha.ready(() => {
       grecaptcha
-        .execute("6LclBKEcAAAAAFHWOOrAQcZ4U4FR1jHb2hDLKet7", {
+        .execute("6LcxEQ0dAAAAAF-bD9NiXswpidyIjSmZDCUkIL3e", {
           action: "homepage",
         })
         .then((token) => {
@@ -202,7 +202,7 @@ class KontaktForm extends Component {
     const form = this.state.kontaktForm;
     return (
       <div className={classes.KontaktFormContainer}>
-        <Script src="https://www.google.com/recaptcha/api.js?render=6LclBKEcAAAAAFHWOOrAQcZ4U4FR1jHb2hDLKet7"></Script>
+        <Script src="https://www.google.com/recaptcha/api.js?render=6LcxEQ0dAAAAAF-bD9NiXswpidyIjSmZDCUkIL3e"></Script>
         {this.props.noHeader ? null : (
           <React.Fragment>
             <div>

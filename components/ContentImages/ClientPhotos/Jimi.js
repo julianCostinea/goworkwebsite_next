@@ -11,7 +11,7 @@ export const ClientPhotoJimi = () => {
             loading="eager"
             width= "100px" height="100px"
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/Clients/Jimi.png" alt="Jimi"
+            src="/images/Clients/jimi.png" alt="Jimi"
             onLoad={() => setLoaded(true)}
             />
     </div>
