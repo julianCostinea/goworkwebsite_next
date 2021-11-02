@@ -27,7 +27,7 @@ class Uddanelser extends Component {
         this.setState({ showModal: false });
     }
     render() {
-        const pageTitle = "Uddannelser | Find din næste eksamensvagt her";
+        const pageTitle = "Uddannelser | Find din næste eksterne eksamensvagt her";
         const pageDescription = "Find kompetent og fleksibelt eksamenstilsyn til at hjælpe med jeres prøver";
         return (
             <div>

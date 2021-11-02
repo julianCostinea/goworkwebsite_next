@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import OkonomiPhoto from '../../components/ContentImages/FagOmraderImages/OkonomiPhoto';
@@ -9,8 +10,18 @@ import classes from './ServicePage.module.css';
 
 class Okonomi extends Component {
     render() {
+        let pageDescription = "Lej et økonomitalent. Med vores brede netværk af kandidater indenfor økonomi og finans kan i trygt overlade opgaven til os";
+        let pageTitle = "Virksomheder | Økonomi";
         return (
             <React.Fragment>
+                <Head>
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
+                </Head>
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         smallIconReverse

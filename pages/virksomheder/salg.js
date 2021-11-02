@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import SalgPhoto from '../../components/ContentImages/FagOmraderImages/SalgPhoto';
@@ -10,8 +11,18 @@ import classes from './ServicePage.module.css';
 
 class Salg extends Component {
     render() {
+        let pageDescription = "Lej et salgs- eller kundeservicetalent. Vi finder de helt rigtige talenter til midlertidige og midlertidige-til-permanente opgaver";
+        let pageTitle = "Virksomheder | Salg";
         return (
             <React.Fragment>
+                <Head>
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
+                </Head>
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         smallIconReverse

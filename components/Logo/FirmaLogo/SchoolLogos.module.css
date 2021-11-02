@@ -25,6 +25,11 @@
     height: 60px;
     width: 150px;
 }
+
+.Logo2 img {
+    height: 60px;
+    width: 240px;
+}
 @media (min-width: 760px) {
     .LogoContainer{
         flex-direction: row;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 
 import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
 import DigitaltPhoto from '../../components/ContentImages/FagOmraderImages/DigitaltPhoto';
@@ -9,8 +10,18 @@ import classes from './ServicePage.module.css';
 
 class Digitalt extends Component {
     render() {
+        let pageDescription = "Lej et digitalt eller kreativt talent. Vi finder de helt rigtige kandidater, så din virksomhed kan få styrket sin online tilstedeværelse";
+        let pageTitle = "Virksomheder | Digitalt";
         return (
             <React.Fragment>
+                <Head>
+                    <title>{pageTitle}</title>
+                    <meta name="description" content={pageDescription} />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:description" content={pageDescription}/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={{pageDescription}} />
+                </Head>
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         smallIconReverse

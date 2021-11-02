@@ -30,7 +30,7 @@ class Virksomheder extends Component {
     }
     render() {
         const pageTitle = "Virksomheder | Find din næste vikar her";
-        const pageDescription = "Vi sætter stor pris på at finde de helt rigtige kandidater og hjælper jer gennem hele ansættelsesprocessen";
+        const pageDescription = "Vikarbureau - vi hjælper dig med midlertidigt personale";
         return (
             <React.Fragment>
                 <Head>
@@ -136,12 +136,10 @@ class Virksomheder extends Component {
                             // vikarPhoto2={<ClienPhotos.ClientPhotoRikke />}
                             // slide2Name={'Rikke'}
                             // firma2={'Valeur A/S'}
-                            slide3={`Vi er særdeles tilfredse med vores samarbejde med GoWork. Vi er i en branche, hvor behovet
-                            for personale varierer enormt - ofte med kort varsel. Med det samarbejde vi har
-                            med GoWork, er vi aldrig bange for at tage opgaver ind.`}
-                            vikarPhoto3={<ClienPhotos.ClientPhotoJacob />}
-                            slide3Name={'Jacob'}
-                            firma3={'Alex Andersen Ølund A/S'}
+                            slide3={`Vi oplever altid at vikarer fra GoWork møder op til tiden, velforberedte og med et smil på læben. Det er derfor en fornøjelse at arbejde sammen med GoWork, både med kontoret og de vikarer, der møder ind.`}
+                            vikarPhoto3={<ClienPhotos.ClientPhotoJimi />}
+                            slide3Name={'Jimi'}
+                            firma3={'Micro Technic A/S'}
                             slide2={`GoWork leverede varen i forhold til vores eksamener.
                             Det var kvalificerede medarbejdere -
                             unge mennesker med overblik.

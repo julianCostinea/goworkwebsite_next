@@ -1,3 +1,3 @@
 export * from './Jacob';
-export * from './Rikke';
+export * from './Jimi';
 export * from './Tine';

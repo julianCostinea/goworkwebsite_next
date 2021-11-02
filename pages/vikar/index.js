@@ -43,7 +43,7 @@ class Vikar extends Component {
                         buttonText={'Se stillinger'}
                         buttonLink={'/ledige-stillinger.html'}
                         button2Text={'Opret CV'}
-                        button2Link={'/vikar/opret-cv'}
+                        button2Link={'/ledige-stillinger.html?hr=show-job%2F32004%26locale%3Dda_DK'}
                         header={'Søger du\net fleksibelt job?'}
                         underText={'Læs mere om dine muligheder'}
                     >
