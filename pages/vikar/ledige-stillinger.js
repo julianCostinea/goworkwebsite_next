@@ -7,9 +7,9 @@ function LedigeStillinger() {
             if (iframe.contentWindow.document.body.scrollHeight < 1000) {
                 adjustHeight();
             }
+            //if its a job add, change height to 100px, then check contentWindow.scrollHeight
             if (iframe.contentWindow.location.href.length > 85) {
-                console.log("IN IF STATEMNT");
-                document.querySelector('#HRon').height = document.querySelector('#HRon').contentWindow.document.body.scrollHeight;
+                iframe.height = 1400;
             }
             else {
                 iframe.height = iframe.contentWindow.document.body.scrollHeight;
