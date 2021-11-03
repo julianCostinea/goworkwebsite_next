@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './FirmaLogo.module.css';
 
 import SimplyLogo from './SimplyLogo';
-import Roskilde_VUCLogo from './Roskilde_VUCLogo';
+import MicroTechnicLogo from './MicroTechnicLogo';
 import RUCLogo from './RUCLogo';
 import StenhusLogo from './StenhusLogo';
 import SkanderborgLogo from './SkanderborgLogo';
@@ -19,10 +19,11 @@ const logo = () => {
             </div>
             <div className={classes.splitRow}>
                 <SimplyLogo />
-                <Roskilde_VUCLogo />
+                <RUCLogo />
+
             </div>
             <div className={classes.splitRow}>
-                <RUCLogo />
+                <MicroTechnicLogo />
                 <StenhusLogo />
             </div>
             <div className={classes.splitRow}>
