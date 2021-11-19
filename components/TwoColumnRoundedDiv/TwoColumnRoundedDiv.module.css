@@ -31,7 +31,7 @@
 
 .ImageDiv{
     /* display: none; */
-    max-width: 70%;
+    /* max-width: 70%; */
 }
 
 .Paragraph{
@@ -44,21 +44,25 @@
 }
 
 
-@media (min-width: 780px) {
+@media (min-width: 1000px) {
     .Container{
         flex-direction: row;
+        max-width: 90%;
+        justify-content: center;
+        margin: 0 auto;
     }
     .ReverseContainer{
         flex-direction: row-reverse;
-        margin-left: -3rem;
     }
     .ReverseContainer .TextDiv{
-        margin-left: 5rem;
+        margin-right: 3rem;
+        text-align: left;
+        margin-left: 0rem;
     }
     .TextDiv{
-        margin-right: 0rem;
         text-align: left;
-        max-width: 30%;
+        max-width: 40%;
+        margin-left: 3rem;
     }
     .Header{
         margin-top: 0;

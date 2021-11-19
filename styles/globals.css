@@ -12,6 +12,10 @@ body {
   color: #161637;
 }
 
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+
 .grid{
   display: grid;
   height: 100vh;

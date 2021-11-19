@@ -65,7 +65,7 @@ class Layout extends Component {
       <Aux>
         <BackdropContextProvider>
           <div className="grid">
-            <Modal show={this.state.showModal} modalClosed={this.closeModal} />
+            {/* <Modal show={this.state.showModal} modalClosed={this.closeModal} /> */}
             <Toolbar
               showBox={this.state.showBoxShadow}
               drawerToggleClicked={this.sideDrawerToggleHandler}

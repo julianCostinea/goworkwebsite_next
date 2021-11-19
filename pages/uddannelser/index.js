@@ -63,7 +63,6 @@ class Uddanelser extends Component {
                     </OneColumnDiv>
                     <TwoColumnRoundedDiv
                         imageDiv={<UddanelserImage />}
-                        ReverseContainer
                         header={'Fleksible løsninger til alle behov'}>
                         Vi skræddersyer løsningen, så den matcher jeres behov. Der kan være tale om alt fra få eksamensvagter til fuld outsourcing.<br /><br />
                         Vores team af kompetente konsulenter med omfattende viden og erfaring indenfor eksamenstilsyn, sikrer at alle udsendte vagter er klædt på til opgaven, så regler og retningslinjer altid bliver overholdt.
@@ -83,7 +82,6 @@ class Uddanelser extends Component {
                     </ClientVideoDiv>
                     <TwoColumnRoundedDiv
                         whiteDiv
-                        ReverseContainer
                         imageDiv={<UddanelserImage3 />}
                         header={'Hvorfor bruge os?'}>
                         <strong>Undgå tidskrævende administration med eget tilsyn</strong>

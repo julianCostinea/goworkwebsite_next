@@ -10,15 +10,21 @@
     }
     .ImageDiv2, .ImageDiv3{
         display: block;
+        margin: 0 auto;
         max-width: 90%;
         max-height: 80%;
     }
-    .ImageDiv4 img {
-        width: 35rem;
-    }
 }
 @media (min-width: 1600px) {
-    .ImageDiv2{
-        margin-left: 2rem;
+    .ImageDiv3 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .ImageDiv3 img {
+        width: 35rem;
+        height: 35rem;
+    }
+    .ImageDiv4 img {
+        width: 35rem;
     }
   }

@@ -8,6 +8,7 @@ import ServiceIcons from '../../components/Logo/ServiceIcons/ServiceIcons';
 import KontaktModalButton from '../../components/Button/KontaktModalButton';
 import VirksomehederImg from '../../components/ContentImages/VirksomhederImage';
 import VirksomehederImg3 from '../../components/ContentImages/VirksomhederImage3';
+import VirksomehederImg4 from '../../components/ContentImages/VirksomhederImage4';
 import KontaktModal from '../../components/UI/Modal/KontaktModal';
 import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
 import CarouselContainer from '../../components/CarouselContainer/CarouselContainer';
@@ -84,8 +85,45 @@ class Virksomheder extends Component {
                         </CardContainer>
                     </OneColumnDiv> */}
                     <TwoColumnRoundedDiv
-                        ReverseContainer
                         imageDiv={<VirksomehederImg3 />}
+                        header={'Personale til dit behov'}
+                        >
+                        <strong>Vikarløsninger</strong>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> */}
+                        <br />
+                        Vi hjælper dig med midlertidigt personale. Vikarløsningen er perfekt for dig, som oplever ekstraordinær travlhed, sæsonudsving, ønsker et projekt gennemført eller har personale på barsel. Vi finder det rette match indenfor de fleste fagområder til deltid eller fuldtid.<br /><br />
+                        <strong>Lej først, rekruttér senere</strong>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg> */}
+                        <br />
+                        Start din næste fastansættelse som et vikariat, og ansæt først når du er helt sikker på dit behov. Med ’Lej først, rekruttér senere’ får du og din nye medarbejder mulighed for at se hinanden an uden større omkostninger. Samtidig står vi for alt det besværlige omkring løn, jura, overenskomster og administration.<br /><br />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg> */}
+                        <strong>Lej en Specialist</strong><br />
+                        Opnå hurtig adgang til kvikke hoveder, og slip samtidig for den tunge rekrutteringsproces. Vi sikrer at du har de rette spidskompetencer til rådighed ved eksempelvis projekter, afskedigelser, sygdom eller omstruktureringer. Lej en specialist på vikarbasis og undgå missede deadlines.
+                    </TwoColumnRoundedDiv>
+                    <OneColumnDiv
+                        lightBlueDiv
+                        header={'Kvikke hoveder til de fleste opgaver'}
+                        paragraph={`Vi holder os skarpt opdateret på udviklingen indenfor flere fagområder. Sådan sikrer vi at din virksomhed til enhver tid har de stærkeste kandidater til opgaven.`}
+                    >
+                        Vælg det område du søger personale til:
+                        <ServiceIcons />
+                        <br />
+                        Søger du personale til andre opgaver? <br /> <br />
+                        <a
+                            style={{ cursor: 'pointer' }}
+                            onClick={this.showModal}>
+                            Fortæl os om dit behov
+                        </a>
+                    </OneColumnDiv>
+                    <TwoColumnRoundedDiv
+                        ReverseContainer
+                        imageDiv={<VirksomehederImg4 />}
                         header={'Hvorfor bruge os?'}
                         >
                         <strong>Undgå tidsspild</strong>
@@ -106,23 +144,8 @@ class Virksomheder extends Component {
                         <strong>Sikkerhed for at opgaven bliver løst</strong><br />
                         Vi besætter 98 pct. af de opgaver, vi får ind. Med en pragmatisk tilgang til samarbejdet melder vi klart ud fra start, så du ved, om vi er den rette samarbejdspartner til opgaven. Når vi siger ja, så mener vi det, og arbejder fokuseret på at komme i mål – så du undgår at skubbe dine deadlines.
                     </TwoColumnRoundedDiv>
-                    <OneColumnDiv
-                        lightBlueDiv
-                        header={'Kvikke hoveder til de fleste opgaver'}
-                        paragraph={`Vi holder os skarpt opdateret på udviklingen indenfor flere fagområder. Sådan sikrer vi at din virksomhed til enhver tid har de stærkeste kandidater til opgaven.`}
-                    >
-                        Vælg det område du søger personale til:
-                        <ServiceIcons />
-                        <br />
-                        Søger du personale til andre opgaver? <br /> <br />
-                        <a
-                            style={{ cursor: 'pointer' }}
-                            onClick={this.showModal}>
-                            Fortæl os om dit behov
-                        </a>
-                    </OneColumnDiv>
                     {/* Carousel for virksomheder */}
-                    <CarouselContainer whiteDiv header={'Hvad siger vores kunder?'}>
+                    <CarouselContainer header={'Hvad siger vores kunder?'}>
                         <Carousel
                             slide1={`Vi er særdeles tilfredse med vores samarbejde med GoWork. Vi er i en branche, hvor behovet
                             for personale varierer enormt - ofte med kort varsel. Med det samarbejde vi har
