@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Head from 'next/head';
+import Link from "next/link";
 
 import FacebookIcon from "../../components/Icons/facebookIcon";
 import LinkedInIcon from "../../components/Icons/linkedInIcon";
@@ -45,13 +46,18 @@ class Kontakt extends Component {
         <FacebookIcon />
         <LinkedInIcon />
         <InstagramIcon />
+        <br />
+        <br />
+        <div>
+          Læs om vores whistleblowerordning <Link href="/whistleblower"><a style={{color: '#255c92'}}>her. </a></Link>
+        </div>
       </div>
     );
     const kontaktForm = (
       <div className={classes.kontaktFormDiv}>
-        <div className ={classes.HeaderContainer}>
+        <div className={classes.HeaderContainer}>
           <h2>Skriv til os</h2>
-          <br/>
+          <br />
           <p>
             Vi sidder klar til at hjælpe dig godt i gang. Hvis du er jobsøger, så beder vi dig sende os en ansøgning på et aktuelt jobopslag.
           </p>
@@ -66,18 +72,18 @@ class Kontakt extends Component {
       <React.Fragment>
         <Head>
           <title>{pageTitle}</title>
-            <meta name="description" content={pageDescription} />
+          <meta name="description" content={pageDescription} />
         </Head>
         <div className={classes.Content}>
           <TwoColumnKontaktDiv leftDiv={kontaktForm} rightDiv={kontaktData} />
           <div className={classes.GoogleMaps}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.735623208934!2d10.37225991606297!3d55.3975183268043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdffacd3b5447%3A0xc121de3dbe8e10ab!2sFjordsgade+11%2C+5000+Odense!5e0!3m2!1sda!2sdk!4v1533647673702"
-                width="100%"
-                height="450"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.735623208934!2d10.37225991606297!3d55.3975183268043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464cdffacd3b5447%3A0xc121de3dbe8e10ab!2sFjordsgade+11%2C+5000+Odense!5e0!3m2!1sda!2sdk!4v1533647673702"
+              width="100%"
+              height="450"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </React.Fragment>
