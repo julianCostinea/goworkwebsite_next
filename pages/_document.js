@@ -1,10 +1,11 @@
-import Document, {Html, Head, Main, NextScript} from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class Dokument extends Document {
-    render(){
-        return(
+    render() {
+        return (
             <Html lang="da-DK">
-                <Head />
+                <Head>
+                </ Head >
                 <body>
                     <Main />
                     <NextScript />

@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/logoIcon.png" />
         <meta property="og:site_name" content="GoWork ApS" />
         <meta property="og:type" content="website" />
+        <meta name="facebook-domain-verification" content="4x6nmt7c7e7wawf34emil174qe40kn" />
       </Head>
       <Component {...pageProps} />
     </Layout>
