@@ -1,5 +1,7 @@
 var fs = require('fs');
 
 module.exports = {
-  reactStrictMode: true,
+  images: {
+    domains: ['www.facebook.com'],
+  },
 }
