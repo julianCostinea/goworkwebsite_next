@@ -8,12 +8,12 @@ class Dokument extends Document {
             <Html lang="da-DK">
                 <Head>
                     <noscript>
-                        <Image
+                        {/* <Image
                             height="1"
                             width="1"
                             style={{ display: 'none' }}
                             src={`https://www.facebook.com/tr?id=3003946606526491&ev=PageView&noscript=1`}
-                        />
+                        /> */}
                     </noscript>
                 </ Head >
                 <body>
