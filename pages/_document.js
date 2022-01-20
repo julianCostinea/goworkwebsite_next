@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { FB_PIXEL_ID } from '../lib/facebookPixel';
+import Image from 'next/image';
 
 class Dokument extends Document {
     render() {
@@ -7,7 +8,7 @@ class Dokument extends Document {
             <Html lang="da-DK">
                 <Head>
                     <noscript>
-                        <img
+                        <Image
                             height="1"
                             width="1"
                             style={{ display: 'none' }}
