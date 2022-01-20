@@ -3,6 +3,7 @@ import Script from 'next/script';
 
 import '../styles/globals.css'
 import Layout from '../hoc/Layout/Layout';
+import FacebookPixel from '../lib/facebookPixel';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta name="facebook-domain-verification" content="4x6nmt7c7e7wawf34emil174qe40kn" />
       </Head>
+      <FacebookPixel />
       <Component {...pageProps} />
     </Layout>
   )
