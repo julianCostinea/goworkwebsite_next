@@ -119,6 +119,9 @@
     .bottomRightLow{
         top:15%
     }
+    .bottomRightHigh{
+        top:9%
+    }
     .vikarJob {
         background-color: #6cb0e1;
         padding: 5px;

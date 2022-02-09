@@ -14,6 +14,9 @@ const Avatar = (props) => {
     if (props.bottomRightLow) {
         attachedClasses.push(classes.bottomRightLow)
     }
+    if (props.bottomRightHigh) {
+        attachedClasses.push(classes.bottomRightHigh)
+    }
     return (
         <div className={attachedClasses.join(' ')}>
             {props.AvatarPhoto}

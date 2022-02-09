@@ -47,13 +47,13 @@ class Virksomheder extends Component {
                 <div className={classes.Content}>
                     <Avatar topRight vikarJob = "Lager" AvatarPhoto={<VikarPhotos.VikarPhotoMathias />} />
                     <Avatar topLeft vikarJob = "Support" AvatarPhoto={<VikarPhotos.VikarPhotoKatrine />} />
-                    <Avatar bottomRight vikarJob = "Kundeservice" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
+                    <Avatar bottomRight bottomRightHigh vikarJob = "Kundeservice" AvatarPhoto={<VikarPhotos.VikarPhotoMagnus />} />
 
                     <TwoColumnDiv
                         imageDiv={<VirksomehederImg />}
                         header={'Lej en GoWork’er'}>
                         Vi formidler ambitiøse mennesker i starten af deres
-                        karriere til deltids- og fuldtidsvikariater.Book 
+                        karriere til deltids- og fuldtidsvikariater. Book 
                         f.eks. din næste bogholder, lagermedarbejder eller 
                         SoMe specialist.
                         Nemt, enkelt og økonomisk. <br /><br />
