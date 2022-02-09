@@ -55,7 +55,7 @@ class Virksomheder extends Component {
                         Vi formidler ambitiøse mennesker i starten af deres
                         karriere til deltids- og fuldtidsvikariater. Book 
                         f.eks. din næste bogholder, lagermedarbejder eller 
-                        SoMe specialist.
+                        SoMe specialist.<br />
                         Nemt, enkelt og økonomisk. <br /><br />
                         Hvilken opgave eller projekt søger du personale til? <br />
                         <KontaktModalButton openKontakt={this.showModal} />
