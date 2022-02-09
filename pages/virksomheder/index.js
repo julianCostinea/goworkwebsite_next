@@ -51,9 +51,11 @@ class Virksomheder extends Component {
 
                     <TwoColumnDiv
                         imageDiv={<VirksomehederImg />}
-                        header={'Lej en GoWork’er \n - og få opgaven løst'}>
-                        GoWork formidler ambitiøse mennesker i starten af
-                        deres karriere til vikar- og specialiststillinger.
+                        header={'Lej en GoWork’er'}>
+                        Vi formidler ambitiøse mennesker i starten af deres
+                        karriere til deltids- og fuldtidsvikariater.Book 
+                        f.eks. din næste bogholder, lagermedarbejder eller 
+                        SoMe specialist.
                         Nemt, enkelt og økonomisk. <br /><br />
                         Hvilken opgave eller projekt søger du personale til? <br />
                         <KontaktModalButton openKontakt={this.showModal} />
