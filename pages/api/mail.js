@@ -17,6 +17,7 @@ export default async function handler(req, res) {
 
     const message = `
     Navn: ${body.name} \r\n
+    Virksomhed: ${body.virksomhed} \r\n
     Mail: ${body.email} \r\n
     Telefonnummer: ${body.telefon} \r\n
     Besked: ${body.description} \r\n
