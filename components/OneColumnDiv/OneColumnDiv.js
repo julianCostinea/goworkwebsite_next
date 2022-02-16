@@ -14,6 +14,9 @@ const OneColumnDiv = (props) => {
     if (props.lightBlueDiv) {
         attachedClasses = [classes.Container, classes.lightBlueDiv];
     }
+    if (props.darkBlueDiv) {
+        attachedClasses = [classes.Container, classes.darkBlueDiv];
+    }
     return (
     <div className={attachedClasses.join(' ')}>
         <div>

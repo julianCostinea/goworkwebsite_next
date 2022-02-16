@@ -26,7 +26,7 @@ class OmOs extends Component {
                     <OneColumnDiv
                         whiteDiv
                         header={'Kort om os'}
-                        paragraph={`GoWork er et vikar- og specialistbureau med flere gazellepriser. 
+                        paragraph={`GoWork er et vikarbureau med flere gazellepriser. 
 
                         Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige opgaver – lige fra den nyudklækkede student på sabbatår til den digitale marketing specialist med flere års erfaring der søger sit næste projekt.`}
                     >

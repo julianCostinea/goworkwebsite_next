@@ -175,13 +175,13 @@ class Virksomheder extends Component {
                             firma2={'Skanderborg Gymnasium'}
                         />
                     </CarouselContainer>
-                    {/* <OneColumnDiv
-                        whiteDiv
-                        header={'Interesseret?'}
-                        paragraph={`Skriv til os!`}
+                    <OneColumnDiv
+                        darkBlueDiv
+                        header={'Vil du fortælle os lidt om dit personalebehov?'}
+                        // paragraph={`Skriv til os!`}
                     >
-                        <KontaktForm noHeader/>
-                    </OneColumnDiv> */}
+                        <KontaktModalButton whiteButton openKontakt={this.showModal}/>
+                    </OneColumnDiv>
                 </div>
             </React.Fragment>
         );

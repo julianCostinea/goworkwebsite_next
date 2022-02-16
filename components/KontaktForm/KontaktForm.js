@@ -20,11 +20,28 @@ class KontaktForm extends Component {
         label: "Navn*",
         validation: {
           required: true,
-          minLength: 4,
+          minLength: 3,
         },
         valid: false,
         touched: false,
-        errorMessage: "Navn skal være længere end 3 bogstaver",
+        errorMessage: "Felt skal indeholde mindst 3 karakter",
+      },
+      virksomhed: {
+        elementType: "input",
+        elementConfig: {
+          type: "text",
+          name: "virksomhed",
+          id: "virksomhed",
+        },
+        value: "",
+        label: "Virksomhed*",
+        validation: {
+          required: true,
+          minLength: 3,
+        },
+        valid: false,
+        touched: false,
+        errorMessage: "Felt skal indeholde mindst 3 karakter",
       },
       email: {
         elementType: "input",
@@ -206,11 +223,11 @@ class KontaktForm extends Component {
         {this.props.noHeader ? null : (
           <React.Fragment>
             <div>
-            <h1>Kontakt</h1>
-            <p style={{fontSize:"1.25rem"}}>
-              Er du interesseret i at vide mere? <br /> Fortæl os kort om dit
-              personalebehov, <br /> så kontakter vi dig til en uforpligtende snak.
-            </p>
+              <h1>Kontakt</h1>
+              <p style={{ fontSize: "1.25rem" }}>
+                Er du interesseret i at vide mere? <br /> Fortæl os kort om dit
+                personalebehov, <br /> så kontakter vi dig til en uforpligtende snak.
+              </p>
             </div>
           </React.Fragment>
         )}
@@ -220,20 +237,36 @@ class KontaktForm extends Component {
           onSubmit={this.kontaktHandler}
           className={classes.KontaktForm}
         >
-          <Input
-            id={form.name.elementConfig.id}
-            key={form.name.elementConfig.name}
-            elementType={form.name.elementType}
-            elementConfig={form.name.elementConfig}
-            value={form.name.value}
-            label={form.name.label}
-            errorMessage={form.name.errorMessage}
-            invalid={!form.name.valid}
-            touched={form.name.touched}
-            changed={(event) =>
-              this.inputChangedHandler(event, form.name.elementConfig.name)
-            }
-          />
+          <div className={classes.TwoColumn}>
+            <Input
+              id={form.name.elementConfig.id}
+              key={form.name.elementConfig.name}
+              elementType={form.name.elementType}
+              elementConfig={form.name.elementConfig}
+              value={form.name.value}
+              label={form.name.label}
+              errorMessage={form.name.errorMessage}
+              invalid={!form.name.valid}
+              touched={form.name.touched}
+              changed={(event) =>
+                this.inputChangedHandler(event, form.name.elementConfig.name)
+              }
+            />
+            <Input
+              id={form.virksomhed.elementConfig.id}
+              key={form.virksomhed.elementConfig.name}
+              elementType={form.virksomhed.elementType}
+              elementConfig={form.virksomhed.elementConfig}
+              value={form.virksomhed.value}
+              label={form.virksomhed.label}
+              errorMessage={form.virksomhed.errorMessage}
+              invalid={!form.virksomhed.valid}
+              touched={form.virksomhed.touched}
+              changed={(event) =>
+                this.inputChangedHandler(event, form.virksomhed.elementConfig.name)
+              }
+            />
+          </div>
           <div className={classes.TwoColumn}>
             <Input
               id={form.email.elementConfig.id}
