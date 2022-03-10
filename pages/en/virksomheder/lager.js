@@ -29,7 +29,7 @@ class Okonomi extends Component {
                         header = {'Warehouse &\n production'}>
                    Hire active and energetic temps for your warehouse or production!<br/><br/>
                    Warehouse and production work is an important task that must be handled by qualified and reliable employees <br /><br/>
-                   Our team quickly finds the right warehouse and production workers, so you can safely get to the end of the day's tasks and spend the time on what you are best at.<br/>
+                   Our team quickly finds the right warehouse and production workers, so you can safely get to the end of the day&apos;s tasks and spend the time on what you are best at.<br/>
                     </TwoColumnDiv>
                     <OneColumnDiv 
                         header = {'Examples of the positions/tasks we solve:'}>

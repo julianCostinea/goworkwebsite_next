@@ -29,7 +29,7 @@ class Digitalt extends Component {
                         header={'Digitalt & Kreativt'}>
                         Hire a digital or creative talent! <br /><br />
                         Generation Y and Z are special because they are digital natives. It creates some obvious opportunities - a digital generation for digital tasks! <br /><br />
-                        GoWork has access to a large pool of digital and creative talents found among the country's students and specialist / freelance community.<br /><br />
+                        GoWork has access to a large pool of digital and creative talents found among the country&apos;s students and specialist / freelance community.<br /><br />
                         We select and screen the right candidates for temporary and temporary-to-permanent assignments so that your company can strengthen its online presence.
                     </TwoColumnDiv>
                     <OneColumnDiv
