@@ -7,7 +7,17 @@ import Digital from './DigitalIcon';
 import Kundeservice from './Kundeservice';
 import Operations from './Operations';
 
-const logo = () => {
+const logo = (props) => {
+    if (props.englishVersion) {
+        return (
+            <div className={classes.IconContainer}>
+                <Kundeservice englishVersion/>
+                <Digital englishVersion/>
+                <Okonomi englishVersion/>
+                <Operations englishVersion/>
+            </div>
+        )
+    }
     return (
         <div className={classes.IconContainer}>
             <Kundeservice />

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 
-import OneColumnDiv from '../../components/OneColumnDiv/OneColumnDiv';
-import CardContainer from '../../components/Card/CardContainer';
-import TeamCard from '../../components/Card/TeamCard';
-import * as TeamPhotos from '../../components/ContentImages/TeamPhotos/TeamPhotos';
-import OmOsImage1 from '../../components/ContentImages/OmOsImage1';
-import OmOsImage2 from '../../components/ContentImages/OmOsImage2';
-import classes from './OmOs.module.css';
-import TwoColumnDiv from '../../components/TwoColumnDiv/TwoColumnDiv';
-import TwoColumnRoundedDiv from '../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
+import OneColumnDiv from '../../../components/OneColumnDiv/OneColumnDiv';
+import CardContainer from '../../../components/Card/CardContainer';
+import TwoColumnDiv from '../../../components/TwoColumnDiv/TwoColumnDiv';
+import TeamCard from '../../../components/Card/TeamCard';
+import OmOsImage1 from '../../../components/ContentImages/OmOsImage1';
+import OmOsImage2 from '../../../components/ContentImages/OmOsImage2';
+import * as TeamPhotos from '../../../components/ContentImages/TeamPhotos/TeamPhotos';
+import TwoColumnRoundedDiv from '../../../components/TwoColumnRoundedDiv/TwoColumnRoundedDiv';
+
+import classes from './om-os.module.css';
 
 class OmOs extends Component {
     render() {
@@ -28,84 +29,84 @@ class OmOs extends Component {
                 <div className={classes.Content}>
                     <TwoColumnDiv
                         imageDiv={<OmOsImage1 />}
-                        header={'Kort om os'}>
-                        GoWork er et vikarbureau med flere gazellepriser.<br /><br />
-                        Vi har siden 2012 formidlet ambitiøse mennesker i starten af deres karriere til midlertidige opgaver – lige fra den nyudklækkede student på sabbatår til den digitale marketing specialist med flere års erfaring der søger sit næste projekt.
+                        header={'About us'}>
+                        GoWork is a temp agency with several Gazelle awards under its belt.<br /><br />
+                        Since 2012, we have recruited ambitious people at the beginning of their careers for temporary assignments - from the newly hatched student during their gap years to the digital marketing specialist, with great experience, looking for the next project.
                     </TwoColumnDiv>
                     <OneColumnDiv
                         lightBlueDiv
-                        header={'Vores Team'}
+                        header={'Our Team'}
                     >
                         <CardContainer>
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoAnne />}
                                 cardHeader={'Anne Jervelund'}
-                                cardBody={'HR Konsulent'}
+                                cardBody={'HR Consultant '}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoJonas />}
                                 cardHeader={'Jonas Jeppesen'}
-                                cardBody={'HR Konsulent'}
+                                cardBody={'HR Consultant '}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoJulian />}
                                 cardHeader={'Julian Costinea'}
-                                cardBody={'HR Konsulent'}
+                                cardBody={'HR Consultant '}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoErik />}
                                 cardHeader={'Erik Dreiøe'}
-                                cardBody={'HR Konsulent'}
+                                cardBody={'HR Consultant '}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoOle />}
                                 cardHeader={'Ole Susé'}
-                                cardBody={`Senior Konsulent \n& Indehaver`}
+                                cardBody={`Senior Consultant \n& Proprietor`}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoPeter />}
                                 cardHeader={'Peter Prese'}
-                                cardBody={'HR Konsulent'}
+                                cardBody={'HR Consultant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoArne />}
                                 cardHeader={'Arne Lauritzen'}
-                                cardBody={'Senior Konsulent'}
+                                cardBody={'Senior Consultant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoTrine />}
                                 cardHeader={'Trine le Fevre'}
-                                cardBody={'Bogholder'}
+                                cardBody={'Accountant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoEmil />}
                                 cardHeader={'Emil Rylander'}
-                                cardBody={'Økonomiassistent'}
+                                cardBody={'Finance Assistant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoKirstine />}
                                 cardHeader={'Kirstine Stoksted '}
-                                cardBody={'HR Assistent'}
+                                cardBody={'HR Assistant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoEmma />}
                                 cardHeader={'Emma Aunsbak'}
-                                cardBody={'Studentermedhjælper'}
+                                cardBody={'Student Assistant'}
                             />
                             <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoSebastian />}
                                 cardHeader={'Sebastian Rasmussen'}
-                                cardBody={'Salgskonsulent'}
+                                cardBody={'Salgs Consultant'}
                             />
                         </CardContainer>
                     </OneColumnDiv>
                     <TwoColumnRoundedDiv
                         imageDiv={<OmOsImage2 />}
-                        header={'Bliv klar til fremtiden'}>
-                        Undgå en ’plads på tilskuerrækkerne’ i et arbejdsmarked under stærk forandring.<br /><br />
-                        Fremtidens arbejdsbegreb bliver en flydende størrelse, hvor ’fast job’ erstattes af digitale arbejdspladser og midlertidige projekter. Det stiller krav til teknologi og forandringsparathed hos arbejdsgivere, og fleksibilitet hos arbejdstagere.<br /><br />
-                        Hos GoWork forbereder vi dig på det der venter – og brænder for at bringe ambitiøse mennesker og virksomheder sammen, nu og i fremtiden. <br /><br />
-                        Bliv klar til fremtidens arbejdsmarked… eller, ja du kan også fortsætte i den samme gamle rille.
+                        header={'Get ready for the future'}>
+                        Avoid sitting in the audience while the labor market is undergoing a strong transformation.<br /><br />
+                        The working concept of the future will be a fluid size, where ‘permanent jobs’ will be replaced by digital jobs and temporary projects. It places demands on technology and readiness for change among employers, and flexibility for workers.<br /><br />
+                        At GoWork, we prepare you for what lies ahead - we are passionate about bringing ambitious people and companies together, now and in the future.<br /><br />
+                        Get ready for the job market of the future… or, sure you can also continue in the same old groove.
                     </TwoColumnRoundedDiv>
                 </div>
             </div>

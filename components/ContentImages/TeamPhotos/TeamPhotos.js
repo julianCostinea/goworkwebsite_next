@@ -8,5 +8,5 @@ export * from './Trine';
 export * from './Peter';
 export * from './Emil';
 export * from './Kirstine';
-export * from './Marie';
 export * from './Emma';
+export * from './Sebastian';

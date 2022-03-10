@@ -14,7 +14,7 @@ const toolbar = (props) => {
             <header className={classes.Toolbar}>
                 <DrawerToggle clicked={props.drawerToggleClicked} />
                 <nav className={classes.DesktopOnly}>
-                    <NavigationItems />
+                    {props.englishVersion ? <NavigationItems englishVersion/> : <NavigationItems />}
                 </nav>
                 <div>
                 </div>

@@ -12,7 +12,7 @@ export const CandidatePhotoEmma = () => {
             loading="eager"
             objectFit="fill"
             style={loaded ? {} : { display: 'none' }} 
-            src="/images/team/Emma.jpg" alt="Foto mangler"
+            src="/images/team/Emma.jpg" alt="Foto Emma"
             onLoad={() => setLoaded(true)}
             />
     </div>

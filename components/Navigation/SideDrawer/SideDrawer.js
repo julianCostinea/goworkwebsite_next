@@ -9,7 +9,7 @@ import FacebookIcon from '../../Icons/facebookIcon';
 import LinkedInIcon from '../../Icons/linkedInIcon';
 import InstagramIcon from '../../Icons/instagramIcon';
 
-const SideDrawer = ( props ) => {
+const SideDrawer = (props) => {
     //const backdropCtx = useContext(BackdropContext)
     let attachedClasses = [classes.SideDrawer, classes.Close];
     if (props.open) {
@@ -17,13 +17,13 @@ const SideDrawer = ( props ) => {
     }
     return (
         <Aux>
-            <Backdrop show={props.open} clicked={props.closed}/>
-            <div className={attachedClasses.join(' ')} style={{textAlign: 'center'}}>
+            <Backdrop show={props.open} clicked={props.closed} />
+            <div className={attachedClasses.join(' ')} style={{ textAlign: 'center' }}>
                 <nav>
-                    <NavigationItems closeModal = {props.closed}/>
+                    {props.englishVersion ? <NavigationItems englishVersion closeModal={props.closed} /> : <NavigationItems closeModal={props.closed} />}
                 </nav>
                 <div className={classes.Footer}>
-                    <FacebookIcon/>
+                    <FacebookIcon />
                     <LinkedInIcon />
                     <InstagramIcon />
                 </div>

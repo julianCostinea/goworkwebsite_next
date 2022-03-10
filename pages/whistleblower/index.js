@@ -1,12 +1,12 @@
 import React from "react"
-
+import MobileOnlyDash from "../../util/MobileOnlyDash"
 import classes from './whistleblower.module.css'
 
 const Whistleblower = () => {
     return (
         <React.Fragment>
             <div className={classes.Content}>
-                <h1>GoWorks Whistleblowerordning</h1>
+                <h1>GoWorks Whistleblower<MobileOnlyDash />ordning</h1>
 
                 <h2>Typiske forhold, der kan indberettes</h2>
                 <p>Formålet med denne whistleblowerordning er at skabe muligheden for fortroligt at indberette kriminelle eller andre alvorlige forhold vedr. GoWork. </p>

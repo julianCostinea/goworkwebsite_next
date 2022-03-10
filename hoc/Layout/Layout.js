@@ -6,13 +6,13 @@ import classes from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 import Footer from "../../components/Footer/Footer";
-import Modal from "../../components/UI/Modal/Modal";
 
 class Layout extends Component {
   state = {
     showBoxShadow: false,
     showModal: false,
     showSideDrawer: false,
+    isEnglishVersion: false
   };
   closeModal = () => {
     this.setState({ showModal: false });
@@ -33,6 +33,9 @@ class Layout extends Component {
   };
 
   componentDidMount() {
+    if (window.location.pathname.split('/')[1] === "en") {
+      this.setState({ isEnglishVersion: true })
+    }
     if (!sessionStorage.getItem("sessionHideModal")) {
       if (window.location.pathname !== "/") {
         sessionStorage.setItem("sessionHideModal", true);
@@ -61,11 +64,32 @@ class Layout extends Component {
   }
 
   render() {
+    if (this.state.isEnglishVersion) {
+      return (
+        <Aux>
+          <BackdropContextProvider>
+            <div className="grid">
+              <Toolbar
+                englishVersion
+                showBox={this.state.showBoxShadow}
+                drawerToggleClicked={this.sideDrawerToggleHandler}
+              />
+              <SideDrawer
+                englishVersion
+                open={this.state.showSideDrawer}
+                closed={this.sideDrawerClosedHandler}
+              />
+              <main className={classes.Content}>{this.props.children}</main>
+              <Footer englishVersion />
+            </div>
+          </BackdropContextProvider>
+        </Aux>
+      );
+    }
     return (
       <Aux>
         <BackdropContextProvider>
           <div className="grid">
-            {/* <Modal show={this.state.showModal} modalClosed={this.closeModal} /> */}
             <Toolbar
               showBox={this.state.showBoxShadow}
               drawerToggleClicked={this.sideDrawerToggleHandler}

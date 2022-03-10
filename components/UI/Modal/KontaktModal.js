@@ -4,6 +4,7 @@ import classes from './Modal.module.css';
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Backdrop from '../Backdrop/Backdrop';
 import KontaktForm from '../../../components/KontaktForm/KontaktForm';
+import KontaktFormEng from '../../../components/KontaktForm/KontaktFormEng'
 
 class KontaktModal extends Component {
     shouldComponentUpdate ( nextProps ) {
@@ -21,7 +22,7 @@ class KontaktModal extends Component {
                         transition: '1s'
                     }}>
                     <div className={classes.KontaktModal}>
-                        <KontaktForm show={this.props.show}/>
+                        {this.props.englishVersion ? <KontaktFormEng show={this.props.show}/> : <KontaktForm show={this.props.show}/>}
                     </div>
                 </div>
             </Aux>

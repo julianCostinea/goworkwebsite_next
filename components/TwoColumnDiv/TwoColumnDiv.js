@@ -5,6 +5,7 @@ import Button from '../Button/Button';
 import Link from 'next/link';
 
 const TwoColumnDiv = (props) => {
+    let hopOmBordLink;
     let button1 = null;
     if (props.buttonText) {
         button1 = <Button 
@@ -22,6 +23,13 @@ const TwoColumnDiv = (props) => {
     }
 
     const formattedHeader = props.header.split('\n').map((str, index) => <h2 className={classes.Header__h2} key={index}>{str}</h2>);
+    if (props.underText) {
+        if (props.englishVersion) {
+            hopOmBordLink = <Link href='/en/vikar/hop-ombord'><a>{props.underText}</a></Link>
+        } else{
+            hopOmBordLink = <Link href='/vikar/hop-ombord'><a>{props.underText}</a></Link>
+        }
+    }
     return(
     <div className={`${classes.Container} ${props.ReverseContainer ? classes.ReverseContainer : null} ${props.smallIconReverse ? classes.smallIconReverse : null} ${props.lightBlueDiv ? classes.lightBlueDiv : null}`}>
         <div className={classes.TextDiv}>
@@ -34,7 +42,7 @@ const TwoColumnDiv = (props) => {
                 {button1}
                 {button2}
             <br />
-            {props.underText ? <Link href='/vikar/hop-ombord'><a>{props.underText}</a></Link> : null}
+            {hopOmBordLink}
         </div>
         <div className={classes.ImageDiv}>
             {props.imageDiv}

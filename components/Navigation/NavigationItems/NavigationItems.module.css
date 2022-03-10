@@ -8,8 +8,18 @@
     height: 100%;
 }
 
-.KontaktNav{
+.KontaktNav {
     width: 100%;
+}
+
+.LanguageFlag {
+    cursor: pointer;
+}
+
+.LanguageFlag svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
 }
 
 @media (min-width: 811px) {
@@ -19,7 +29,7 @@
 }
 
 @media (min-width: 1200px) {
-    .KontaktNav{
+    .KontaktNav {
         margin-left: 9rem;
     }
 }

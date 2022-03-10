@@ -10,7 +10,7 @@ const Logo = (props) => {
 
   return(
   <div className={classes.Logo} style={{ height: props.height, cursor: "pointer" }}>
-    <Link href="/" passHref>
+    <Link href={props.link} passHref>
       <a onClick={props.clicked}>
         <Image
           loading="eager"
