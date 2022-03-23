@@ -7,8 +7,8 @@ const UddanelserImage = (props) => (
     <div className={classes.ImageDiv}>
         <Image
             quality= "100"
-            width="450px" height="450px"
-            className={classes.Laptop} src="/images/om-os/Info_1.svg" alt="Om os" />
+            width="400px" height="350px"
+            className={classes.Laptop} src="/images/om-os/Info_1.png" alt="Om os" />
     </div>
 );
 
