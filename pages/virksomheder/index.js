@@ -15,7 +15,6 @@ import CarouselContainer from '../../components/CarouselContainer/CarouselContai
 import Carousel from '../../components/UI/Carousel/Carousel';
 import * as ClienPhotos from '../../components/ContentImages/ClientPhotos/ClientPhotos';
 import * as VikarPhotos from '../../components/ContentImages/VikarPhotos/VikarPhotos';
-import KontaktForm from '../../components/KontaktForm/KontaktForm';
 import Avatar from '../../components/Avatar/Avatar';
 
 import classes from './Virksomheder.module.css';

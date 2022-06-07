@@ -92,11 +92,6 @@ class OmOs extends Component {
                                 cardHeader={'Emma Aunsbak'}
                                 cardBody={'Studentermedhjælper'}
                             />
-                            <TeamCard
-                                cardPhoto={<TeamPhotos.CandidatePhotoSebastian />}
-                                cardHeader={'Sebastian Rasmussen'}
-                                cardBody={'Salgskonsulent'}
-                            />
                         </CardContainer>
                     </OneColumnDiv>
                     <TwoColumnRoundedDiv
