@@ -69,11 +69,6 @@ class OmOs extends Component {
                                 cardBody={'HR Consultant'}
                             />
                             <TeamCard
-                                cardPhoto={<TeamPhotos.CandidatePhotoArne />}
-                                cardHeader={'Arne Lauritzen'}
-                                cardBody={'Senior Consultant'}
-                            />
-                            <TeamCard
                                 cardPhoto={<TeamPhotos.CandidatePhotoTrine />}
                                 cardHeader={'Trine le Fevre'}
                                 cardBody={'Accountant'}
